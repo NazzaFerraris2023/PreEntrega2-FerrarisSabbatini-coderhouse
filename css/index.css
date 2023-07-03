@@ -167,6 +167,10 @@ div.contenedor-svg{
 
 }
 
+header div.menu-hamburguesa nav ul li::marker{
+      color: transparent;
+   }
+
 
 
 .redes-sociales{
@@ -371,25 +375,97 @@ footer.pie-pagina ul.lista-pie-pagina li{
    .buscador input.btn-send:hover{
       color: rgb(214, 156, 80);   
    }
-   header nav{
+/* .menu-hamburguesa a{
+   color: inherit;
+   text-decoration: none;
+   display: none;
+   padding: 10px 20px;
+   max-width: 200px;
+   background: none;
+   font-variant: small-caps;
+   text-shadow: 1px 1px black;
+
+}
+.menu-hamburguesa input[type="checkbox"], .menu-hamburguesa .bloque-1, .menu-hamburguesa .bloque-2{
+   position: absolute;
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   right: 0;
+   top: 0;
+   width: 48px;
+   height: 48px;
+   display: none;
+} 
+.menu-hamburguesa .bloque-1, .menu-hamburguesa .bloque-2 {
+   font-size: 48px;
+   pointer-events: none;
+   display: none;
+}
+.menu-hamburguesa input[type="checkbox"] {
+   opacity: 0;
+   display: none;
+}
+.menu-hamburguesa {
+   color: black;
+   position: relative;
+   background: none;
+   min-height: 48px;
+   display: none;
+}
+.menu-hamburguesa nav {
+   display: none;
+}
+.menu-hamburguesa input:checked ~ nav {
+   display: none;
+}
+.menu-hamburguesa input:checked ~ .bloque-1 {
+   display: none;
+}
+.menu-hamburguesa input:not(:checked) ~ .bloque-2 {
+   display: none;
+}
+*/
+div.contenedor-svg{
+   display: none;
+   flex-direction: row;
+   justify-content: end;
+   
+
+}
+
+
+
+
+   header div.menu-hamburguesa nav{
       display: grid;
       grid-column: span 2;
       grid-area: nav;
+
+      
    }
-   header nav ul{
+   header div.menu-hamburguesa nav ul{
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: space-around;
       gap: 3em;
    }
-
-   header nav ul li a:hover{
+   header div.menu-hamburguesa nav ul li{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+   }
+   header div.menu-hamburguesa nav ul li::marker{
+      color: transparent;
+   }
+   header div.menu-hamburguesa nav ul li a:hover{
    color: rgb(214, 156, 80);
+   
 } 
-div.contenedor-svg{
+/* div.contenedor-svg{
    display: flex;
    justify-content: end;
-}
+} */
 /* div button.redes-sociales{
    display: flex;
    align-items: center;
@@ -597,11 +673,68 @@ header div.contenedor{
       background-color:none;
       width: 100%;
    }
-   nav ul li{
+
+/* .menu-hamburguesa a{
+   color: inherit;
+   text-decoration: none;
+   display: none;
+   padding: 10px 20px;
+   max-width: 200px;
+   background: none;
+   font-variant: small-caps;
+   text-shadow: 1px 1px black;
+
+}
+.menu-hamburguesa input[type="checkbox"], .menu-hamburguesa .bloque-1, .menu-hamburguesa .bloque-2{
+   position: absolute;
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   right: 0;
+   top: 0;
+   width: 48px;
+   height: 48px;
+   display: none;
+} 
+.menu-hamburguesa .bloque-1, .menu-hamburguesa .bloque-2 {
+   font-size: 48px;
+   pointer-events: none;
+   display: none;
+}
+.menu-hamburguesa input[type="checkbox"] {
+   opacity: 0;
+   display: none;
+}
+.menu-hamburguesa {
+   color: black;
+   position: relative;
+   background: none;
+   min-height: 48px;
+   display: none;
+}
+.menu-hamburguesa nav {
+   display: none;
+}
+.menu-hamburguesa input:checked ~ nav {
+   display: none;
+}
+.menu-hamburguesa input:checked ~ .bloque-1 {
+   display: none;
+}
+.menu-hamburguesa input:not(:checked) ~ .bloque-2 {
+   display: none;
+}
+div.contenedor-svg{
+   display: none;
+   flex-direction: row;
+   justify-content: end;
+   
+
+} */
+div.menu-hamburguesa nav ul li{
       list-style: none;
       }
-      
-      header nav ul li a{
+header div.menu-hamburguesa nav ul li a{
          text-decoration: solid;
          color: black;
          padding: 0 .5em;
