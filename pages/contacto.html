@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Nosotros</title>
+    <title>Contactate con nosotros</title>
     <link rel="stylesheet" href="../css/index.css">
 </head>
 <body>
@@ -30,10 +30,10 @@
                     </svg></div>
                     <nav>
                         <ul>
-                            <li><a href="../deportes/deportes.html">Deportes </a></li>
-                            <li><a href="../servicio/servicio.html">Servicio</a> </li>
-                            <li><a href="../contacto/contacto.html">Contacto</a></li>
-                            <li><a href="./nosotros.html">Nosotros</a> </li>
+                            <li><a href="../pages/deportes.html">Deportes </a></li>
+                            <li><a href="/pages/servicio.html">Servicio</a> </li>
+                            <li><a href="/pages/contacto.html">Contacto</a></li>
+                            <li><a href="/pages/nosotros.html">Nosotros</a> </li>
                         </ul>
                     </nav>
                 </div>
@@ -86,43 +86,82 @@
                 </div>
             </div>
         </header>
-            <!--MAIN DEL DOCUMENTO-->
-    <main class="idea_principal">
-            <h2>Nosotros</h2>
-            <img src="#">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias vero reiciendis laborum vitae nisi explicabo quos reprehenderit quasi repellendus expedita officiis necessitatibus exercitationem ducimus ea </p>
-            <h3>Quienes somos</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure dolore nam natus quam architecto quo, asperiores id expedita ducimus magnam cumque dignissimos dicta dolor eaque fuga cupiditate molestias </p>
-            <h3>El objetivo de la empresa</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam cum, aut quod debitis, tempore nulla delectus quis numquam, nihil repellat necessitatibus molestiae repudiandae veritatis iusto ipsam dolore</p>
-            <h3>Como contactarte con nosotros</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt et, iusto necessitatibus soluta nihil at? Amet debitis fugiat nostrum aspernatur, enim et repellat! Quos quae ducimus molestiae distinctio eaque dolores?</p>
+        <!--MAIN DE PAGINA-->
+        <main id="main">
+            <br>
+            <br>
+            <h2>Contacto</h2>
+                <section>
+            <div class="contenedor-img">
+                <img class="img-contacto"  src="../fotos_proyecto/fotos contacto/foto-contacto-preguntas.jpeg">
+            </div>
+                <p class="section__informacion">Preguntas?</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat eius ratione itaque, repudiandae labore harum sint iste unde error nulla fuga commodi exercitationem opti</p>
+                <button class="boton" href="#">Preguntame!</button>
+                </section>
+                <div class="contenedor-img"><img class="img-info" src="../fotos_proyecto/fotos contacto/foto-contacto-informacion.png"></div>
+                <p class="section__informacion">Informacion</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis facere assumenda omnis, dicta officiis architecto, dolor fugiat quisquam autem ipsam atque hic, veritatis illum necessitatibus nulla eaque asperiores sint incidunt.</p>
+                <button class="boton" href="#">Contactanos!</button>
+                <section>
+                    <div class="contenedor-img"><img class="img-nosotros" src="../fotos_proyecto/fotos contacto/foto-contacto-forma_parte.png"></div>
+                <p class="section__informacion"> Se parte del proyecto</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, dolorum obcaecati cumque similique, voluptatibus esse voluptatum quibusdam quis nemo, nam reprehenderit totam enim quas facere reiciendis quam laudantium assumenda ad.</p>
+                <button class="boton" href="#">Contactanos!</button>
+                </section>
+                <section class="contenedor-formulario">
+                    <h2>Dejame tu mensaje</h2>
+                    <form>
+                        <fieldset>
+                    
+                            <ul>
+                                <li>
+                                <label for="name">Nombre</label>
+                                <input type="text" id="name" name=user_name>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <label for="mail">Email</label>
+                                    <input type="email" id="mail" name=user_mail>
+                                </li>    
+                            </ul>
+                            <ul> 
+                                <li>
+                                <label for="pnumber">Phone number</label>
+                                <input type="number" id="phone_number" name=user_phone>
+                            </li>
+                        </ul>
+                            <ul>
+                                <li>
+                                <label for="msg">Mensaje:</label>
+                                <textarea id="msg" name="user_message"></textarea>
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </form>
+                    <legend class="block-btn-send">
+                        <button class="btn-send" href="#">Envia los datos</button>
+                    </legend>
+                </section>
+                <footer class="pie-pagina"> 
+                    <h4> InformateYaa!</h4>
+        <div class="fp">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus esse quos Lorem ipsum dolor sit amet
+                consectetur, adipisicing elit. Vero, at.</p>
+        </div>
+        <div class="tags">
+            <h5>Tags
+                <ul class="lista-pie-pagina">
+                    <li>💪health</li>
+                    <li>💪lifestyle</li>
+                    <li>💪social</li>
+                    <li>💪Enterteinment</li>
+                    <li>💪news</li>
+                </ul>
+            </h5>
+        </div>
+                </footer>
         </main>
-        <!--FORMULARIO-->
-        <section class="formulario">
-            <h2>Contacte con nosotros!</h2>
-            <form>
-                <fieldset>
-                    <legend>Suscribite a la pagina</legend>
-                    <ul>
-                        <label for="mail">Correo electrónico:</label>
-                        <input type="email" id="mail" name="user_mail">
-                    </ul>
-                </fieldset>
-            </form>
-            <legend><button>Suscribite</button></legend>
-        </section>
-        <!--PIE DE PAGINA-->
-        <footer class="pie_de_pagina"> 
-            <h4>Nombre de la empresa (?)</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus esse quos</p>
-            <h4>Tags</h4>
-            <li>💪health</li>
-            <li>💪lifestyle</li>
-            <li>💪social</li>
-            <li>💪Enterteinment</li>
-            <li>💪news</li>
-        </footer>
-            
 </body>
 </html>
