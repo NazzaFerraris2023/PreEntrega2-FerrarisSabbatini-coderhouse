@@ -1,0 +1,453 @@
+//================= VERSION-MOBILE =================//
+h1{
+    text-align: left;
+    text-decoration: solid;
+    font-size: 1.8em;
+    margin-left: .7em;
+}
+h2{
+    font-size:1.5em;
+}
+h3{
+    margin-left: 1.2em;
+    margin-top: .6em;
+    font-size: 1em;
+    text-transform:uppercase;
+    margin-bottom: .5em;
+    text-align: left;
+}
+//================= MAIN KARATE =================//
+main{
+    margin: 1em;
+    & article.titulo-karate{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    & h3{
+    text-decoration: underline;
+
+}
+}
+    & div.hero img{
+        width: 85%;
+        max-height: 80%;
+        display: flex;
+        justify-content: flex-start;
+        display: none;}
+    & div.contenedor-columnas{
+        width: 95%;
+        text-align: justify;
+        margin: 1em;
+        position: relative;
+        bottom: 2em;
+    }
+    & div.cont-btn a.btn{
+        width: 100px;
+        border: solid black;
+        padding: .2em;
+        margin-left: 1em;
+        border-radius: 20px;
+        color: black;
+        background-color: $color-botones;
+        text-decoration: solid;
+    }
+    
+}
+//================= ARTICULOS =================//
+section{    
+    & .contenedor-articulos-judo{
+        & img{
+            margin: 1em;}
+        & p{
+            margin: 1em;
+        }
+    }
+    &.contenedor-articulos-boxeo{
+        & img{
+            margin: 1em;}
+        & p{
+            margin: 1em;
+        }
+    }
+
+}
+
+
+
+//================= ASIDE =================//
+aside{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    & h4{
+        display: block;
+        padding: 1em;
+    }
+    & a{
+        display: block;
+        padding: 1em;
+        color: black;
+        text-decoration: solid;
+    }
+    & div.cont-img-aside img{
+        display: none;
+    }
+}
+//================= SERVICIOS =================//
+section.servicios{
+    display: flex;
+    flex-direction: column;
+    & div.contenedor-foto-servicio img{
+    display: none;}
+
+
+}
+
+//================= FORMULARIO =================//
+section.formulario{
+    width:98%;
+    height: 15em;
+    & h2{
+        text-align: center;
+        font-size: 1em;
+        padding: .5em;
+    }
+    & form fieldset {
+        height: 12em;
+        border: none;
+        & legend{
+            text-align: center;
+        
+        }
+        & ul{
+            text-align: center;
+            & li{
+                text-align: center;
+                width: 12em;
+                height: 3em;
+            
+            }
+
+        }
+    
+    }
+    & legend.cont-send{
+        margin-left: 3em;
+        & button.send{
+            background-color: $color-botones;
+            border-radius: 10px;
+            padding: .5em;
+            margin: 1em;
+            position: relative;
+            bottom: 2.5em;
+        
+        }
+        
+    }
+}
+
+//================= VERSION-TABLETS =================//
+
+@media (min-width:768px){
+    h1{
+        font-size: 2.5rem;
+        display: flex;
+        justify-content: center;
+    }
+// ================== MAIN ===================//
+main{    
+
+    & div.hero img{
+        display: flex;
+        width: 90%;
+        height: 25em;
+        /* margin-left: 1em; */
+        margin-right: 1em;
+        opacity:95%
+        }
+    // & div.foto-karate{
+    //     display: inline;
+    // }
+    & div.foto-karate img{
+        margin-right: 1em;
+        margin-top: 1em;
+        width: 30em;
+        float: right;
+    }
+        & div.contenedor-columnas {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            & p{
+                text-align: left;
+            }
+        }         
+
+
+}
+
+// ================== SECCIONES ===================//
+section.articulos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    & div.contenedor-articulo-judo h3{
+        text-decoration: underline;
+    }
+    & div.contenedor-articulo-boxeo h3{
+        text-decoration: underline;
+    }
+    }
+// ================== ASIDE ===================//
+div.contenedor-grilla{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+    & div.contenedor-aside{
+        display: flex;
+        justify-content: end;
+        margin:4em;
+        align-items: start;
+        grid-column: 2/3;
+    
+    
+        & aside#aside{
+            width: 8em;
+            display: grid;
+            grid-template-columns: 1fr;
+            /* border: solid black; */
+            border-radius: 20px;
+        }
+    
+        & section.servicios{
+            border: none;
+            display: flex;
+            border-radius: 20px;
+            grid-column: 1/2;
+            grid-row: 1/2;
+        
+            & div.contenedor-foto-servicio{
+                display: flex;
+                flex-direction: column;
+                width: 15em;
+                margin: .5em;
+                justify-content: end;
+                
+                & img{
+                    display: flex;
+                    width:25em;
+                    border-radius: 20px;
+                    & button.boton-servicio{       
+                        display: block;
+                        width: 20em;
+                        margin: 1em;
+                        background-color: transparent;
+                        border: none;
+                        box-shadow: none;
+                        & a{
+                            font-size: 1em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ================== FORMULARIO ===================//
+section.formularios{
+    display: grid;
+    grid-template-rows: repeat(3 1fr);
+    width: 95%;
+    height: 15em;
+    /* border: solid black; */
+    margin-left: 1em; 
+    margin-right: 1em;
+    text-decoration: none;
+    & h2{
+        text-align: center;
+        font-size: 1em;
+        padding: .5em;
+    
+    }
+    & form fieldset {
+        height: 12em; 
+        & legend{
+            text-align: center;
+            
+        & ul{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        
+            & li{
+
+                width: 12em;
+                height: 3em;
+                list-style: none; 
+            }
+        }
+    }
+}
+legend.cont-send{
+    display: flex;
+    justify-content: center;
+    & button.send{
+        background-color: $color-botones;
+        border-radius: 10px;
+        padding: .5em;
+        margin: 1em;
+        /* position: relative;
+        bottom: 2.5em;
+        left: 25em; */
+        legend.cont-send button.send:hover{
+            background-color:rgb(232, 167, 81); ;
+        }        
+    }
+}
+}
+
+}//MEDIA QUERIE
+
+//================= VERSION-DESKTOP =================//
+@media (min-width:1200px){
+    h1{
+        font-size: 3rem;
+        text-decoration: underline;
+    }
+//================= MAIN KARATE =================//
+    main div.hero{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top:1em ;
+        & img{
+            width: 95%;
+            margin: none;
+        &:hover{
+        transition: 0.6s;
+        transform: scale(0.9);
+        opacity: 92%;
+    }
+    }
+}
+
+
+    article.titulo-karate h3{
+        font-size: 1.5em;
+    }
+    
+    div.contenedor-columnas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    & p{
+        text-align: left;
+        }
+    }
+    /* 
+    div.cont-btn{
+        box-shadow: 20px black;
+     } */
+
+    
+//================= ARTICULOS =================//
+
+section.articulos{
+        margin-left: 2em;
+
+& div.contenedor-articulo-judo img{
+            border-radius: 20px;
+            height: 20em;
+            width:40em;
+            &:hover{
+                transition: 0.6s;
+                transform: scale(1.1);
+                opacity: 92%;
+                border-radius: 20px;
+            }
+    
+        }
+        
+& div.contendor-articulo-boxeo img{
+            border-radius: 20px;
+            height: 20em;
+            width: 40em;
+            &:hover{
+                transition: 0.6s;
+                transform: scale(1.1);
+                opacity: 92%;
+                border-radius: 20px;
+            }
+        }
+
+    }
+
+//================= ASIDE =================//
+    div.contenedor-grilla{
+        padding-left: 2em;
+
+        & div aside#aside{
+            width: 43.75em;
+            height: 50em;
+            display: flex;
+            justify-content: start;
+            align-items: end;
+            & p.trendings{
+                text-align: end;
+                font-size: 1.4em;
+                text-decoration: underline;
+                margin-bottom: 1em;
+                &:hover{
+                    color: rgb(176, 157, 157);
+                }
+            }
+        
+            & div.cont-img-aside{
+                display: flex;
+                justify-content: end; 
+                align-items: end;
+                & img{
+                    display: block;
+                    width: 50%;
+                    border-radius: 20px;
+                    &:hover{
+                        transition: 0.6s;
+                        transform: scale(1.1);
+                        opacity: 92%;
+                        border-radius: 20px;
+                    }
+                }
+            }
+        } 
+        
+    //     div.cont-img-aside-esgrima{
+    //         display: none;
+    //     }
+    // } 
+    
+
+
+
+//================= SERVICIOS =================//
+    section.servicios img:hover{
+        transition: 0.6s;
+        transform: scale(1.1);
+        opacity: 92%;
+        border-radius: 20px;
+    }  
+    
+// ================== FORMULARIO ===================//
+    section.formulario{
+        /* border: 2px black solid; */
+        width: 500px;
+        display: flex;
+        align-items: center;
+    & legend button.send{
+        position: relative;
+        left:15px;top:5px;                 
+    }
+    }
+
+}
+}//MEDIA QUERIE
+

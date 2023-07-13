@@ -1,0 +1,151 @@
+/* ================================CONTACTO================================ */
+//================= VERSION-MOBILE ===============//
+
+
+
+//================= MAIN =================//
+main{
+    & p.section__informacion{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: bolder;
+    }
+    main#main div.contenedor-img{
+        display: flex;
+        justify-content: center;
+        border-radius: 20px;
+        & img.img-contacto{
+            width: 50%;
+            border-radius: 20px;
+        }
+    }
+    
+}
+
+//================= FORMULARIO =================//
+section.contenedor-formulario{
+    width:98%;
+    height: 19em;
+    & h2{
+    text-align: center;
+    font-size: 1em;
+    padding: .5em;
+}
+section.contenedor-formulario form fieldset {
+    height: 12em;
+    border: none;
+    & ul li{
+        text-align: center;
+        list-style: none;
+        & label{
+            text-align: center;
+            width: 12em;
+            height: 3em;
+        
+        }
+    }
+}
+section.contenedor-formulario legend.block-btn-send{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    & button.btn-send{
+        background-color: $color-botones;
+        border-radius: 10px;
+        padding: .5em;
+        margin: 1em;
+        display: flex;
+        }
+    }
+}
+
+//================= VERSION-TABLET ===============//
+@media (min-width:768px){
+section.contenedor-formulario{
+    width: 95%;
+    height: 15em;
+    /* border: solid black; */
+    margin-left: 1em; 
+    margin-right: 1em;
+    text-decoration: none;
+    & h2{
+        text-align: center;
+        font-size: 1em;
+        padding: .5em;
+        
+    }
+    & form fieldset {
+        height: 14em;
+        & ul{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            & li{
+                width: 12em;
+                height: 3em;
+                list-style: none;
+                font-weight: bold;    
+            }
+            
+        }
+        
+    }
+    
+& legend.block-btn-send{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    bottom: 2em;
+    & button.btn-send{
+        background-color: $color-botones;
+        border-radius: 10px;
+        padding: .5em;
+        margin: 1em;
+        display: flex;
+    }
+    
+}
+}
+}//MQ
+
+
+
+//================= VERSION-DESKTOP ===============//
+@media (min-width:1200px){
+//================= MAIN =================//
+main#main div.contenedor-img{
+    width: 25em;
+    & img.img-contacto{
+        width: 20em;
+        height: 15em;
+        border-radius: 20px;
+    }
+    &.img-info{
+        border-radius: 20px;
+    }
+    &.img-nosotros{
+        border-radius: 20px;
+    }
+    &:hover{
+        opacity: 80%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+}//MQ
+
+
+//================= FORMULARIO =================//
