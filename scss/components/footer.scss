@@ -1,0 +1,24 @@
+//================= FOOTER =================//
+footer.pie-pagina{
+    display: flex;
+    padding: 1em 1em;
+    & div.contenedor-texto-footer {
+        display: flex;
+        flex-direction: column ;
+        justify-content: center;
+        align-items: center;}
+& h5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 1em;
+
+}
+& ul.lista-pie-pagina li{
+    display: flex;
+    flex-direction: column;
+
+}
+}
+
+

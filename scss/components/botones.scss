@@ -1,0 +1,50 @@
+//================= BOTENES =================//
+a.btn{
+    width: 100px;
+    border: solid black;
+    padding: .2em;
+    margin-left: 1em;
+    border-radius: 20px;
+    color:$color-letras;
+    background-color: $color-botones;
+    text-decoration: solid;
+    &:hover{
+        background-color:rgb(159, 127, 86);
+    }
+}
+
+button.bn{
+    background-color: rgb(254, 205, 142);
+    border-radius: 10px;
+    margin: 1em;
+    display: flex;
+    &:hover{
+        background-color:rgb(159, 127, 86);
+    }
+}
+button.bn a{
+    border: none;
+    background-color: transparent;
+    color: black;
+    text-decoration: solid;
+    
+}
+
+& button.boton-servicio{
+    background-color: transparent;
+    text-decoration: solid;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 20px;
+    box-shadow: 1.5px 1.5px 1.5px 1.5px black;
+    & a{
+    color: black;
+    text-decoration: solid;
+    &:hover{    
+    background-color:rgb(208, 206, 203);   
+}
+}
+}
+button.boton-servicio{
+    color: blueviolet;
+    font-size: 1em;}
