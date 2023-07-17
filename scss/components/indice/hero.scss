@@ -9,7 +9,7 @@ div.hero img{
 
 // TABLET
 @media (min-width:768px){
-& div.hero img{
+div.hero img{
     display: flex;
     width: 90%;
     height: 25em;
