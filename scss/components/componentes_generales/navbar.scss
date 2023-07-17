@@ -1,47 +1,4 @@
-//================= HEADER =================//
-header h3 a{
-    text-decoration: solid;
-}
-div.hero img{
-    width: 85%;
-    max-height: 80%;
-    display: flex;
-    justify-content: flex-start;
-
-}
-button.btn{
-    background-color: $color-botones;
-    border-radius: 10px;
-    padding: .5em;
-    margin: 1em;
-    position: relative;
-    bottom: 3em;
-    & a{
-        color: $color-letras;
-        text-decoration: solid black;}
-
-    }
-button.boton{
-    
-        background-color: $color-botones;
-        border-radius: 10px;
-        padding: .5em;
-        margin: 1em;
-        display: flex;
-        &:hover{
-            background-color:rgb(159, 127, 86);
-        }
-        & a{
-            color: $color-letras;
-            text-decoration: none;
-        } 
-}
-header{
-    padding: 1rem;
-    background-color: none;
-    /* border-bottom:solid black ; */
-
-    & div.contenedor-nav h3{
+div.contenedor-nav h3{
     color: $color-letras;
     display: flex;
     flex-direction: column;
@@ -51,7 +8,7 @@ header{
         margin-bottom: .5em;
         display: none;
     }
-    & div.menu-hamburguesa{
+    div.menu-hamburguesa{
         & a{
             color: inherit;
             text-decoration: none;
@@ -101,21 +58,21 @@ header{
             display: none;
         }
     }
-    & div.contenedor-svg{
+    div.contenedor-svg{
         display: flex;
         flex-direction: row;
         justify-content: end;
         
     }
-    & div.redes-sociales{
+    div.redes-sociales{
         display:none;
     }
-}
 
-//================= HEADER MQ 768px =================//
 
-header{
-    & div.contenedor-nav{
+
+
+    @media (min-width:768px){
+    div.contenedor-nav{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 40px;
@@ -123,14 +80,6 @@ header{
         grid-template-areas: 
         "titulo titulo buscador"
         "nav nav nav";
-        
-    }
-    & h3{
-        font-size: 1.5em;
-        padding: 0;
-        border: 0;
-        margin: 0;
-        grid-area: titulo;
         
     }
     .buscador{
@@ -146,7 +95,6 @@ header{
             &:hover{
                 color: rgb(214, 156, 80);   
             }
-    }
     }
     & div.menu-hamburguesa{
         & a{
@@ -206,5 +154,15 @@ header{
     }
     & div.redes-sociales{
         display:none;
-    }
-    }
+    } 
+}
+
+
+
+
+
+
+
+
+
+} //MQ 

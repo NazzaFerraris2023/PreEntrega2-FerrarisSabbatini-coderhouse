@@ -1,0 +1,17 @@
+//Desktop
+
+article.titulo-karate h3{
+    font-size: 1.5em;
+}
+
+div.contenedor-columnas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+& p{
+    text-align: left;
+    }
+}
+/* 
+div.cont-btn{
+    box-shadow: 20px black;
+ } */

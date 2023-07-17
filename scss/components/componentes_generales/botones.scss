@@ -12,9 +12,19 @@ a.btn{
         background-color:rgb(159, 127, 86);
     }
 }
+div.cont-btn a.btn{
+    width: 100px;
+    border: solid black;
+    padding: .2em;
+    margin-left: 1em;
+    border-radius: 20px;
+    color: black;
+    background-color: $color-botones;
+    text-decoration: solid;
+}
 
 button.bn{
-    background-color: rgb(254, 205, 142);
+    background-color: $color-botones ; 
     border-radius: 10px;
     margin: 1em;
     display: flex;
@@ -30,7 +40,7 @@ button.bn a{
     
 }
 
-& button.boton-servicio{
+button.boton-servicio{
     background-color: transparent;
     text-decoration: solid;
     padding: 1em;
@@ -48,3 +58,19 @@ button.bn a{
 button.boton-servicio{
     color: blueviolet;
     font-size: 1em;}
+
+button.boton{
+    
+        background-color: $color-botones;
+        border-radius: 10px;
+        padding: .5em;
+        margin: 1em;
+        display: flex;
+        &:hover{
+            background-color:rgb(159, 127, 86);
+        }
+        & a{
+            color: $color-letras;
+            text-decoration: none;
+        } 
+}

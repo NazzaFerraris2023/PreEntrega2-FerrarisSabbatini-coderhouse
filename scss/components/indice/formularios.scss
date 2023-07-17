@@ -1,0 +1,114 @@
+
+//================= FORMULARIO =================//
+section.formulario{
+    width:98%;
+    height: 15em;
+    & h2{
+        text-align: center;
+        font-size: 1em;
+        padding: .5em;
+    }
+    & form fieldset {
+        height: 12em;
+        border: none;
+        & legend{
+            text-align: center;
+        
+        }
+        & ul{
+            text-align: center;
+            & li{
+                text-align: center;
+                width: 12em;
+                height: 3em;
+            
+            }
+
+        }
+    
+    }
+    & legend.cont-send{
+        margin-left: 3em;
+        & button.send{
+            background-color: $color-botones;
+            border-radius: 10px;
+            padding: .5em;
+            margin: 1em;
+            position: relative;
+            bottom: 2.5em;
+        
+        }
+        
+    }
+}
+
+// ================== FORMULARIO ===================//
+@media (min-width:768px){
+section.formularios{
+    display: grid;
+    grid-template-rows: repeat(3 1fr);
+    width: 95%;
+    height: 15em;
+    /* border: solid black; */
+    margin-left: 1em; 
+    margin-right: 1em;
+    text-decoration: none;
+    & h2{
+        text-align: center;
+        font-size: 1em;
+        padding: .5em;
+    
+    }
+    & form fieldset {
+        height: 12em; 
+        & legend{
+            text-align: center;
+            
+        & ul{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        
+            & li{
+
+                width: 12em;
+                height: 3em;
+                list-style: none; 
+            }
+        }
+    }
+}
+legend.cont-send{
+    display: flex;
+    justify-content: center;
+    & button.send{
+        background-color: $color-botones;
+        border-radius: 10px;
+        padding: .5em;
+        margin: 1em;
+        /* position: relative;
+        bottom: 2.5em;
+        left: 25em; */
+        legend.cont-send button.send:hover{
+            background-color:rgb(232, 167, 81); ;
+        }        
+    }
+}
+}
+}
+
+@media (min-width:1200px){
+    section.formulario{
+        /* border: 2px black solid; */
+        width: 500px;
+        display: flex;
+        align-items: center;
+    & legend button.send{
+        position: relative;
+        left:15px;top:5px;                 
+    }
+    }
+
+}
