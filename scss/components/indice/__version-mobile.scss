@@ -29,13 +29,7 @@ header{
 
 }
 
-        div.hero img{
-            width: 85%;
-            max-height: 80%;
-            display: flex;
-            justify-content: flex-start;
-            display: none;}
-        
+
     
     }
     h1{
@@ -58,21 +52,26 @@ header{
 
     main{
         margin: 1em;
+        & div.hero img{
+            width: 85%;
+            max-height: 80%;
+            display: flex;
+            justify-content: flex-start;
+            display: none;}
         & article.titulo-karate{
         display: flex;
         flex-direction: row;
         justify-content: center;
         & h3{
-        text-decoration: underline;
-    
+        text-decoration: underline;}
     }
-    }
-    div.foto-karate{
-        background-color: bisque;
-        width: 500px;
-
-        
-    }
+        & .foto-karate{
+            background-color: antiquewhite;
+            width: 50em;
+            & img{
+                width: 100%;
+            }
+        }
     
         
     & div.contenedor-columnas{
@@ -83,7 +82,6 @@ header{
         position: relative;
         bottom: 2em;
         }
-        
         
     }
     section{    
