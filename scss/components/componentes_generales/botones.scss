@@ -85,9 +85,12 @@ div.cont-btn{
         &:hover{
             background-color:$color-botones-hover;
         }
+    }
+}
+
 div.cont-btn-judo{        
-    a.btn-judo{
-        padding: .5em;
+    .btn-judo {
+        padding: .3em;
         background-color: $color-botones;
         color: $color-letras;
         border-radius: 10px;
@@ -95,59 +98,80 @@ div.cont-btn-judo{
         text-decoration: none;
         font-weight: 700;
         margin-left: 1em;
+        font-size: .8em;
         }
     }
+    
 div.cont-btn-box{
     a.btn-box{
-            padding: .5em;
-            background-color: $color-botones;
-            color: $color-letras;
-            border-radius: 10px;
-            text-transform: uppercase;
-            text-decoration: none;
-            font-weight: 700;
-            margin-left: 1em;
+        padding: .3em;
+        background-color: $color-botones;
+        color: $color-letras;
+        border-radius: 10px;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 700;
+        margin-left: 1em;
+        font-size: .8em;
         }
     }
 div.cont-btn-info{
+    margin-top: 1em;
     a.btn-info{
-            padding: .5em;
-            background-color: $color-botones;
-            color: $color-letras;
-            border-radius: 10px;
-            text-transform: uppercase;
-            text-decoration: none;
-            font-weight: 700;
-            margin-left: 1em;
+        padding: .3em;
+        background-color: $color-botones;
+        color: $color-letras;
+        border-radius: 10px;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 700;
+        margin-left: 1em;
+        font-size: .8em;
         }
     }
 div.cont-btn-info1{
+    margin-bottom: 1em;
     a.btn-info1{
-            padding: .5em;
-            background-color: $color-botones;
-            color: $color-letras;
-            border-radius: 10px;
-            text-transform: uppercase;
-            text-decoration: none;
-            font-weight: 700;
-            margin-left: 1em;            
+        padding: .3em;
+        background-color: $color-botones;
+        color: $color-letras;
+        border-radius: 10px;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 700;
+        margin-left: 1em;
+        font-size: .8em;            
         }
     }
 div.cont-btn-send{
     a.btn-send{
-            padding: .5em;
-            background-color: $color-botones;
+        padding: .3em;
+        background-color: $color-botones;
+        color: $color-letras;
+        border-radius: 10px;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 700;
+        margin-left: 1em;
+        font-size: .8em;
+        position: relative;
+        bottom: 1.5em;
+            }
+    }
+    button.boton-servicio{
+            background-color: transparent;
+            text-decoration: solid;
+            padding: 1em;
+            margin-bottom: 1em;
+            border-radius: 20px;
+            box-shadow: 1.5px 1.5px 1.5px 1.5px black;
+            & a{
             color: $color-letras;
-            border-radius: 10px;
-            text-transform: uppercase;
-            text-decoration: none;
-            font-weight: 700;
-            margin-left: 1em;
+            text-decoration: solid;
         }
-    }
+        }
+    
 
-    }
-}
 
 
 
