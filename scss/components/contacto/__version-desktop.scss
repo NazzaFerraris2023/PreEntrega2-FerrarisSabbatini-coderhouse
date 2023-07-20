@@ -1,0 +1,35 @@
+@media (min-width: 768px){
+main{
+    div.contenedor-img{
+        display: flex;
+        justify-content: center;
+        
+        & img{
+            width: 70em;
+            height: 30em;
+            margin-right: 1em;
+            margin-bottom: 1em;
+            opacity: 80%;
+            &:hover{
+                transition: 0.6s;
+                transform: scale(0.9);
+                opacity: 92%;
+            }
+    }        
+    }
+    p.section-informacion{
+        font-size: 2em;
+    }
+    p{
+        font-size: 1.4em;
+    }
+    h2.section-informacion{
+        font-size: 1.8em;
+    }
+}
+section.contenedor-formulario{
+    margin-left: 28em;
+}
+
+
+}//MQ

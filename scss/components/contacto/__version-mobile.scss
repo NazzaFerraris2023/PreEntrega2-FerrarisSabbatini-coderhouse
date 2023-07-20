@@ -1,0 +1,37 @@
+/* ================================CONTACTO================================ */
+//================= VERSION-MOBILE ===============//
+@media (min-width: 400px){
+    main{
+    div.contenedor-img{
+        //background-color: aquamarine;
+        img{
+            border-radius: 20px;
+            margin-bottom: .5em;
+            margin-top: .8em;
+            width: 18em;
+            height: 12em;
+        }
+    }
+    .section-informacion{
+        padding:5px 0px;
+        font-weight: 800;
+        }
+    section.contenedor-formulario{
+        width: 350px;
+        & form fieldset {
+            border: none;
+            & ul{
+                text-align: center;
+                & li{
+                    text-align: center;
+                    width: 12em;
+                    height: 3em;
+                }
+            }
+        }
+        legend.block-btn-send{
+            margin: 1em;
+        }
+    }
+}
+}

@@ -12,12 +12,24 @@ h1 {
   color: rgba(255, 255, 255, 0.527);
 }
 
+h2 {
+  text-decoration: underline;
+}
+
 h3 {
   font-size: 1em;
   text-transform: uppercase;
   margin-bottom: 0.5em;
   text-align: left;
   color: rgba(255, 255, 255, 0.527);
+}
+
+h4 {
+  font-weight: 400;
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 1em;
+  margin-left: 2em;
 }
 
 a {
@@ -27,6 +39,7 @@ a {
 
 p {
   color: rgba(255, 255, 255, 0.527);
+  margin-bottom: 0.8em;
 }
 
 p.texto-articulo {
@@ -145,6 +158,25 @@ button.boton-servicio {
 button.boton-servicio a {
   color: rgba(255, 255, 255, 0.527);
   text-decoration: solid;
+}
+
+button.boton {
+  background-color: firebrick;
+  border-radius: 10px;
+  padding: 0.4em;
+}
+button.boton:hover {
+  background-color: rgb(117, 22, 22);
+}
+
+button.btn-send {
+  background-color: firebrick;
+  border-radius: 10px;
+  padding: 0.4em;
+  margin-left: 2em;
+}
+button.btn-send:hover {
+  background-color: rgb(117, 22, 22);
 }
 
 footer.pie-pagina {
@@ -311,7 +343,7 @@ section.servicios div.contenedor-foto-servicio button.boton-servicio a {
 }
 
 section.formulario {
-  width: 98%;
+  width: 95px;
   height: 15em;
 }
 section.formulario h2 {
@@ -370,7 +402,7 @@ section.formulario legend.cont-send button.send {
   }
   div.hero img {
     display: flex;
-    width: 45em;
+    width: 80%;
     height: 15em;
     margin-left: 1em;
     margin-right: 1em;
@@ -381,7 +413,7 @@ section.formulario legend.cont-send button.send {
 @media (min-width: 768px) and (max-width: 1199px) {
   div.hero img {
     display: flex;
-    width: 65em;
+    width: 80%;
     height: 15em;
     margin-left: 1em;
     margin-right: 2em;
@@ -588,7 +620,7 @@ section.formulario legend.cont-send button.send {
   section.articulos div.contenedor-articulo-boxeo img {
     border-radius: 20px;
     height: 20em;
-    width: 40em;
+    width: 28em;
   }
   section.articulos div.contenedor-articulo-boxeo img:hover {
     transition: 0.6s;
@@ -645,6 +677,86 @@ section.formulario legend button.send {
   position: relative;
   left: 15px;
   top: 5px;
+}
+
+/* ================================CONTACTO================================ */
+@media (min-width: 400px) {
+  main div.contenedor-img img {
+    border-radius: 20px;
+    margin-bottom: 0.5em;
+    margin-top: 0.8em;
+    width: 18em;
+    height: 12em;
+  }
+  main .section-informacion {
+    padding: 5px 0px;
+    font-weight: 800;
+  }
+  main section.contenedor-formulario {
+    width: 350px;
+  }
+  main section.contenedor-formulario form fieldset {
+    border: none;
+  }
+  main section.contenedor-formulario form fieldset ul {
+    text-align: center;
+  }
+  main section.contenedor-formulario form fieldset ul li {
+    text-align: center;
+    width: 12em;
+    height: 3em;
+  }
+  main section.contenedor-formulario legend.block-btn-send {
+    margin: 1em;
+  }
+}
+@media (min-width: 768px) {
+  main div.contenedor-img {
+    display: flex;
+    justify-content: center;
+  }
+  main div.contenedor-img img {
+    width: 35em;
+    height: 20em;
+  }
+  main section.contenedor-formulario {
+    display: block;
+    text-align: center;
+    margin-top: 1em;
+  }
+  main section.contenedor-formulario ul {
+    margin-left: 6em;
+  }
+}
+@media (min-width: 768px) {
+  main div.contenedor-img {
+    display: flex;
+    justify-content: center;
+  }
+  main div.contenedor-img img {
+    width: 70em;
+    height: 30em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    opacity: 80%;
+  }
+  main div.contenedor-img img:hover {
+    transition: 0.6s;
+    transform: scale(0.9);
+    opacity: 92%;
+  }
+  main p.section-informacion {
+    font-size: 2em;
+  }
+  main p {
+    font-size: 1.4em;
+  }
+  main h2.section-informacion {
+    font-size: 1.8em;
+  }
+  section.contenedor-formulario {
+    margin-left: 28em;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

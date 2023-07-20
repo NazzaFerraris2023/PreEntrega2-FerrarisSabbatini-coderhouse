@@ -10,7 +10,7 @@
 <body>
         <!--Barra de navegacion-->
         <header id="header">
-            <div class="contenedor">
+            <div class="contenedor-nav">
                 <h3>
                     <a href="../index.html">InformateYaa!</a>
                 </h3>
@@ -18,74 +18,17 @@
                     <input type="search" placeholder="buscar...">
                     <input class="btn-send" type="submit" value="Enviar">
                 </form>
-                <div class="menu-hamburguesa">
-                    <input type="checkbox">
-                    <i class="bloque-1"></i>
-                    <i class="bloque-2"></i>
-                    <div class="contenedor-svg"><svg xmlns="http://www.w3.org/2000/svg" class="menu-hamburguesa-icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                        <path d="M4 6l16 0"></path>
-                        <path d="M10 12l10 0"></path>
-                        <path d="M6 18l14 0"></path>
-                    </svg></div>
-                    <nav>
-                        <ul>
-                            <li><a href="../pages/deportes.html">Deportes </a></li>
-                            <li><a href="/pages/servicio.html">Servicio</a> </li>
-                            <li><a href="/pages/contacto.html">Contacto</a></li>
-                            <li><a href="/pages/nosotros.html">Nosotros</a> </li>
-                        </ul>
-                    </nav>
-                </div>
-                
-    
-                <div class="redes-sociales">
-                    <button>
-                        <svg href="#" xmlns="http://www.w3.org/2000/svg" class="instagram" width="24" height="24"
-                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
-                            stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"></path>
-                            <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
-                            <path d="M16.5 7.5l0 .01"></path>
-                        </svg>
-    
-                    </button>
-    
-    
-                    <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
-                    <button class="redes-sociales">
-                        <svg href="#" xmlns="http://www.w3.org/2000/svg" class="twitter" width="24" height="24"
-                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
-                            stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path
-                                d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c0 -.249 1.51 -2.772 1.818 -4.013z">
-                            </path>
-                        </svg>
-                    </button>
-    
-                    <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
-                    <button class="redes-sociales">
-                        <svg href="#" xmlns="http://www.w3.org/2000/svg" class="telegram" width="24" height="24"
-                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
-                            stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M15 10l-4 4l6 6l4 -16l-18 7l4 2l2 6l3 -4"></path>
-                        </svg>
-                    </button>
-                    <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
-                    <button class="redes-sociales">
-                        <svg href="#" xmlns="http://www.w3.org/2000/svg" class="facebook" width="24" height="24"
-                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
-                            stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path>
-                        </svg>
-                    </button>
-                </div>
             </div>
+                <nav class="nav-bar">
+                    <ul>
+                        <li><a href="../pages/deportes.html">Deportes </a></li>
+                        <li><a href="../pages/servicio.html">Servicio</a> </li>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                        <li><a href="../pages/nosotros.html">Nosotros</a> </li>
+                    </ul>
+                </nav>
         </header>
+    
         <!--MAIN DE PAGINA-->
         <main id="main">
             <br>
@@ -95,22 +38,24 @@
             <div class="contenedor-img">
                 <img class="img-contacto"  src="../fotos_proyecto/fotos contacto/foto-contacto-preguntas.jpeg">
             </div>
-                <p class="section__informacion">Preguntas?</p>
+                <p class="section-informacion">Preguntas?</p>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat eius ratione itaque, repudiandae labore harum sint iste unde error nulla fuga commodi exercitationem opti</p>
                 <button class="boton" href="#">Preguntame!</button>
                 </section>
+                
+                <h2 class="section-informacion">Informacion</h2>
                 <div class="contenedor-img"><img class="img-info" src="../fotos_proyecto/fotos contacto/foto-contacto-informacion.png"></div>
-                <p class="section__informacion">Informacion</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis facere assumenda omnis, dicta officiis architecto, dolor fugiat quisquam autem ipsam atque hic, veritatis illum necessitatibus nulla eaque asperiores sint incidunt.</p>
                 <button class="boton" href="#">Contactanos!</button>
                 <section>
-                    <div class="contenedor-img"><img class="img-nosotros" src="../fotos_proyecto/fotos contacto/foto-contacto-forma_parte.png"></div>
-                <p class="section__informacion"> Se parte del proyecto</p>
+                    
+                <h2 class="section-informacion"> Se parte del proyecto</h2>
+                <div class="contenedor-img"><img class="img-nosotros" src="../fotos_proyecto/fotos contacto/foto-contacto-forma_parte.png"></div>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, dolorum obcaecati cumque similique, voluptatibus esse voluptatum quibusdam quis nemo, nam reprehenderit totam enim quas facere reiciendis quam laudantium assumenda ad.</p>
                 <button class="boton" href="#">Contactanos!</button>
                 </section>
                 <section class="contenedor-formulario">
-                    <h2>Dejame tu mensaje</h2>
+                    <h4>Dejame tu mensaje</h4>
                     <form>
                         <fieldset>
                     
@@ -144,6 +89,7 @@
                         <button class="btn-send" href="#">Envia los datos</button>
                     </legend>
                 </section>
+                </main>
                 <footer class="pie-pagina"> 
                     <h4> InformateYaa!</h4>
         <div class="fp">
@@ -162,6 +108,6 @@
             </h5>
         </div>
                 </footer>
-        </main>
+        
 </body>
 </html>
