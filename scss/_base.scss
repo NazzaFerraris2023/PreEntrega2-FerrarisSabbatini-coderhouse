@@ -40,6 +40,9 @@ h4{
     margin-bottom: 1em;
     margin-left: 2em;
 }
+h5{
+    font-size: 1.2em;
+}
 a{
     color: $color-letras;
     background-color: none;
@@ -47,6 +50,7 @@ a{
 p{
     color:$color-letras;
     margin-bottom: .8em;
+    text-align: justify;
 }
 p.texto-articulo{
     margin-bottom: 1em;

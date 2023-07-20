@@ -32,6 +32,10 @@ h4 {
   margin-left: 2em;
 }
 
+h5 {
+  font-size: 1.2em;
+}
+
 a {
   color: rgba(255, 255, 255, 0.527);
   background-color: none;
@@ -40,6 +44,7 @@ a {
 p {
   color: rgba(255, 255, 255, 0.527);
   margin-bottom: 0.8em;
+  text-align: justify;
 }
 
 p.texto-articulo {
@@ -756,6 +761,92 @@ section.formulario legend button.send {
   }
   section.contenedor-formulario {
     margin-left: 28em;
+  }
+}
+@media (min-width: 400px) {
+  main img {
+    margin: 1em;
+    border-radius: 10px;
+    width: 90%;
+  }
+  main h4.obj-pagina {
+    font-weight: 800;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 0.5em;
+  }
+  section.recomendaciones img {
+    width: 20em;
+    margin: 1em;
+    border-radius: 10px;
+  }
+  section.recomendaciones .deportes {
+    margin-left: 1em;
+    margin-bottom: 0.5em;
+    font-weight: 800;
+  }
+  section.recomendaciones .texto-articulo {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}
+@media (min-width: 768px) {
+  main img {
+    width: 45em;
+  }
+  main h4 {
+    font-size: 1.5em;
+  }
+  section.recomendaciones h3 {
+    font-size: 1.2em;
+  }
+  section.recomendaciones img {
+    width: 70%;
+    margin-left: 8em;
+  }
+}
+@media (min-width: 1200px) {
+  main.idea-principal img {
+    width: 80%;
+    margin-left: 10em;
+    margin-bottom: 2em;
+    margin-top: 2em;
+  }
+  main.idea-principal img:hover:hover {
+    transition: 0.6s;
+    transform: scale(1.1);
+    opacity: 92%;
+  }
+  main.idea-principal p {
+    width: 50em;
+    margin-left: 7.2em;
+  }
+  main.idea-principal h4.obj-pagina {
+    width: 50em;
+    margin-left: 7em;
+  }
+  section.resumen_pag h5 {
+    text-align: center;
+  }
+  section.recomendaciones img {
+    width: 80%;
+    margin-left: 10em;
+    margin-bottom: 2em;
+    margin-top: 2em;
+  }
+  section.recomendaciones img:hover:hover {
+    transition: 0.6s;
+    transform: scale(1.1);
+    opacity: 92%;
+  }
+  section.recomendaciones h3 {
+    margin-left: 8.5em;
+  }
+  section.recomendaciones article.deportes {
+    margin-left: 9.8em;
+  }
+  section.recomendaciones p.texto-articulo {
+    margin-left: 9.8em;
   }
 }
 

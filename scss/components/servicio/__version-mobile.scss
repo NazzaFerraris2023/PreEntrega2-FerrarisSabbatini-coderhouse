@@ -1,0 +1,42 @@
+
+@media (min-width:400px){
+main{
+    & img{
+        margin: 1em;
+        border-radius: 10px;
+        width: 90%;
+    }
+h4.obj-pagina{
+    font-weight: 800;
+    text-align: left;
+    margin: 0;
+    margin-bottom: .5em;
+}
+}
+section.recomendaciones{
+    img{
+        width: 20em;
+        margin:1em;
+        border-radius: 10px;
+    }
+    .deportes{
+        margin-left: 1em;
+        margin-bottom: .5em;
+        font-weight: 800;
+    }
+    .texto-articulo{
+        margin-left: 1em;
+        margin-right: 1em;
+
+    }
+}
+
+
+
+    
+
+
+        
+        
+
+}//MQ
