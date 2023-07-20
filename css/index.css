@@ -58,6 +58,9 @@ div.cont-btn-judo .btn-judo {
   margin-left: 1em;
   font-size: 0.8em;
 }
+div.cont-btn-judo .btn-judo:hover {
+  background-color: rgb(117, 22, 22);
+}
 
 div.cont-btn-box a.btn-box {
   padding: 0.3em;
@@ -69,6 +72,9 @@ div.cont-btn-box a.btn-box {
   font-weight: 700;
   margin-left: 1em;
   font-size: 0.8em;
+}
+div.cont-btn-box a.btn-box:hover {
+  background-color: rgb(117, 22, 22);
 }
 
 div.cont-btn-info {
@@ -85,6 +91,9 @@ div.cont-btn-info a.btn-info {
   margin-left: 1em;
   font-size: 0.8em;
 }
+div.cont-btn-info a.btn-info:hover {
+  background-color: rgb(117, 22, 22);
+}
 
 div.cont-btn-info1 {
   margin-bottom: 1em;
@@ -100,6 +109,9 @@ div.cont-btn-info1 a.btn-info1 {
   margin-left: 1em;
   font-size: 0.8em;
 }
+div.cont-btn-info1 a.btn-info1:hover {
+  background-color: rgb(117, 22, 22);
+}
 
 div.cont-btn-send a.btn-send {
   padding: 0.3em;
@@ -113,6 +125,9 @@ div.cont-btn-send a.btn-send {
   font-size: 0.8em;
   position: relative;
   bottom: 1.5em;
+}
+div.cont-btn-send a.btn-send:hover {
+  background-color: rgb(117, 22, 22);
 }
 
 button.boton-servicio {
@@ -219,7 +234,7 @@ main article.titulo-karate h3 {
   top: 2em;
 }
 main div.foto-karate img {
-  width: 29em;
+  width: 22em;
   margin-left: 1em;
   margin-bottom: 1.5em;
   border-radius: 20px;
@@ -328,99 +343,49 @@ section.formulario legend.cont-send button.send {
 }
 
 @media (min-width: 768px) {
+  header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
   header h3 {
     font-size: 1.5em;
     padding: 0;
     border: 0;
     margin: 0;
-    grid-area: titulo;
-  }
-  div.contenedor-nav {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 40px;
-    justify-content: space-evenly;
-    grid-template-areas: "titulo titulo buscador" "nav nav nav";
-  }
-  .buscador {
-    display: flex;
-    justify-content: end;
-    grid-area: buscador;
-  }
-  .buscador input.btn-send {
-    font-size: 1em;
-    padding: 2.5px;
-    background-color: transparent;
-    border: none;
-    grid-area: buscador;
-  }
-  .buscador input.btn-send:hover {
-    color: rgb(214, 156, 80);
-  }
-  .buscador div.menu-hamburguesa a {
-    color: inherit;
-    text-decoration: none;
-    display: block;
-    padding: 10px 20px;
-    max-width: 200px;
-    background: none;
-    font-variant: small-caps;
-    text-shadow: 1px 1px black;
-  }
-  .buscador div.menu-hamburguesa a nav ul li::marker {
-    color: transparent;
-  }
-  .buscador div.menu-hamburguesa input[type=checkbox], .buscador div.menu-hamburguesa .bloque-1, .buscador div.menu-hamburguesa .bloque-2 {
-    position: absolute;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    right: 0;
-    top: 0;
-    width: 48px;
-    height: 48px;
-  }
-  .buscador div.menu-hamburguesa .bloque-1, .buscador div.menu-hamburguesa .bloque-2 {
-    font-size: 48px;
-    pointer-events: none;
-  }
-  .buscador div.menu-hamburguesa input[type=checkbox] {
-    opacity: 0;
-  }
-  .buscador div.menu-hamburguesa {
-    color: rgba(255, 255, 255, 0.527);
     position: relative;
-    background: none;
-    min-height: 48px;
+    top: 0.4em;
   }
-  .buscador div.menu-hamburguesa nav {
-    display: none;
-  }
-  .buscador div.menu-hamburguesa input:checked ~ nav {
-    display: block;
-  }
-  .buscador div.menu-hamburguesa input:checked ~ .bloque-1 {
-    display: none;
-  }
-  .buscador div.menu-hamburguesa input:not(:checked) ~ .bloque-2 {
-    display: none;
-  }
-  .buscador div.contenedor-svg {
+  header nav.nav-bar ul li {
     display: flex;
-    flex-direction: row;
-    justify-content: end;
   }
-  .buscador div.redes-sociales {
-    display: none;
+  header nav.nav-bar ul li a {
+    text-decoration: solid;
+  }
+  header nav.nav-bar ul li a:hover {
+    color: rgba(255, 255, 255, 0.907);
   }
   div.hero img {
     display: flex;
-    width: 90%;
-    height: 25em;
-    /* margin-left: 1em; */
+    width: 45em;
+    height: 15em;
+    margin-left: 1em;
     margin-right: 1em;
     opacity: 95%;
+    border-radius: 10px;
   }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  div.hero img {
+    display: flex;
+    width: 65em;
+    height: 15em;
+    margin-left: 1em;
+    margin-right: 2em;
+    opacity: 95%;
+    border-radius: 10px;
+  }
+}
+@media (min-width: 768px) {
   h1 {
     font-size: 2.5rem;
     display: flex;
@@ -432,6 +397,19 @@ section.formulario legend.cont-send button.send {
   }
   main div.contenedor-columnas p {
     text-align: left;
+  }
+  main div.foto-karate {
+    display: flex;
+  }
+  main div.foto-karate img {
+    margin-right: 1em;
+    margin-top: 1em;
+    width: 30em;
+  }
+  main div.foto-karate img:hover {
+    transition: 0.6s;
+    transform: scale(1.1);
+    opacity: 90%;
   }
   section.articulos {
     display: grid;
@@ -447,6 +425,38 @@ section.formulario legend.cont-send button.send {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+  div.contenedor-grilla section.servicios {
+    background-color: #153d79;
+    border: none;
+    display: flex;
+    border-radius: 20px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  div.contenedor-grilla section.servicios div.contenedor-foto-servicio {
+    display: flex;
+    flex-direction: column;
+    width: 15em;
+    margin: 0.5em;
+    justify-content: end;
+  }
+  div.contenedor-grilla section.servicios div.contenedor-foto-servicio img {
+    display: flex;
+    width: 22em;
+    border-radius: 20px;
+  }
+  div.contenedor-grilla section.servicios div.contenedor-foto-servicio button.boton-servicio {
+    display: block;
+    width: 15em;
+    margin: 1em;
+    background-color: #FFC300;
+    border: 2px solid black;
+  }
+  div.contenedor-grilla section.servicios div.contenedor-foto-servicio button.boton-servicio a {
+    font-size: 1em;
+    background-color: transparent;
+    color: black;
+  }
   div.contenedor-grilla div.contenedor-aside {
     display: flex;
     justify-content: end;
@@ -460,36 +470,6 @@ section.formulario legend.cont-send button.send {
     grid-template-columns: 1fr;
     /* border: solid black; */
     border-radius: 20px;
-  }
-  div.contenedor-grilla div.contenedor-aside section.servicios {
-    border: none;
-    display: flex;
-    border-radius: 20px;
-    grid-column: 1/2;
-    grid-row: 1/2;
-  }
-  div.contenedor-grilla div.contenedor-aside section.servicios div.contenedor-foto-servicio {
-    display: flex;
-    flex-direction: column;
-    width: 15em;
-    margin: 0.5em;
-    justify-content: end;
-  }
-  div.contenedor-grilla div.contenedor-aside section.servicios div.contenedor-foto-servicio img {
-    display: flex;
-    width: 25em;
-    border-radius: 20px;
-  }
-  div.contenedor-grilla div.contenedor-aside section.servicios div.contenedor-foto-servicio img button.boton-servicio {
-    display: block;
-    width: 20em;
-    margin: 1em;
-    background-color: transparent;
-    border: none;
-    box-shadow: none;
-  }
-  div.contenedor-grilla div.contenedor-aside section.servicios div.contenedor-foto-servicio img button.boton-servicio a {
-    font-size: 1em;
   }
   section.formularios {
     display: grid;
