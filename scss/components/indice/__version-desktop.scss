@@ -1,9 +1,20 @@
 @media (min-width:1200px){
+header{
+    nav.nav-bar{
+        & ul{
+            // background-color: red;
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+}
+
     h1{
         font-size: 3rem;
         text-decoration: underline;
     }
-    main div.hero{
+main{
+    & div.hero{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -17,7 +28,6 @@
         opacity: 92%;
     }
     }
-}
     article.titulo-karate h3{
         font-size: 1.5em;
     }
@@ -29,10 +39,26 @@
         text-align: left;
         }
     }
+
+}
+div.foto-karate{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    & img{
+        width: 40em;
+    }
+}
+}
+
+
     /* 
     div.cont-btn{
         box-shadow: 20px black;
     } */
+
+
+// ======================= ARTICULOS =======================
 
     section.articulos{
         margin-left: 2em;
@@ -49,34 +75,38 @@
             }
     
         }
-        
-    & div.contendor-articulo-boxeo img{
+
+        & div.contenedor-articulo-boxeo img{
             border-radius: 20px;
             height: 20em;
-            width: 40em;
+            width:40em;
             &:hover{
                 transition: 0.6s;
                 transform: scale(1.1);
                 opacity: 92%;
                 border-radius: 20px;
             }
-        }
     
+        }
     }
     div.contenedor-grilla{
         padding-left: 2em;
 
+
+        
         & div aside#aside{
             width: 43.75em;
             height: 50em;
-            display: flex;
-            justify-content: start;
-            align-items: end;
+
+            // h4{
+            //     margin-right: 10em;
+            // }
             & p.trendings{
                 text-align: end;
                 font-size: 1.4em;
                 text-decoration: underline;
                 margin-bottom: 1em;
+                // margin-right: 10em;
                 &:hover{
                     color: rgb(176, 157, 157);
                 }
@@ -84,11 +114,12 @@
         
             & div.cont-img-aside{
                 display: flex;
-                justify-content: end; 
-                align-items: end;
+                justify-content: center; 
+                align-items: center;
+                // margin-right: 10em;
                 & img{
                     display: block;
-                    width: 50%;
+                    width: 10em;
                     border-radius: 20px;
                     &:hover{
                         transition: 0.6s;
@@ -98,13 +129,16 @@
                     }
                 }
             }
-        } 
+        }
+    } 
+
         section.servicios img:hover{
             transition: 0.6s;
             transform: scale(1.1);
             opacity: 92%;
             border-radius: 20px;
         }
+    }
         section.formulario{
             /* border: 2px black solid; */
             width: 500px;
@@ -145,4 +179,3 @@
 
 
 
-}}
