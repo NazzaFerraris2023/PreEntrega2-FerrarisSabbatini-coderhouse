@@ -129,7 +129,31 @@ button.btn-send{
         background-color: $color-botones-hover;
     }
 }
-
+div.boton{
+    button.boton-deportes{
+        background-color: $color-botones;
+        border-radius: 10px;
+        padding: .4em;
+        margin-left: 2em;
+        & a{
+            color: $color-letras;
+            text-decoration: solid;
+            background-color: transparent;}
+        &:hover{
+            background-color: $color-botones-hover;
+        }
+    }
+}
+// }
+legend button{
+    background-color: $color-botones;
+    border-radius: 10px;
+    padding: .4em;
+    margin-left: 2em;
+    &:hover{
+        background-color: $color-botones-hover;
+    }
+}
 
 
 
