@@ -1,0 +1,45 @@
+@media (min-width:768px){
+    main{
+        h3{
+            font-size: 1.3em;
+        }
+    }
+
+
+    section.formulario{
+        // border: 2px solid black;
+        width: 90%;
+        margin: 0 1.3em;
+        h2{
+            font-size: 1em;
+            // margin-bottom: .5em;
+            margin-top: 1.5em;
+            
+        }
+        form fieldset{
+            // background-color: aquamarine;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            
+        & legend{
+            text-align: left;
+            // background-color: antiquewhite;
+            text-decoration: underline;
+        
+            
+        }
+    }
+        ul{
+            // margin-bottom: 1em;
+            margin-top: 1em;
+            text-align: center;
+            margin-left: 1em;
+        }
+    }
+
+
+
+
+}
