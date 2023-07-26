@@ -1,5 +1,5 @@
 //================= HEADER =================//
-@media (min-width:400px){
+@media (min-width:335px){
     header{
         padding: 1rem;
         background-color: none;
@@ -74,12 +74,11 @@
         }
         }
         div.foto-karate img{
-            width: 22em;
+            width: 80%;
             margin-left: 1em;
             margin-bottom: 1.5em;
             border-radius: 20px;
-            position:relative;
-            top: 1em;
+            transform: translate(45px, 15px);
         }
     
     
@@ -109,7 +108,8 @@
                     }
                 }
                 & p.texto-articulo{
-                    margin-left: 1em;
+                    margin: 0 1em;
+                    margin-bottom: .7em;
                 }
             }
             & .contenedor-articulo-boxeo{
@@ -124,7 +124,8 @@
                     }
                 }
                 & p.texto-articulo{
-                    margin-left: 1em;
+                    margin: 0 1em;
+                    margin-bottom: .7em;        
                 }
             }
             

@@ -13,6 +13,7 @@ header{
         font-size: 3rem;
         text-decoration: underline;
     }
+    
 main{
     & div.hero{
         display: flex;
@@ -45,6 +46,7 @@ div.foto-karate{
     display: flex;
     width: 100%;
     justify-content: center;
+    margin-top: 1em;
     & img{
         width: 40em;
     }

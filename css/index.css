@@ -59,6 +59,9 @@ li {
   list-style: none;
 }
 
+div.cont-btn {
+  margin-bottom: 1em;
+}
 div.cont-btn a.btn {
   padding: 0.5em;
   background-color: firebrick;
@@ -213,28 +216,27 @@ legend button:hover {
   background-color: rgb(117, 22, 22);
 }
 
-footer.pie-pagina {
+footer .contenedor-titulo-footer {
   display: flex;
-  padding: 1em 1em;
+  justify-content: left;
 }
-footer.pie-pagina div.contenedor-texto-footer {
+footer .contenedor-titulo-footer h4 {
+  color: rgb(188, 179, 179);
+  text-decoration: solid;
+  font-weight: 700;
+  margin-top: 1em;
+}
+footer .contenedor-texto-footer {
   display: flex;
-  flex-direction: column;
+  width: 80%;
   justify-content: center;
-  align-items: center;
 }
-footer.pie-pagina h5 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-right: 1em;
-}
-footer.pie-pagina ul.lista-pie-pagina li {
-  display: flex;
-  flex-direction: column;
+footer .contenedor-texto-footer p {
+  text-align: center;
+  margin-left: 2em;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 335px) {
   header {
     padding: 1rem;
     background-color: none;
@@ -304,12 +306,11 @@ main article.titulo-karate h3 {
   top: 2em;
 }
 main div.foto-karate img {
-  width: 22em;
+  width: 80%;
   margin-left: 1em;
   margin-bottom: 1.5em;
   border-radius: 20px;
-  position: relative;
-  top: 1em;
+  transform: translate(45px, 15px);
 }
 main div.contenedor-columnas {
   width: 95%;
@@ -328,7 +329,8 @@ section .contenedor-articulo-judo img.articulo:hover {
   opacity: 90%;
 }
 section .contenedor-articulo-judo p.texto-articulo {
-  margin-left: 1em;
+  margin: 0 1em;
+  margin-bottom: 0.7em;
 }
 section .contenedor-articulo-boxeo img.articulo {
   margin: 1em;
@@ -341,7 +343,8 @@ section .contenedor-articulo-boxeo img.articulo:hover {
   opacity: 90%;
 }
 section .contenedor-articulo-boxeo p.texto-articulo {
-  margin-left: 1em;
+  margin: 0 1em;
+  margin-bottom: 0.7em;
 }
 
 aside {
@@ -628,6 +631,7 @@ section.formulario legend.cont-send button.send {
     display: flex;
     width: 100%;
     justify-content: center;
+    margin-top: 1em;
   }
   main div.foto-karate img {
     width: 40em;

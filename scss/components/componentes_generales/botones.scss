@@ -1,5 +1,6 @@
 //=========================BOTONES=================================
 div.cont-btn{
+    margin-bottom: 1em;
     a.btn{
         padding: .5em;
         background-color: $color-botones;
@@ -9,6 +10,7 @@ div.cont-btn{
         text-decoration: none;
         font-weight: 700;
         margin-left: 1em;
+        
         &:hover{
             background-color:$color-botones-hover;
         }
