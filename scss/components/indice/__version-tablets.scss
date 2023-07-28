@@ -10,8 +10,7 @@
             margin: 0;
             position: relative;
             top: .4em;
-            // grid-area: titulo;
-        }
+                }
             nav.nav-bar ul{
                 & li{
                     display: flex;
@@ -145,7 +144,6 @@ div.contenedor-grilla{
         width: 8em;
         display: grid;
         grid-template-columns: 1fr;
-        /* border: solid black; */
         border-radius: 20px;
         }
     }
@@ -160,7 +158,6 @@ div.contenedor-grilla{
         grid-template-rows: repeat(3 1fr);
         width: 95%;
         height: 15em;
-        /* border: solid black; */
         margin-left: 1em; 
         margin-right: 1em;
         text-decoration: none;
@@ -199,9 +196,6 @@ div.contenedor-grilla{
             border-radius: 10px;
             padding: .5em;
             margin: 1em;
-            /* position: relative;
-            bottom: 2.5em;
-            left: 25em; */
             legend.cont-send button.send:hover{
                 background-color:rgb(232, 167, 81); ;
             }        

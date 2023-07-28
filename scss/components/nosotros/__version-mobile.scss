@@ -9,7 +9,6 @@ main{
 
 
     section.formulario{
-        // border: 2px solid black;
         width: 90%;
         margin: 0 1.3em;
         h2{
@@ -18,7 +17,6 @@ main{
             
         }
         form fieldset{
-            // background-color: aquamarine;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -26,7 +24,6 @@ main{
             
         & legend{
             text-align: left;
-            // background-color: antiquewhite;
             text-decoration: underline;
         
             

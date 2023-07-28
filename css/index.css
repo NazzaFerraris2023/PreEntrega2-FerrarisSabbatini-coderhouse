@@ -540,7 +540,6 @@ section.formulario legend.cont-send button.send {
     width: 8em;
     display: grid;
     grid-template-columns: 1fr;
-    /* border: solid black; */
     border-radius: 20px;
   }
   section.formularios {
@@ -548,7 +547,6 @@ section.formulario legend.cont-send button.send {
     grid-template-rows: repeat(3 1fr);
     width: 95%;
     height: 15em;
-    /* border: solid black; */
     margin-left: 1em;
     margin-right: 1em;
     text-decoration: none;
@@ -585,9 +583,6 @@ section.formulario legend.cont-send button.send {
     border-radius: 10px;
     padding: 0.5em;
     margin: 1em;
-    /* position: relative;
-    bottom: 2.5em;
-    left: 25em; */
   }
   section.formularios legend.cont-send button.send legend.cont-send button.send:hover {
     background-color: rgb(232, 167, 81);
@@ -636,10 +631,6 @@ section.formulario legend.cont-send button.send {
   main div.foto-karate img {
     width: 40em;
   }
-  /* 
-  div.cont-btn{
-      box-shadow: 20px black;
-  } */
   section.articulos {
     margin-left: 2em;
   }
@@ -705,7 +696,6 @@ section.formulario legend.cont-send button.send {
   }
 }
 section.formulario {
-  /* border: 2px black solid; */
   width: 500px;
   display: flex;
   align-items: center;
