@@ -1,4 +1,81 @@
+@media (min-width:1200px){
+    body{
+    section.container{
+        .contenedor-articulo-judo{
+            height: 90vh;
+            h3{
+                font-size: 2em;
+            }
+            .articulo{
+                display: block;
+                width:30em;
+                transform: translateY(-50px);
+            }
+            .texto-articulo{
+                transform: translateY(-70px);
+                font-size: 1.4em;
+            }
+            .cont-btn-judo{
+                transform: translateY(-70px);
+            }
+        }
+    }
+    section.container{
+        .contenedor-articulo-boxeo{
+            height: 90vh;
+            h3{
+                font-size: 2em;
+            }
+            .articulo{
+                display: block;
+                width:30em;
+                transform: translateY(-50px);
+            }
+            .texto-articulo{
+                transform: translateY(-70px);
+                font-size: 1.3em;
+            }
+            
+        }
+    }
+}
 
+.formulario{
+    margin-bottom: 1em;
+    form{
+        fieldset{
+            ul.lista-formulario{
+                width: 10em;
+                display: flex;
+                text-align: center;
+                transform: translateX(550px);
+                li label{
+                    font-size: 1.5em;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}//MQ
 
 
 

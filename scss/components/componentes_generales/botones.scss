@@ -27,7 +27,6 @@ div.cont-btn-judo{
         text-transform: uppercase;
         text-decoration: none;
         font-weight: 700;
-        margin-left: 1em;
         font-size: .8em;
         &:hover{
             background-color:$color-botones-hover;
@@ -50,9 +49,15 @@ div.cont-btn-box{
             background-color:$color-botones-hover;
         }
         }
+        @media (min-width:1200px){
+            transform: translateY(-60px);
+        }
     }
 div.cont-btn-info{
     margin-top: 1em;
+    @media (min-width:1200px){
+        transform: translateY(-65px);
+    }
     a.btn-info{
         padding: .3em;
         background-color: $color-botones;
@@ -103,12 +108,20 @@ div.cont-btn-send{
         &:hover{
             background-color:$color-botones-hover;
         }
-            }
+        @media (min-width:1200px){
+            padding: .5em;
+            font-size: 1em;
+            // transform: translateX(1550px);
+            
+        }    }
+        
     }
     button.boton-servicio{
             background-color: transparent;
             text-decoration: solid;
-            padding: .5em;
+            padding: 0;
+            width: 10em;
+            height: 3em;
             margin-right: 1em;
             margin-bottom: 1em;
             border-radius: 20px;
