@@ -2,60 +2,63 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  background-color: #153d79;
-  color: rgba(255, 255, 255, 0.527);
+}
+
+.container {
+  max-width: 1400px;
+  margin: auto;
 }
 
 h1 {
-  text-decoration: solid;
-  color: rgba(255, 255, 255, 0.527);
+  color: rgba(0, 0, 0, 0.2784313725);
+  text-decoration: underline;
+  font-family: fantasy;
+  text-align: center;
+  font-size: 2em;
+  margin: 0.5em;
 }
 
 h2 {
+  color: rgba(0, 0, 0, 0.5176470588);
   text-decoration: underline;
+  font-family: fantasy;
+  text-align: center;
+  font-size: 1.7em;
 }
 
 h3 {
-  font-size: 1em;
-  text-transform: uppercase;
-  margin-bottom: 0.5em;
-  text-align: left;
-  color: rgba(255, 255, 255, 0.527);
+  color: rgba(99, 92, 92, 0.5176470588);
+  text-decoration: underline;
+  font-family: fantasy;
+  text-align: center;
+  font-size: 1.4em;
 }
 
 h4 {
-  font-weight: 400;
-  text-align: center;
+  color: rgba(0, 0, 0, 0.5176470588);
   text-decoration: underline;
-  margin-bottom: 1em;
-  margin-left: 2em;
-}
-
-h5 {
+  font-family: fantasy;
+  text-align: center;
   font-size: 1.2em;
 }
 
-a {
-  color: rgba(255, 255, 255, 0.527);
-  background-color: none;
-}
-
 p {
-  color: rgba(255, 255, 255, 0.527);
-  margin-bottom: 0.8em;
+  color: #000000;
+  font-family: "Times New Roman", Times, serif;
   text-align: justify;
+  font-size: 1.1em;
 }
 
-p.texto-articulo {
-  margin-bottom: 1em;
+a {
+  color: #000000;
+  font-family: "Times New Roman", Times, serif;
+  text-align: justify;
+  font-size: 1.1em;
+  text-decoration: none;
 }
 
-ul {
-  margin-left: 1.5em;
-}
-
-li {
+ul, li {
+  color: rgba(99, 92, 92, 0.5176470588);
   list-style: none;
 }
 
@@ -63,14 +66,14 @@ div.cont-btn {
   margin-bottom: 1em;
 }
 div.cont-btn a.btn {
-  padding: 0.5em;
-  background-color: firebrick;
-  color: rgba(255, 255, 255, 0.527);
+  padding: 0.2em;
+  background-color: rgb(255, 98, 0);
+  color: black;
   border-radius: 10px;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 700;
-  margin-left: 1em;
+  margin-left: 2em;
 }
 div.cont-btn a.btn:hover {
   background-color: rgb(117, 22, 22);
@@ -78,8 +81,8 @@ div.cont-btn a.btn:hover {
 
 div.cont-btn-judo .btn-judo {
   padding: 0.3em;
-  background-color: firebrick;
-  color: rgba(255, 255, 255, 0.527);
+  background-color: rgb(255, 98, 0);
+  color: black;
   border-radius: 10px;
   text-transform: uppercase;
   text-decoration: none;
@@ -93,8 +96,8 @@ div.cont-btn-judo .btn-judo:hover {
 
 div.cont-btn-box a.btn-box {
   padding: 0.3em;
-  background-color: firebrick;
-  color: rgba(255, 255, 255, 0.527);
+  background-color: rgb(255, 98, 0);
+  color: black;
   border-radius: 10px;
   text-transform: uppercase;
   text-decoration: none;
@@ -111,8 +114,8 @@ div.cont-btn-info {
 }
 div.cont-btn-info a.btn-info {
   padding: 0.3em;
-  background-color: firebrick;
-  color: rgba(255, 255, 255, 0.527);
+  background-color: rgb(255, 98, 0);
+  color: black;
   border-radius: 10px;
   text-transform: uppercase;
   text-decoration: none;
@@ -129,8 +132,8 @@ div.cont-btn-info1 {
 }
 div.cont-btn-info1 a.btn-info1 {
   padding: 0.3em;
-  background-color: firebrick;
-  color: rgba(255, 255, 255, 0.527);
+  background-color: rgb(255, 98, 0);
+  color: black;
   border-radius: 10px;
   text-transform: uppercase;
   text-decoration: none;
@@ -144,16 +147,17 @@ div.cont-btn-info1 a.btn-info1:hover {
 
 div.cont-btn-send a.btn-send {
   padding: 0.3em;
-  background-color: firebrick;
-  color: rgba(255, 255, 255, 0.527);
+  background-color: rgb(255, 98, 0);
+  color: black;
   border-radius: 10px;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 700;
-  margin-left: 1em;
-  font-size: 0.8em;
+  margin-bottom: 1em;
+  font-size: 0.6em;
   position: relative;
-  bottom: 1.5em;
+  left: 150px;
+  bottom: 2px;
 }
 div.cont-btn-send a.btn-send:hover {
   background-color: rgb(117, 22, 22);
@@ -162,18 +166,20 @@ div.cont-btn-send a.btn-send:hover {
 button.boton-servicio {
   background-color: transparent;
   text-decoration: solid;
-  padding: 1em;
+  padding: 0.5em;
+  margin-right: 1em;
   margin-bottom: 1em;
   border-radius: 20px;
-  box-shadow: 1.5px 1.5px 1.5px 1.5px black;
+  -webkit-box-shadow: 14px 13px 16px 2px #000000;
+  box-shadow: 14px 13px 16px 2px #000000;
 }
 button.boton-servicio a {
-  color: rgba(255, 255, 255, 0.527);
+  color: black;
   text-decoration: solid;
 }
 
 button.boton {
-  background-color: firebrick;
+  background-color: rgb(255, 98, 0);
   border-radius: 10px;
   padding: 0.4em;
 }
@@ -182,7 +188,7 @@ button.boton:hover {
 }
 
 button.btn-send {
-  background-color: firebrick;
+  background-color: rgb(255, 98, 0);
   border-radius: 10px;
   padding: 0.4em;
   margin-left: 2em;
@@ -192,13 +198,13 @@ button.btn-send:hover {
 }
 
 div.boton button.boton-deportes {
-  background-color: firebrick;
+  background-color: rgb(255, 98, 0);
   border-radius: 10px;
   padding: 0.4em;
   margin-left: 2em;
 }
 div.boton button.boton-deportes a {
-  color: rgba(255, 255, 255, 0.527);
+  color: black;
   text-decoration: solid;
   background-color: transparent;
 }
@@ -207,7 +213,7 @@ div.boton button.boton-deportes:hover {
 }
 
 legend button {
-  background-color: firebrick;
+  background-color: rgb(255, 98, 0);
   border-radius: 10px;
   padding: 0.4em;
   margin-left: 2em;
@@ -216,202 +222,138 @@ legend button:hover {
   background-color: rgb(117, 22, 22);
 }
 
-footer .contenedor-titulo-footer {
-  display: flex;
-  justify-content: left;
-}
-footer .contenedor-titulo-footer h4 {
-  color: rgb(188, 179, 179);
-  text-decoration: solid;
-  font-weight: 700;
-  margin-top: 1em;
-}
-footer .contenedor-texto-footer {
-  display: flex;
-  width: 80%;
-  justify-content: center;
-}
-footer .contenedor-texto-footer p {
-  text-align: center;
-  margin-left: 2em;
-}
-
-@media (min-width: 335px) {
-  header {
-    padding: 1rem;
-    background-color: none;
-  }
-  header h3 a {
-    text-decoration: solid;
-  }
-  header form.buscador {
-    display: none;
-  }
-  header nav.nav-bar ul {
-    display: flex;
-    flex-direction: row;
-    gap: 2em;
-    margin-top: 1em;
-    margin-bottom: 1em;
-  }
-  header nav.nav-bar ul li {
-    display: flex;
-  }
-  header nav.nav-bar ul li a {
-    text-decoration: solid;
-  }
-  header nav.nav-bar ul li a:hover {
-    color: rgba(255, 255, 255, 0.907);
-  }
-  div.hero img {
-    width: 85%;
-    max-height: 80%;
-    display: flex;
-    justify-content: flex-start;
-    display: none;
-  }
-}
-h1 {
-  text-align: left;
-  text-decoration: solid;
-  font-size: 1.8em;
-  margin-left: 0.7em;
-}
-
-h2 {
-  font-size: 1.5em;
-}
-
-h3 {
-  margin-left: 1.2em;
-  margin-top: 0.6em;
-  font-size: 1em;
-  text-transform: uppercase;
-  margin-bottom: 0.5em;
-  text-align: left;
-  text-decoration: underline;
-}
-
-main {
-  margin: 1em;
-}
-main article.titulo-karate {
-  display: flex;
+footer {
+  width: 92vw;
+  background-color: rgb(168, 88, 244);
+  display: grid;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
+  border-top: 2px solid black;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 2px;
+  grid-row-gap: 0px;
 }
-main article.titulo-karate h3 {
-  text-decoration: underline;
-  position: relative;
-  top: 2em;
+footer contenedor-titulo-footer {
+  display: flex;
+  align-items: end;
 }
-main div.foto-karate img {
-  width: 80%;
-  margin-left: 1em;
-  margin-bottom: 1.5em;
-  border-radius: 20px;
-  transform: translate(45px, 15px);
-}
-main div.contenedor-columnas {
-  width: 95%;
-  text-align: justify;
-  margin: 1em;
+footer contenedor-titulo-footer h4 {
+  align-items: center;
 }
 
-section .contenedor-articulo-judo img.articulo {
-  width: 20em;
-  margin: 1em;
-  border-radius: 20px;
-}
-section .contenedor-articulo-judo img.articulo:hover {
-  transition: 0.6s;
-  transform: scale(1.1);
-  opacity: 90%;
-}
-section .contenedor-articulo-judo p.texto-articulo {
-  margin: 0 1em;
-  margin-bottom: 0.7em;
-}
-section .contenedor-articulo-boxeo img.articulo {
-  margin: 1em;
-  width: 21em;
-  border-radius: 20px;
-}
-section .contenedor-articulo-boxeo img.articulo:hover {
-  transition: 0.6s;
-  transform: scale(1.1);
-  opacity: 90%;
-}
-section .contenedor-articulo-boxeo p.texto-articulo {
-  margin: 0 1em;
-  margin-bottom: 0.7em;
-}
-
-aside {
+header {
+  background-color: rgb(185, 181, 181);
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 70%;
+  width: 90vw;
+  margin: 0 1em;
+  border-bottom: yellow solid;
 }
-aside h4 {
-  display: block;
-  padding: 1em;
+header nav.nav-bar ul li {
+  margin-bottom: 0.6em;
 }
-aside a {
-  display: block;
-  padding: 1em;
-  color: black;
-  text-decoration: solid;
+
+body {
+  width: 100vw;
 }
-aside div.cont-img-aside img {
+
+div.hero {
   display: none;
 }
 
-section.servicios {
+div.foto-karate img {
+  width: 80vw;
+  margin: 0 2em;
+}
+
+div.contenedor-columnas {
+  display: flex;
+  margin: 1em 1em;
+  background-color: rgb(185, 181, 181);
+  width: 90vw;
+}
+div.contenedor-columnas p.texto-columna1-karate {
+  text-align: justify;
+  margin-right: 1em;
+}
+div.contenedor-columnas p.texto-columna2-karate {
+  margin-left: 1em;
+}
+
+div.contenedor-articulo-judo {
+  width: 90vw;
+  background-color: rgb(185, 181, 181);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1em 1em;
+}
+div.contenedor-articulo-judo img {
+  width: 80vw;
+  margin: 1em;
+}
+div.contenedor-articulo-judo p.texto-articulo {
+  text-align: justify;
+  margin-right: 1em;
+}
+
+div.contenedor-articulo-boxeo {
+  width: 90vw;
+  background-color: rgb(185, 181, 181);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1em 1em;
+}
+div.contenedor-articulo-boxeo img {
+  width: 80vw;
+  margin: 1em;
+}
+div.contenedor-articulo-boxeo p.texto-articulo {
+  text-align: justify;
+  margin-right: 1em;
+}
+
+div.container {
+  width: 90vw;
+  background-color: rgb(185, 181, 181);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1em 1em;
+}
+div.container p {
+  border: 1px solid black;
+  margin-bottom: 1em;
+  padding: 0.5em;
+  -webkit-box-shadow: 14px 13px 16px 2px #000000;
+  box-shadow: 14px 13px 16px 2px #000000;
+  border-radius: 10px;
+}
+div.container img {
+  display: none;
+}
+div.container p.texto-articulo {
+  text-align: justify;
+  margin-right: 1em;
+}
+
+fieldset {
+  transform: translate(35px);
+  width: 85vw;
+}
+fieldset legend {
+  text-align: center;
+  font-size: 0.9em;
+  font-family: "Times New Roman", Times, serif;
+}
+fieldset ul {
   display: flex;
   flex-direction: column;
-  background-color: aliceblue;
-}
-section.servicios div.contenedor-foto-servicio img {
-  display: none;
-}
-section.servicios div.contenedor-foto-servicio button.boton-servicio a {
-  color: rgba(255, 255, 255, 0.527);
-}
-
-section.formulario {
-  width: 95px;
-  height: 15em;
-}
-section.formulario h2 {
-  text-align: center;
-  font-size: 1em;
-  padding: 0.5em;
-}
-section.formulario form fieldset {
-  height: 12em;
-  border: none;
-}
-section.formulario form fieldset legend {
-  text-align: center;
-}
-section.formulario form fieldset ul {
-  text-align: center;
-}
-section.formulario form fieldset ul li {
-  text-align: center;
-  width: 12em;
-  height: 3em;
-}
-section.formulario legend.cont-send {
-  margin-left: 3em;
-}
-section.formulario legend.cont-send button.send {
-  background-color: firebrick;
-  border-radius: 10px;
-  padding: 0.5em;
-  margin: 1em;
-  position: relative;
-  bottom: 2.5em;
 }
 
 @media (min-width: 768px) {
@@ -434,593 +376,64 @@ section.formulario legend.cont-send button.send {
     text-decoration: solid;
   }
   header nav.nav-bar ul li a:hover {
-    color: rgba(255, 255, 255, 0.907);
-  }
-  div.hero img {
-    display: flex;
-    width: 80%;
-    height: 15em;
-    margin-left: 1em;
-    margin-right: 1em;
-    opacity: 95%;
-    border-radius: 10px;
+    color: rgb(92, 92, 92);
   }
 }
-@media (min-width: 768px) and (max-width: 1199px) {
-  div.hero img {
-    display: flex;
-    width: 80%;
-    height: 15em;
-    margin-left: 1em;
-    margin-right: 2em;
-    opacity: 95%;
-    border-radius: 10px;
-  }
-}
-@media (min-width: 768px) {
-  h1 {
-    font-size: 2.5rem;
-    display: flex;
-    justify-content: center;
-  }
-  main div.contenedor-columnas {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  main div.contenedor-columnas p {
-    text-align: left;
-  }
-  main div.foto-karate {
-    display: flex;
-  }
-  main div.foto-karate img {
-    margin-right: 1em;
-    margin-top: 1em;
-    width: 30em;
-  }
-  main div.foto-karate img:hover {
-    transition: 0.6s;
-    transform: scale(1.1);
-    opacity: 90%;
-  }
-  section.articulos {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  section.articulos div.contenedor-articulo-judo h3 {
-    text-decoration: underline;
-  }
-  section.articulos div.contenedor-articulo-boxeo h3 {
-    text-decoration: underline;
-  }
-  div.contenedor-grilla {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  div.contenedor-grilla section.servicios {
-    background-color: #153d79;
-    border: none;
-    display: flex;
-    border-radius: 20px;
-    grid-column: 1/2;
-    grid-row: 1/2;
-  }
-  div.contenedor-grilla section.servicios div.contenedor-foto-servicio {
-    display: flex;
-    flex-direction: column;
-    width: 15em;
-    margin: 0.5em;
-    justify-content: end;
-  }
-  div.contenedor-grilla section.servicios div.contenedor-foto-servicio img {
-    display: flex;
-    width: 22em;
-    border-radius: 20px;
-  }
-  div.contenedor-grilla section.servicios div.contenedor-foto-servicio button.boton-servicio {
-    display: block;
-    width: 15em;
-    margin: 1em;
-    background-color: #FFC300;
-    border: 2px solid black;
-  }
-  div.contenedor-grilla section.servicios div.contenedor-foto-servicio button.boton-servicio a {
-    font-size: 1em;
-    background-color: transparent;
-    color: black;
-  }
-  div.contenedor-grilla div.contenedor-aside {
-    display: flex;
-    justify-content: end;
-    margin: 4em;
-    align-items: start;
-    grid-column: 2/3;
-  }
-  div.contenedor-grilla div.contenedor-aside aside#aside {
-    width: 8em;
-    display: grid;
-    grid-template-columns: 1fr;
-    border-radius: 20px;
-  }
-  section.formularios {
-    display: grid;
-    grid-template-rows: repeat(3 1fr);
-    width: 95%;
-    height: 15em;
-    margin-left: 1em;
-    margin-right: 1em;
-    text-decoration: none;
-  }
-  section.formularios h2 {
-    text-align: center;
-    font-size: 1em;
-    padding: 0.5em;
-  }
-  section.formularios form fieldset {
-    height: 12em;
-  }
-  section.formularios form fieldset legend {
-    text-align: center;
-  }
-  section.formularios form fieldset legend ul {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  section.formularios form fieldset legend ul li {
-    width: 12em;
-    height: 3em;
-    list-style: none;
-  }
-  section.formularios legend.cont-send {
-    display: flex;
-    justify-content: center;
-  }
-  section.formularios legend.cont-send button.send {
-    background-color: firebrick;
-    border-radius: 10px;
-    padding: 0.5em;
-    margin: 1em;
-  }
-  section.formularios legend.cont-send button.send legend.cont-send button.send:hover {
-    background-color: rgb(232, 167, 81);
-  }
-}
-@media (min-width: 1200px) {
-  header nav.nav-bar ul {
-    display: flex;
-    justify-content: space-around;
-  }
-  h1 {
-    font-size: 3rem;
-    text-decoration: underline;
-  }
-  main div.hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 1em;
-  }
-  main div.hero img {
-    width: 95%;
-    margin: none;
-  }
-  main div.hero img:hover {
-    transition: 0.6s;
-    transform: scale(0.9);
-    opacity: 92%;
-  }
-  main div.hero article.titulo-karate h3 {
-    font-size: 1.5em;
-  }
-  main div.hero div.contenedor-columnas {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  main div.hero div.contenedor-columnas p {
-    text-align: left;
-  }
-  main div.foto-karate {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    margin-top: 1em;
-  }
-  main div.foto-karate img {
-    width: 40em;
-  }
-  section.articulos {
-    margin-left: 2em;
-  }
-  section.articulos div.contenedor-articulo-judo img {
-    border-radius: 20px;
-    height: 20em;
-    width: 40em;
-  }
-  section.articulos div.contenedor-articulo-judo img:hover {
-    transition: 0.6s;
-    transform: scale(1.1);
-    opacity: 92%;
-    border-radius: 20px;
-  }
-  section.articulos div.contenedor-articulo-boxeo img {
-    border-radius: 20px;
-    height: 20em;
-    width: 28em;
-  }
-  section.articulos div.contenedor-articulo-boxeo img:hover {
-    transition: 0.6s;
-    transform: scale(1.1);
-    opacity: 92%;
-    border-radius: 20px;
-  }
-  div.contenedor-grilla {
-    padding-left: 2em;
-  }
-  div.contenedor-grilla div aside#aside {
-    width: 43.75em;
-    height: 50em;
-  }
-  div.contenedor-grilla div aside#aside p.trendings {
-    text-align: end;
-    font-size: 1.4em;
-    text-decoration: underline;
-    margin-bottom: 1em;
-  }
-  div.contenedor-grilla div aside#aside p.trendings:hover {
-    color: rgb(176, 157, 157);
-  }
-  div.contenedor-grilla div aside#aside div.cont-img-aside {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  div.contenedor-grilla div aside#aside div.cont-img-aside img {
-    display: block;
-    width: 10em;
-    border-radius: 20px;
-  }
-  div.contenedor-grilla div aside#aside div.cont-img-aside img:hover {
-    transition: 0.6s;
-    transform: scale(1.1);
-    opacity: 92%;
-    border-radius: 20px;
-  }
-  section.servicios img:hover {
-    transition: 0.6s;
-    transform: scale(1.1);
-    opacity: 92%;
-    border-radius: 20px;
-  }
-}
-section.formulario {
-  width: 500px;
+header {
+  background-color: rgb(185, 181, 181);
   display: flex;
+  flex-direction: column;
   align-items: center;
+  min-height: 70%;
+  width: 90vw;
+  margin: 0 1em;
+  border-bottom: yellow solid;
 }
-section.formulario legend button.send {
-  position: relative;
-  left: 15px;
-  top: 5px;
+header nav.nav-bar ul li {
+  margin-bottom: 0.6em;
 }
 
 /* ================================CONTACTO================================ */
-@media (min-width: 400px) {
-  main div.contenedor-img img {
-    border-radius: 20px;
-    margin-bottom: 0.5em;
-    margin-top: 0.8em;
-    width: 18em;
-    height: 12em;
-  }
-  main .section-informacion {
-    padding: 5px 0px;
-    font-weight: 800;
-  }
-  main section.contenedor-formulario {
-    width: 350px;
-  }
-  main section.contenedor-formulario form fieldset {
-    border: none;
-  }
-  main section.contenedor-formulario form fieldset ul {
-    text-align: center;
-  }
-  main section.contenedor-formulario form fieldset ul li {
-    text-align: center;
-    width: 12em;
-    height: 3em;
-  }
-  main section.contenedor-formulario legend.block-btn-send {
-    margin: 1em;
-  }
+header {
+  background-color: rgb(185, 181, 181);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 70%;
+  width: 90vw;
+  margin: 0 1em;
+  border-bottom: yellow solid;
 }
-@media (min-width: 768px) {
-  main div.contenedor-img {
-    display: flex;
-    justify-content: center;
-  }
-  main div.contenedor-img img {
-    width: 35em;
-    height: 20em;
-  }
-  main section.contenedor-formulario {
-    display: block;
-    text-align: center;
-    margin-top: 1em;
-  }
-  main section.contenedor-formulario ul {
-    margin-left: 6em;
-  }
+header nav.nav-bar ul li {
+  margin-bottom: 0.6em;
 }
-@media (min-width: 768px) {
-  main div.contenedor-img {
-    display: flex;
-    justify-content: center;
-  }
-  main div.contenedor-img img {
-    width: 70em;
-    height: 30em;
-    margin-right: 1em;
-    margin-bottom: 1em;
-    opacity: 80%;
-  }
-  main div.contenedor-img img:hover {
-    transition: 0.6s;
-    transform: scale(0.9);
-    opacity: 92%;
-  }
-  main p.section-informacion {
-    font-size: 2em;
-  }
-  main p {
-    font-size: 1.4em;
-  }
-  main h2.section-informacion {
-    font-size: 1.8em;
-  }
-  section.contenedor-formulario {
-    margin-left: 28em;
-  }
+
+header {
+  background-color: rgb(185, 181, 181);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 70%;
+  width: 90vw;
+  margin: 0 1em;
+  border-bottom: yellow solid;
 }
-@media (min-width: 400px) {
-  main img {
-    margin: 1em;
-    border-radius: 10px;
-    width: 90%;
-  }
-  main h4.obj-pagina {
-    font-weight: 800;
-    text-align: left;
-    margin: 0;
-    margin-bottom: 0.5em;
-  }
-  section.recomendaciones img {
-    width: 20em;
-    margin: 1em;
-    border-radius: 10px;
-  }
-  section.recomendaciones .deportes {
-    margin-left: 1em;
-    margin-bottom: 0.5em;
-    font-weight: 800;
-  }
-  section.recomendaciones .texto-articulo {
-    margin-left: 1em;
-    margin-right: 1em;
-  }
+header nav.nav-bar ul li {
+  margin-bottom: 0.6em;
 }
-@media (min-width: 768px) {
-  main img {
-    width: 45em;
-  }
-  main h4 {
-    font-size: 1.5em;
-  }
-  section.recomendaciones h3 {
-    font-size: 1.2em;
-  }
-  section.recomendaciones img {
-    width: 70%;
-    margin-left: 8em;
-  }
+
+header {
+  background-color: rgb(185, 181, 181);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 70%;
+  width: 90vw;
+  margin: 0 1em;
+  border-bottom: yellow solid;
 }
-@media (min-width: 1200px) {
-  main.idea-principal img {
-    width: 80%;
-    margin-left: 10em;
-    margin-bottom: 2em;
-    margin-top: 2em;
-  }
-  main.idea-principal img:hover {
-    transition: 0.6s;
-    transform: scale(1.1);
-    opacity: 92%;
-  }
-  main.idea-principal p {
-    width: 50em;
-    margin-left: 7.2em;
-  }
-  main.idea-principal h4.obj-pagina {
-    width: 50em;
-    margin-left: 7em;
-  }
-  section.resumen_pag h5 {
-    text-align: center;
-  }
-  section.recomendaciones img {
-    width: 80%;
-    margin-left: 10em;
-    margin-bottom: 2em;
-    margin-top: 2em;
-  }
-  section.recomendaciones img:hover:hover {
-    transition: 0.6s;
-    transform: scale(1.1);
-    opacity: 92%;
-  }
-  section.recomendaciones h3 {
-    margin-left: 8.5em;
-  }
-  section.recomendaciones article.deportes {
-    margin-left: 9.8em;
-  }
-  section.recomendaciones p.texto-articulo {
-    margin-left: 9.8em;
-  }
-}
-@media (min-width: 400px) {
-  main h1 {
-    text-decoration: underline;
-    font-size: 1.8em;
-    margin-bottom: 0.5em;
-  }
-  main p {
-    margin-left: 1em;
-    margin-right: 1em;
-  }
-  section.formulario-deportes h2 {
-    font-size: 1em;
-    margin-bottom: 0.5em;
-  }
-  section.formulario-deportes form fieldset legend {
-    text-align: center;
-    margin-bottom: 1em;
-  }
-  section.formulario-deportes ul {
-    margin-bottom: 1em;
-    text-align: center;
-  }
-}
-@media (min-width: 1200px) {
-  body {
-    margin-right: 3em;
-    margin-left: 3em;
-  }
-  body section.articulo-deportes img {
-    width: 65em;
-    margin-left: 5em;
-  }
-  body section.articulo-deportes img:hover {
-    transition: 0.6s;
-    transform: scale(1.1);
-    opacity: 92%;
-  }
-  body div.boton button.boton-deportes {
-    padding: 0.7em;
-  }
-  body section.formulario-deportes h2 {
-    margin-left: 2em;
-    font-size: 1.3em;
-  }
-  body section.formulario-deportes form fieldset {
-    width: 50em;
-    display: flex;
-    margin-left: 20em;
-  }
-  body section.formulario-deportes form fieldset ul {
-    display: flex;
-    align-items: center;
-    text-align: center;
-  }
-  body section.formulario-deportes form fieldset ul label {
-    margin-left: 15em;
-  }
-  body legend button {
-    margin-left: 51em;
-  }
-}
-@media (min-width: 400px) {
-  main h2 {
-    margin-left: 1em;
-  }
-  section.formulario {
-    width: 90%;
-    margin: 0 1.3em;
-  }
-  section.formulario h2 {
-    font-size: 1em;
-    margin-bottom: 0.5em;
-  }
-  section.formulario form fieldset {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  section.formulario form fieldset legend {
-    text-align: left;
-    text-decoration: underline;
-  }
-  section.formulario ul {
-    margin-bottom: 1em;
-    text-align: center;
-  }
-}
-@media (min-width: 768px) {
-  main h3 {
-    font-size: 1.3em;
-  }
-  section.formulario {
-    width: 90%;
-    margin: 0 1.3em;
-  }
-  section.formulario h2 {
-    font-size: 1em;
-    margin-top: 1.5em;
-  }
-  section.formulario form fieldset {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  section.formulario form fieldset legend {
-    text-align: left;
-    text-decoration: underline;
-  }
-  section.formulario ul {
-    margin-top: 1em;
-    text-align: center;
-    margin-left: 1em;
-  }
-}
-@media (min-width: 400px) {
-  main.idea_principal img {
-    width: 90%;
-    height: 80%;
-  }
-  main.idea_principal img:hover {
-    transition: 0.6s;
-    transform: scale(0.9);
-    opacity: 92%;
-  }
-  section.formulario {
-    display: none;
-  }
-  section.formulario h2 {
-    margin-left: 5em;
-    font-size: 1.3em;
-  }
-  section.formulario form fieldset {
-    width: 50em;
-    display: flex;
-    margin-left: 15em;
-  }
-  section.formulario form fieldset legend {
-    margin-left: 5em;
-  }
-  section.formulario form fieldset ul {
-    display: flex;
-    align-items: right;
-    text-align: right;
-  }
-  section.formulario form fieldset ul label {
-    margin-left: 0.2em;
-  }
-  section.formulario form fieldset legend button {
-    margin-left: 0.2em;
-  }
+header nav.nav-bar ul li {
+  margin-bottom: 0.6em;
 }
 
 /*# sourceMappingURL=index.css.map */

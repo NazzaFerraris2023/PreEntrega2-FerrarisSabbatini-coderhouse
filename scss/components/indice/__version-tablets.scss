@@ -1,4 +1,3 @@
-//==================== HEADER ====================
 @media (min-width:768px){
     header{
         display: grid;
@@ -10,7 +9,8 @@
             margin: 0;
             position: relative;
             top: .4em;
-                }
+            // grid-area: titulo;
+        }
             nav.nav-bar ul{
                 & li{
                     display: flex;
@@ -22,188 +22,19 @@
                     }
                 } 
             }
-            
-                
-            }
-//==================== HERO ==================== 
-        
-div.hero img{
-    display: flex;
-    width: 80%;
-    height: 15em;
-    margin-left: 1em; 
-    margin-right: 1em;
-    opacity:95%;border-radius: 10px;
-    
-    }
-    @media  (max-width:1199px){
-        div.hero img{
-            display: flex;
-            width: 80%;
-            height: 15em;
-            margin-left: 1em; 
-            margin-right: 2em;
-            opacity:95%;border-radius: 10px;
-            
-            }   
-    }
-
-//==================== TITULO PRINCIPAL ====================
-    h1{
-        font-size: 2.5rem;
-        display: flex;
-        justify-content: center;
-    }
-//==================== MAIN ====================    
-
-    main{
-        & div.contenedor-columnas {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            & p{
-                text-align: left;
-            }
-        }         
-    div.foto-karate{
-        display: flex;    
-        & img{
-            margin-right: 1em;
-            margin-top: 1em;
-            width: 30em;
-            &:hover{
-                transition: 0.6s;
-                transform: scale(1.1);
-                opacity: 90%;
-            }
-            
-        
-        }
-            
-    }
-
-}
-
-//==================== ARTICULOS JUDO/BOXEO ====================
-    section.articulos{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        & div.contenedor-articulo-judo h3{
-            text-decoration: underline;
-        }
-        & div.contenedor-articulo-boxeo h3{
-            text-decoration: underline;
-        }
-        }
-
-//==================== ASIDE ====================
-div.contenedor-grilla{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    section.servicios{
-        background-color: $color-body;
-        border: none;
-        display: flex;
-        border-radius: 20px;
-        grid-column: 1/2;
-        grid-row: 1/2;
-        & div.contenedor-foto-servicio{
-            display: flex;
-            flex-direction: column;
-            width: 15em;
-            margin: .5em;
-            justify-content: end;
-            & img{
-                display: flex;
-                width:22em;
-                border-radius: 20px;
-            }
-            & button.boton-servicio{
-                display: block;
-                width: 15em;
-                margin: 1em;
-                background-color: $color-botones-servicios;
-                border: 2px solid black;
-                & a{
-                    font-size: 1em;
-                    background-color: transparent;
-                    color:black
-                }
-            }
-                
-        }
-        
-    }
-    
-    div.contenedor-aside{
-    display: flex;
-    justify-content: end;
-    margin:4em;
-    align-items: start;
-    grid-column: 2/3;
-    aside#aside{
-        width: 8em;
-        display: grid;
-        grid-template-columns: 1fr;
-        border-radius: 20px;
-        }
-    }
-}
-
-
-
-
-//==================== FORMULARIO ====================
-    section.formularios{
-        display: grid;
-        grid-template-rows: repeat(3 1fr);
-        width: 95%;
-        height: 15em;
-        margin-left: 1em; 
-        margin-right: 1em;
-        text-decoration: none;
-        & h2{
-            text-align: center;
-            font-size: 1em;
-            padding: .5em;
-        
-        }
-        & form fieldset {
-            height: 12em; 
-            & legend{
-                text-align: center;
-                
-            & ul{
-                text-align: center;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-            
-                & li{
-    
-                    width: 12em;
-                    height: 3em;
-                    list-style: none; 
-                }
-            }
-        }
-    }
-    legend.cont-send{
-        display: flex;
-        justify-content: center;
-        & button.send{
-            background-color: $color-botones;
-            border-radius: 10px;
-            padding: .5em;
-            margin: 1em;
-            legend.cont-send button.send:hover{
-                background-color:rgb(232, 167, 81); ;
-            }        
-        }
-    }
-    }
-    
-    
+    }    
     
 
-}    //MQ 
+
+
+
+
+
+
+
+
+
+
+
+
+}//MQ

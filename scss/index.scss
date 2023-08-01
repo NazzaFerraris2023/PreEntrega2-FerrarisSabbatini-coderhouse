@@ -1,22 +1,29 @@
 @import "./base";
 @import "./components/componentes_generales/botones.scss";
 @import "./components/componentes_generales/footer.scss";
+
+
+
+
 @import "./components/indice/_version-mobile";
 @import "./components/indice/_version-tablets";
 @import "./components/indice/_version-desktop";
 
 
-@import "../scss/components/contacto/_version-mobile";
+@import "./components/servicio/_version-mobile";
+@import "./components/servicio/_version-tablets";
+@import "./components/servicio/_version-desktop";
+
+
+@import "./components/contacto/_version-mobile";
 @import "./components/contacto/_version-tablets";
 @import "./components/contacto/_version-desktop";
 
-@import "../scss/components/servicio/_version-mobile";
-@import "../scss/components/servicio/_version-tablets";
-@import "../scss/components/servicio/_version-desktop";
 
-@import "../scss/components/deportes/_version-mobile";
-@import "../scss/components/deportes/_version-desktop";
+@import "./components/deportes/_version-mobile";
+@import "./components/deportes/_version-desktop";
 
-@import "../scss/components/nosotros/_version-mobile";
-@import "../scss/components/nosotros/_version-tablets";
-@import "../scss/components/nosotros/_version-desktop";
+
+@import "./components/nosotros/_version-mobile";
+@import "./components/nosotros/_version-tablets";
+@import "./components/nosotros/_version-desktop";

@@ -1,37 +1,13 @@
-@media (min-width:400px){
-
-
-main{
-    h2{
-        margin-left: 1em;
+header{
+    background-color:$color-tarjetas;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 70%;
+    width: 90vw;
+    margin: 0 1em;
+    border-bottom: yellow solid;
+    nav.nav-bar ul li{
+        margin-bottom: .6em;
     }
 }
-
-
-    section.formulario{
-        width: 90%;
-        margin: 0 1.3em;
-        h2{
-            font-size: 1em;
-            margin-bottom: .5em;
-            
-        }
-        form fieldset{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            
-            
-        & legend{
-            text-align: left;
-            text-decoration: underline;
-        
-            
-        }
-    }
-        ul{
-            margin-bottom: 1em;
-            text-align: center;
-        }
-    }
-}//MQ
