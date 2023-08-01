@@ -1,17 +1,20 @@
 @media (min-width:768px){
-    header{
+    #header-container{
         display: grid;
         grid-template-columns: 1fr 1fr;
+        background-color: $color-tarjetas;
         & h3{
             font-size: 1.5em;
             padding: 0;
             border: 0;
             margin: 0;
             position: relative;
-            top: .4em;
+            // top: .4em;
             // grid-area: titulo;
         }
-            nav.nav-bar ul{
+        & .nav-bar ul{
+            display: flex;
+            justify-content: space-around;
                 & li{
                     display: flex;
                     & a{
@@ -25,7 +28,65 @@
     }    
     
 
+main{
+    .hero{
+        display: flex;
+        img{
+            height: 50vh;
+            width: 90vw;
+            margin: 0 2em;
+            border-radius: 20px 0;
+            opacity: 90%;
+            background-color: aqua;
+            &:hover{
+                transition: 0.6s;
+                transform: scale(0.9);
+                opacity: 90%;
+            }
+        }
+    }
 
+    .foto-karate{
+        display: flex;
+        img{
+            border-radius: 20px;
+            height: 60vh;
+            width: 90vw;
+            &:hover{
+                transition: 0.6s;
+                transform: scale(1.1);
+                opacity: 90%;
+            }
+        }
+}
+
+section.container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    .contenedor-articulos-judo{
+        background-color: $color-body;
+        border: none;
+        display: flex;
+        border-radius: 20px;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        width: 2em;
+            .articulo{
+                display: none;
+                width:22em;
+                border-radius: 20px;
+            }
+
+        }
+
+    }
+}
+
+
+.cont-img-aside{
+    img{
+        width: 2em;
+}}
 
 
 

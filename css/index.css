@@ -357,26 +357,80 @@ fieldset ul {
 }
 
 @media (min-width: 768px) {
-  header {
+  #header-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    background-color: rgb(185, 181, 181);
   }
-  header h3 {
+  #header-container h3 {
     font-size: 1.5em;
     padding: 0;
     border: 0;
     margin: 0;
     position: relative;
-    top: 0.4em;
   }
-  header nav.nav-bar ul li {
+  #header-container .nav-bar ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  #header-container .nav-bar ul li {
     display: flex;
   }
-  header nav.nav-bar ul li a {
+  #header-container .nav-bar ul li a {
     text-decoration: solid;
   }
-  header nav.nav-bar ul li a:hover {
-    color: rgb(92, 92, 92);
+  #header-container .nav-bar ul li a:hover {
+    color: rgb(252, 244, 244);
+  }
+  main .hero {
+    display: flex;
+  }
+  main .hero img {
+    height: 50vh;
+    width: 90vw;
+    margin: 0 2em;
+    border-radius: 20px 0;
+    opacity: 90%;
+    background-color: aqua;
+  }
+  main .hero img:hover {
+    transition: 0.6s;
+    transform: scale(0.9);
+    opacity: 90%;
+  }
+  main .foto-karate {
+    display: flex;
+  }
+  main .foto-karate img {
+    border-radius: 20px;
+    height: 60vh;
+    width: 90vw;
+  }
+  main .foto-karate img:hover {
+    transition: 0.6s;
+    transform: scale(1.1);
+    opacity: 90%;
+  }
+  main section.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  main section.container .contenedor-articulos-judo {
+    background-color: rgb(248, 90, 27);
+    border: none;
+    display: flex;
+    border-radius: 20px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 2em;
+  }
+  main section.container .contenedor-articulos-judo .articulo {
+    display: none;
+    width: 22em;
+    border-radius: 20px;
+  }
+  .cont-img-aside img {
+    width: 2em;
   }
 }
 header {
