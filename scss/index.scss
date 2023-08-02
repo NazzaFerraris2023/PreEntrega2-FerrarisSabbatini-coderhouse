@@ -1,6 +1,6 @@
 @import "./base";
 @import "./components/componentes_generales/botones.scss";
-@import "./components/componentes_generales/footer.scss";
+// @import "./components/componentes_generales/footer.scss";
 
 
 
@@ -21,6 +21,7 @@
 
 
 @import "./components/deportes/_version-mobile";
+@import "./components/deportes/_version-tablets";
 @import "./components/deportes/_version-desktop";
 
 

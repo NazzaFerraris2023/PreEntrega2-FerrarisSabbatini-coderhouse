@@ -1,0 +1,63 @@
+@media(min-width:1200px){
+
+main{
+    h4{
+        font-size: 2em;
+    }
+    p{
+        font-size: 1.5em;
+    }
+}
+.recomendaciones{
+    h3{
+        font-size: 2.3em;
+    }
+    .deportes{
+        display: flex;
+        justify-content: flex-start;
+        font-size: 2em;
+    }
+    .cont-img{
+        display: flex;
+        justify-content: flex-start;
+        img{
+            width:30em ;
+        }
+    }
+    .cont-img-capoeira{
+        display: flex;
+        justify-content: flex-start;
+        img{
+            width:30em ;
+            margin-bottom: 1em;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}//MQ

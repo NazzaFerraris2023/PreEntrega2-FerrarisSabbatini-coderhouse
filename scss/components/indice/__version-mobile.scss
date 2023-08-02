@@ -29,7 +29,7 @@ div.contenedor-columnas{
     display: flex;
     margin: 1em 1em;
     background-color: $color-tarjetas;
-    width: 90vw;
+    width: 80vw;
     p.texto-columna1-karate{
         text-align: justify;
         margin-right: 1em;
@@ -41,7 +41,7 @@ div.contenedor-columnas{
 }
 
 div.contenedor-articulo-judo{
-    width: 90vw;;
+    width: 80vw;;
     background-color: $color-tarjetas;
     display: flex;
     justify-content: center;
@@ -57,7 +57,7 @@ div.contenedor-articulo-judo{
     }
 }
 div.contenedor-articulo-boxeo{
-    width: 90vw;
+    width: 80vw;
     background-color: $color-tarjetas;
     display: flex;
     justify-content: center;

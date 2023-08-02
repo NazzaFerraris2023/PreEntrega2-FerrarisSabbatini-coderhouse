@@ -1,3 +1,4 @@
+//================= HEADER =================//
 header{
     background-color:$color-tarjetas;
     display: flex;
@@ -10,4 +11,24 @@ header{
     nav.nav-bar ul li{
         margin-bottom: .6em;
     }
+}
+
+.idea-principal-deportes{
+    background-color:$color-tarjetas;
+    width: 90vw;
+    padding: .5em;
+    margin: 1em 1em;
+    .cont-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: .5em;
+        img{
+            width: 15em;
+            border-radius: 10px;
+            @media(min-width: 660px){
+                width: 25em;
+            }
+    }
+}
 }

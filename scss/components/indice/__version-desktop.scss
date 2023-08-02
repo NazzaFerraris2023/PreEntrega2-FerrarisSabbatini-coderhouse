@@ -1,8 +1,14 @@
 @media (min-width:1200px){
+*{
+    margin: 0;
+}
     body{
+        width: 90vw;
+    
     section.container{
         .contenedor-articulo-judo{
             height: 90vh;
+
             h3{
                 font-size: 2em;
             }
@@ -56,10 +62,6 @@
         }
     }
 }
-
-
-
-
 
 
 

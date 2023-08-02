@@ -1,0 +1,58 @@
+@media (min-width:1200px){
+*{
+    margin-left: 1.5em;
+}
+#header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: $color-tarjetas;
+    & div h3{
+        font-size: 1.5em;
+        padding: 0;
+        border: 0;
+        margin: 0;
+        position: relative;
+        // top: .4em;
+        // grid-area: titulo;
+    }
+    & .nav-bar ul{
+        display: flex;
+        justify-content: space-around;
+            & li{
+                display: flex;
+                & a{
+                    text-decoration: solid;
+                    &:hover{
+                        color: $color-letras-hover;
+                    }
+                }
+            } 
+        }
+}
+
+.idea-principal-deportes{
+    width: 90vw;
+    
+    .texto-introductorio{
+        font-size: 1.6em;
+    }
+    .articulo-deportes{
+    p{
+        font-size: 1.6em;
+    }
+    .cont-img{
+        &:hover{
+            transition: 0.6s;
+            transform: scale(1.1);
+            opacity: 90%;
+        }
+    }
+}
+}
+
+
+
+
+
+
+}//MQ

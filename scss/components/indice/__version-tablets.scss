@@ -94,8 +94,8 @@ section.container{
         .contenedor-articulo-boxeo{
             background-color: $color-tarjetas;
             border: none;
-            width: 45vw;
-            height: 70vh;
+            width: 38vw;
+            height: 60vh;
                 h3{
                     font-size: 1.1em;
                     color: black;
@@ -106,6 +106,7 @@ section.container{
                     margin-top: 1em;
                     transform: translateY(-60px);
                 }
+                
                 .articulo{
                     display: relative;
                     width:15em;

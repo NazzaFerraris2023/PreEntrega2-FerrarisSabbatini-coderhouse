@@ -33,6 +33,11 @@ h3 {
   text-align: center;
   font-size: 1.4em;
 }
+@media (min-width: 768px) {
+  h3 {
+    font-size: 1.6em;
+  }
+}
 
 h4 {
   color: rgba(0, 0, 0, 0.5176470588);
@@ -47,6 +52,11 @@ p {
   font-family: "Times New Roman", Times, serif;
   text-align: justify;
   font-size: 1.1em;
+}
+@media (min-width: 768px) {
+  p {
+    font-size: 1.3em;
+  }
 }
 
 a {
@@ -76,7 +86,7 @@ div.cont-btn a.btn {
   margin-left: 2em;
 }
 div.cont-btn a.btn:hover {
-  background-color: rgb(117, 22, 22);
+  background-color: rgb(224, 81, 81);
 }
 
 div.cont-btn-judo .btn-judo {
@@ -90,7 +100,7 @@ div.cont-btn-judo .btn-judo {
   font-size: 0.8em;
 }
 div.cont-btn-judo .btn-judo:hover {
-  background-color: rgb(117, 22, 22);
+  background-color: rgb(224, 81, 81);
 }
 
 div.cont-btn-box a.btn-box {
@@ -105,7 +115,12 @@ div.cont-btn-box a.btn-box {
   font-size: 0.8em;
 }
 div.cont-btn-box a.btn-box:hover {
-  background-color: rgb(117, 22, 22);
+  background-color: rgb(224, 81, 81);
+}
+@media (min-width: 768px) {
+  div.cont-btn-box {
+    transform: translateY(-50px);
+  }
 }
 @media (min-width: 1200px) {
   div.cont-btn-box {
@@ -115,6 +130,11 @@ div.cont-btn-box a.btn-box:hover {
 
 div.cont-btn-info {
   margin-top: 1em;
+}
+@media (min-width: 768px) {
+  div.cont-btn-info {
+    transform: translateY(-50px);
+  }
 }
 @media (min-width: 1200px) {
   div.cont-btn-info {
@@ -133,7 +153,7 @@ div.cont-btn-info a.btn-info {
   font-size: 0.8em;
 }
 div.cont-btn-info a.btn-info:hover {
-  background-color: rgb(117, 22, 22);
+  background-color: rgb(224, 81, 81);
 }
 
 div.cont-btn-info1 {
@@ -151,7 +171,7 @@ div.cont-btn-info1 a.btn-info1 {
   font-size: 0.8em;
 }
 div.cont-btn-info1 a.btn-info1:hover {
-  background-color: rgb(117, 22, 22);
+  background-color: rgb(224, 81, 81);
 }
 
 div.cont-btn-send a.btn-send {
@@ -169,7 +189,7 @@ div.cont-btn-send a.btn-send {
   bottom: 2px;
 }
 div.cont-btn-send a.btn-send:hover {
-  background-color: rgb(117, 22, 22);
+  background-color: rgb(224, 81, 81);
 }
 @media (min-width: 1200px) {
   div.cont-btn-send a.btn-send {
@@ -201,7 +221,7 @@ button.boton {
   padding: 0.4em;
 }
 button.boton:hover {
-  background-color: rgb(117, 22, 22);
+  background-color: rgb(224, 81, 81);
 }
 
 button.btn-send {
@@ -211,7 +231,7 @@ button.btn-send {
   margin-left: 2em;
 }
 button.btn-send:hover {
-  background-color: rgb(117, 22, 22);
+  background-color: rgb(224, 81, 81);
 }
 
 div.boton button.boton-deportes {
@@ -226,7 +246,16 @@ div.boton button.boton-deportes a {
   background-color: transparent;
 }
 div.boton button.boton-deportes:hover {
-  background-color: rgb(117, 22, 22);
+  background-color: rgb(224, 81, 81);
+}
+@media (min-width: 1200px) {
+  div.boton {
+    padding: 0;
+    margin: 0;
+  }
+  div.boton a {
+    font-size: 1.5em;
+  }
 }
 
 legend button {
@@ -236,28 +265,7 @@ legend button {
   margin-left: 2em;
 }
 legend button:hover {
-  background-color: rgb(117, 22, 22);
-}
-
-footer {
-  width: 92vw;
-  background-color: rgb(168, 88, 244);
-  display: grid;
-  flex-direction: row;
-  justify-content: space-around;
-  border-top: 2px solid black;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 2px;
-  grid-row-gap: 0px;
-}
-footer contenedor-titulo-footer {
-  display: flex;
-  align-items: end;
-}
-footer contenedor-titulo-footer h4 {
-  align-items: center;
+  background-color: rgb(224, 81, 81);
 }
 
 header {
@@ -291,7 +299,7 @@ div.contenedor-columnas {
   display: flex;
   margin: 1em 1em;
   background-color: rgb(185, 181, 181);
-  width: 90vw;
+  width: 80vw;
 }
 div.contenedor-columnas p.texto-columna1-karate {
   text-align: justify;
@@ -302,7 +310,7 @@ div.contenedor-columnas p.texto-columna2-karate {
 }
 
 div.contenedor-articulo-judo {
-  width: 90vw;
+  width: 80vw;
   background-color: rgb(185, 181, 181);
   display: flex;
   justify-content: center;
@@ -319,7 +327,7 @@ div.contenedor-articulo-judo p.texto-articulo {
 }
 
 div.contenedor-articulo-boxeo {
-  width: 90vw;
+  width: 80vw;
   background-color: rgb(185, 181, 181);
   display: flex;
   justify-content: center;
@@ -462,8 +470,8 @@ fieldset ul {
   main section.container .contenedor-articulo-boxeo {
     background-color: rgb(185, 181, 181);
     border: none;
-    width: 45vw;
-    height: 70vh;
+    width: 38vw;
+    height: 60vh;
   }
   main section.container .contenedor-articulo-boxeo h3 {
     font-size: 1.1em;
@@ -494,6 +502,12 @@ fieldset ul {
   }
 }
 @media (min-width: 1200px) {
+  * {
+    margin: 0;
+  }
+  body {
+    width: 90vw;
+  }
   body section.container .contenedor-articulo-judo {
     height: 90vh;
   }
@@ -554,6 +568,155 @@ header nav.nav-bar ul li {
   margin-bottom: 0.6em;
 }
 
+main {
+  width: 90vw;
+  margin: 0 1em;
+  background-color: rgb(185, 181, 181);
+}
+main .cont-img {
+  display: flex;
+  justify-content: center;
+}
+main .cont-img img {
+  width: 15em;
+  border-radius: 10px;
+  margin-bottom: 1em;
+}
+
+.recomendaciones {
+  background-color: rgb(185, 181, 181);
+  width: 90vw;
+  margin: 0 1em;
+}
+.recomendaciones .deportes {
+  font-size: 1.2em;
+  text-decoration: underline;
+  color: #000;
+  font-weight: 700;
+  margin: 1em 1.5em;
+}
+.recomendaciones .cont-img {
+  display: flex;
+  justify-content: center;
+}
+.recomendaciones .cont-img img {
+  width: 15em;
+  border-radius: 10px;
+}
+.recomendaciones .cont-img-capoeira {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+.recomendaciones .cont-img-capoeira img {
+  width: 15em;
+  border-radius: 10px;
+}
+
+@media (min-width: 500px) {
+  main .cont-img {
+    display: flex;
+    justify-content: center;
+  }
+  main .cont-img img {
+    width: 27em;
+  }
+  .recomendaciones .cont-img {
+    display: flex;
+    justify-content: center;
+  }
+  .recomendaciones .cont-img img {
+    width: 27em;
+  }
+  .recomendaciones .cont-img-capoeira {
+    display: flex;
+    justify-content: center;
+  }
+  .recomendaciones .cont-img-capoeira img {
+    width: 27em;
+  }
+}
+@media (min-width: 768px) {
+  #header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(185, 181, 181);
+  }
+  #header div h3 {
+    font-size: 1.5em;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    position: relative;
+  }
+  #header .nav-bar ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  #header .nav-bar ul li {
+    display: flex;
+  }
+  #header .nav-bar ul li a {
+    text-decoration: solid;
+  }
+  #header .nav-bar ul li a:hover {
+    color: rgb(252, 244, 244);
+  }
+  main .cont-img img {
+    width: 40em;
+  }
+  main h4 {
+    font-size: 1.5em;
+  }
+  main p {
+    margin: 0 1em;
+  }
+  .recomendaciones h3 {
+    font-size: 1.7em;
+  }
+  .recomendaciones .deportes {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+  }
+  .recomendaciones .cont-img img {
+    width: 39em;
+  }
+  .recomendaciones .cont-img-capoeira img {
+    width: 39em;
+  }
+}
+@media (min-width: 1200px) {
+  main h4 {
+    font-size: 2em;
+  }
+  main p {
+    font-size: 1.5em;
+  }
+  .recomendaciones h3 {
+    font-size: 2.3em;
+  }
+  .recomendaciones .deportes {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 2em;
+  }
+  .recomendaciones .cont-img {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .recomendaciones .cont-img img {
+    width: 30em;
+  }
+  .recomendaciones .cont-img-capoeira {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .recomendaciones .cont-img-capoeira img {
+    width: 30em;
+    margin-bottom: 1em;
+  }
+}
 /* ================================CONTACTO================================ */
 header {
   background-color: rgb(185, 181, 181);
@@ -583,6 +746,102 @@ header nav.nav-bar ul li {
   margin-bottom: 0.6em;
 }
 
+.idea-principal-deportes {
+  background-color: rgb(185, 181, 181);
+  width: 90vw;
+  padding: 0.5em;
+  margin: 1em 1em;
+}
+.idea-principal-deportes .cont-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5em;
+}
+.idea-principal-deportes .cont-img img {
+  width: 15em;
+  border-radius: 10px;
+}
+@media (min-width: 660px) {
+  .idea-principal-deportes .cont-img img {
+    width: 25em;
+  }
+}
+
+@media (min-width: 768px) {
+  #header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(185, 181, 181);
+  }
+  #header div h3 {
+    font-size: 1.5em;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    position: relative;
+  }
+  #header .nav-bar ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  #header .nav-bar ul li {
+    display: flex;
+  }
+  #header .nav-bar ul li a {
+    text-decoration: solid;
+  }
+  #header .nav-bar ul li a:hover {
+    color: rgb(252, 244, 244);
+  }
+  main .articulo-deportes .cont-img img {
+    width: 75vw;
+  }
+}
+@media (min-width: 1200px) {
+  * {
+    margin-left: 1.5em;
+  }
+  #header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(185, 181, 181);
+  }
+  #header div h3 {
+    font-size: 1.5em;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    position: relative;
+  }
+  #header .nav-bar ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  #header .nav-bar ul li {
+    display: flex;
+  }
+  #header .nav-bar ul li a {
+    text-decoration: solid;
+  }
+  #header .nav-bar ul li a:hover {
+    color: rgb(252, 244, 244);
+  }
+  .idea-principal-deportes {
+    width: 90vw;
+  }
+  .idea-principal-deportes .texto-introductorio {
+    font-size: 1.6em;
+  }
+  .idea-principal-deportes .articulo-deportes p {
+    font-size: 1.6em;
+  }
+  .idea-principal-deportes .articulo-deportes .cont-img:hover {
+    transition: 0.6s;
+    transform: scale(1.1);
+    opacity: 90%;
+  }
+}
 header {
   background-color: rgb(185, 181, 181);
   display: flex;
