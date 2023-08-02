@@ -11,3 +11,39 @@ header{
         margin-bottom: .6em;
     }
 }
+main{
+    width:90vw;
+    height: 80vh;
+    h1{
+        font-size: 1.5em;
+    }
+    p{
+        font-size:1.2em ;
+    }
+    h3{
+        font-size: 1.5em;
+    }
+    
+}
+.formulario{
+    background-color: $color-tarjetas;
+    width: 90vw;
+    margin: 0 1em;
+    height: 10em;
+    form fieldset{
+        width: 15em;
+    }
+
+}
+
+@media(min-width:530px){
+    
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    form fieldset{
+        width: 20em;
+    }   }
+}

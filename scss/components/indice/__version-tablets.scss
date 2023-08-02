@@ -37,7 +37,6 @@ main{
             margin: 0 2em;
             border-radius: 20px 0;
             opacity: 90%;
-            background-color: aqua;
             &:hover{
                 transition: 0.6s;
                 transform: scale(0.9);
@@ -48,15 +47,27 @@ main{
 
     .foto-karate{
         display: flex;
+        justify-content: center;
+        height: 16em;
         img{
             border-radius: 20px;
-            height: 60vh;
-            width: 90vw;
+            height: 40vh;
+            width: 60vw;
             &:hover{
                 transition: 0.6s;
                 transform: scale(1.1);
                 opacity: 90%;
             }
+        }
+    }
+    .contenedor-columnas{
+        p.texto-columna1-karate{
+            margin-top: 1em;
+
+        }
+        p.texto-columna2-karate{
+            margin-top: 1em;
+
         }
     }
 
@@ -66,8 +77,8 @@ section.container{
     .contenedor-articulo-judo{
         background-color: $color-tarjetas;
         border: none;
-        width: 45vw;
-        height: 70vh;
+        width: 43vw;
+        height: 68vh;
             h3{
                 font-size: 1.1em;
                 color: black;
@@ -94,8 +105,8 @@ section.container{
         .contenedor-articulo-boxeo{
             background-color: $color-tarjetas;
             border: none;
-            width: 38vw;
-            height: 60vh;
+            width: 45vw;
+            height: 67vh;
                 h3{
                     font-size: 1.1em;
                     color: black;
@@ -120,19 +131,6 @@ section.container{
                     
                 }
             }
-    }
-}
-
-.formulario{
-    h2{
-        font-size: 2em;
-    }
-    form{
-        fieldset{
-            legend{
-                font-size: 1.5em;
-            }
-        }
     }
 }
 

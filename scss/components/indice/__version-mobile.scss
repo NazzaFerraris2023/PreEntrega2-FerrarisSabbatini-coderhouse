@@ -27,26 +27,28 @@ div.foto-karate{
 }
 div.contenedor-columnas{
     display: flex;
-    margin: 1em 1em;
+    margin: 1 .0em;
     background-color: $color-tarjetas;
-    width: 80vw;
+    width: 90vw;
     p.texto-columna1-karate{
         text-align: justify;
         margin-right: 1em;
+        margin-bottom: 1em;
     }
     p.texto-columna2-karate{
         margin-left: 1em;
+        margin-bottom: 1em;
     }
 
 }
 
 div.contenedor-articulo-judo{
-    width: 80vw;;
+    width: 90vw;
     background-color: $color-tarjetas;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 1em 1em;
+    ;
     img{
         width: 80vw;
         margin:1em;
@@ -57,12 +59,12 @@ div.contenedor-articulo-judo{
     }
 }
 div.contenedor-articulo-boxeo{
-    width: 80vw;
+    width: 90vw;
     background-color: $color-tarjetas;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 1em 1em;
+    margin-top: .5em;
     img{
         width: 80vw;
         margin:1em;

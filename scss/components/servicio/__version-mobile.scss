@@ -12,78 +12,95 @@ header{
     }
 }
 
-main{
-    width: 90vw;
-    margin:0 1em;
-    background-color: $color-tarjetas;
-    .cont-img{
+.idea-principal{
+    height: 60em;
+    margin: 0 1em;
+    .cont-img-servicio{
         display: flex;
         justify-content: center;
+        
         img{
             width: 15em;
-            border-radius: 10px;
-            margin-bottom: 1em;
-
         }
     }
+    p{
+        margin-bottom: 1em;
+    }
+
 }
 .recomendaciones{
-    background-color: $color-tarjetas;
-    width: 90vw;
-    margin: 0 1em;
+    margin-top: 6em;
     .deportes{
-        font-size: 1.2em;
-        text-decoration: underline;
-        color: #000;
+        font-size: 1.5em;
         font-weight: 700;
-        margin: 1em 1.5em;
+        text-decoration: underline;
     }
-    .cont-img{
+    .cont-img-articulos{
         display: flex;
         justify-content: center;
         img{
-            width: 15em;
-            border-radius: 10px;
+            width: 20em;
+            border-radius: 20px;
         }
     }
-    .cont-img-capoeira{
-        display: flex;
-        justify-content: center;
-        margin-bottom: 1em;
-        img{
-            width: 15em;
-            border-radius: 10px;
-        }
-    }
+
 }
-@media(min-width:500px){
-    main{
-        .cont-img{
-            display:flex ;
-            justify-content: center;
-            img{
-                width: 27em;
-            }
-        }
-    }
-    .recomendaciones{
-        .cont-img{
-            display:flex ;
-            justify-content: center;
-            img{
-                width: 27em;
-            }
-        }
-        .cont-img-capoeira{
-            display:flex ;
-            justify-content: center;
+// .recomendaciones{
+//     background-color: $color-tarjetas;
+//     width: 90vw;
+//     margin: 100 1em;
+//     .deportes{
+//         font-size: 1.2em;
+//         text-decoration: underline;
+//         color: #000;
+//         font-weight: 700;
+//         margin: 1em 1.5em;
+//     }
+//     .cont-img{
+//         display: flex;
+//         justify-content: center;
+//         img{
+//             width: 15em;
+//             border-radius: 10px;
+//         }
+//     }
+//     .cont-img-capoeira{
+//         display: flex;
+//         justify-content: center;
+//         margin-bottom: 1em;
+//         img{
+//             width: 15em;
+//             border-radius: 10px;
+//         }
+//     }
+// }
+// @media(min-width:500px){
+//     main{
+//         .cont-img{
+//             display:flex ;
+//             justify-content: center;
+//             img{
+//                 width: 27em;
+//             }
+//         }
+//     }
+//     .recomendaciones{
+//         .cont-img{
+//             display:flex ;
+//             justify-content: center;
+//             img{
+//                 width: 27em;
+//             }
+//         }
+//         .cont-img-capoeira{
+//             display:flex ;
+//             justify-content: center;
             
-            img{
-                width: 27em;
-            }
-        }
-    }
+//             img{
+//                 width: 27em;
+//             }
+//         }
+//     }
 
 
 
-}

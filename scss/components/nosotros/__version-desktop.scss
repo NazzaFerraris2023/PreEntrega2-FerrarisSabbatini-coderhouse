@@ -1,2 +1,67 @@
+@media (min-width:1200px){
 
+    #header{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: $color-tarjetas;
+        & div h3{
+            font-size: 1.5em;
+            padding: 0;
+            border: 0;
+            margin: 0;
+            position: relative;
+            // top: .4em;
+            // grid-area: titulo;
+        }
+        & .nav-bar ul{
+            display: flex;
+            justify-content: space-around;
+                & li{
+                    display: flex;
+                    & a{
+                        text-decoration: solid;
+                        &:hover{
+                            color: $color-letras-hover;
+                        }
+                    }
+                } 
+            }
+    }
+
+main{
+    height: 40em;
+    h1{
+        font-size: 2.5em;
+    }
+    .cont-img{
+        img{
+            width: 40em;
+        }
+    }
+
+}
+
+.formulario{
+    form{
+        width: 60em;
+    }
+}
+
+
+
+
+//================= FOOTER =================//
+
+
+
+
+
+
+
+
+
+
+
+
+}//mq
 

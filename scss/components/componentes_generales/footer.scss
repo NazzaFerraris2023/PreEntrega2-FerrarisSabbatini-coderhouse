@@ -1,33 +1,25 @@
 //================= FOOTER =================//
 
 footer{
+    
 
-    width: 92vw;
-        background-color: rgb(168, 88, 244);
-        display: grid;
-        flex-direction: row;
-        justify-content: space-around;
-        border-top: 2px solid black;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1fr;
-        grid-column-gap: 2px;
-        grid-row-gap: 0px;
-        contenedor-titulo-footer{
-            display: flex;
-            align-items: end;
-            h4{
-                align-items: center;
-            }
+    width: 93vw;
+    background-color: rgb(168, 88, 244);
+    display: grid;
+    flex-direction: row;
+    justify-content: space-around;
+    border-top: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 2px;
+    grid-row-gap: 0px;
+
+    contenedor-titulo-footer{
+        display: flex;
+        align-items: end;
+        h4{
+            align-items: center;
         }
-
-
     }
-
-
-
-
-
-
-
-
+}

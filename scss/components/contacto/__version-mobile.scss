@@ -13,3 +13,53 @@ header{
         margin-bottom: .6em;
     }
 }
+#main{
+    background-color: transparent;
+    section{
+        .contenedor-img{
+            display: flex;
+            justify-content: center;
+            img{
+                width: 60vw;
+                border-radius: 10px;
+            }
+        }
+        .section-informacion{
+            text-align: center;
+            text-decoration: underline;
+            margin: .5em 0;
+            font-size: 1.2em;
+        }
+        ul{
+            li{
+                color: black;
+                font-weight: 700;
+            }
+            .github{
+                width:1em;
+                font-size: 1em;
+            }
+        }
+    }
+.contenedor-img{
+    display: flex;
+    justify-content: center;
+    img{
+        width: 50vw;
+        border-radius: 10px;
+        &:hover{
+            transition: 0.6s;
+            transform: scale(1.1);
+            opacity: 90%;
+        }
+    }
+}
+form fieldset{
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+}
+

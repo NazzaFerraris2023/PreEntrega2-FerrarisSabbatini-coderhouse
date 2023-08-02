@@ -19,7 +19,7 @@ main{
     }
     .cont-img{
         display: flex;
-        justify-content: flex-start;
+        justify-content: start;
         img{
             width:30em ;
         }
@@ -33,6 +33,7 @@ main{
         }
     }
 }
+
 
 
 
