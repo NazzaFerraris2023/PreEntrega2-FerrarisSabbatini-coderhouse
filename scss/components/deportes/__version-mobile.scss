@@ -1,4 +1,16 @@
 //================= HEADER =================//
+body{
+
+.contenedor-doc{
+    position: absolute;
+    min-height: 620vh;
+    display: flex;
+    flex-direction: column;
+    background-color: aquamarine;
+
+    
+}
+}
 header{
     background-color:$color-tarjetas;
     display: flex;
@@ -13,6 +25,7 @@ header{
     }
 }
 
+
 .idea-principal-deportes{
     background-color:$color-tarjetas;
     width: 90vw;
@@ -26,7 +39,7 @@ header{
         img{
             width: 15em;
             border-radius: 10px;
-            @media(min-width: 660px){
+            @media(min-width:660px) and (max-width:767px){
                 width: 25em;
             }
     }

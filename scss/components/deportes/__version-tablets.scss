@@ -10,8 +10,6 @@
             border: 0;
             margin: 0;
             position: relative;
-            // top: .4em;
-            // grid-area: titulo;
         }
         & .nav-bar ul{
             display: flex;
@@ -27,6 +25,7 @@
                 } 
             }
     }
+    
 main{
     background-color: transparent;
     
