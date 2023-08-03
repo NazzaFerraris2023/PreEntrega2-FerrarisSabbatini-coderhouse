@@ -27,13 +27,17 @@
             }
     }    
 main{
-    height: 95vh;
+    
+    
     h1{
         font-size: 2em;
     }
     .cont-img{
+        display: flex;
+        justify-content: center;
         img{
             border-radius: 0 20px;
+            width: 30em;
         }
     }
     p{

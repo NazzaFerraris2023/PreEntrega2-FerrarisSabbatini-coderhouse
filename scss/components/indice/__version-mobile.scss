@@ -66,11 +66,14 @@ div.contenedor-articulo-judo{
 }
 div.contenedor-articulo-boxeo{
     width: 90vw;
+    height: 100vh;
     background-color: $color-tarjetas;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: .5em;
+    
+    
     img{
         width: 80vw;
         margin:1em;
@@ -78,6 +81,7 @@ div.contenedor-articulo-boxeo{
     p.texto-articulo{
         text-align: justify;
         margin-right: 1em;
+        margin-bottom: 6em;
     }
 }
 
@@ -87,6 +91,7 @@ div.container{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+
     p{
         border:1px solid black;
         margin-bottom: 1em;
@@ -104,19 +109,4 @@ div.container{
         text-align: justify;
         margin-right: 1em;
     }
-}
-fieldset{
-    transform: translate(35px);
-    width: 85vw;
-    legend{
-        text-align: center;
-        font-size: .9em;
-        font-family: 'Times New Roman', Times, serif;
-    }
-    ul{
-        display: flex;
-        flex-direction: column;
-    }
-
-
 }

@@ -12,8 +12,17 @@ header{
     }
 }
 main{
-    width:90vw;
-    height: 80vh;
+    
+    margin-left: 1em;
+    margin-bottom: 12em;
+    
+    .cont-img{
+        display: flex;
+        justify-content: center;
+        img{
+        width:17em;
+        }
+    }
     h1{
         font-size: 1.5em;
     }

@@ -20,6 +20,7 @@ div.cont-btn{
 
 div.cont-btn-judo{        
     .btn-judo {
+        display: none;
         padding: .3em;
         background-color: $color-botones;
         color: $color-letras;
@@ -36,6 +37,7 @@ div.cont-btn-judo{
     
 div.cont-btn-box{
     a.btn-box{
+        display: none;
         padding: .3em;
         background-color: $color-botones;
         color: $color-letras;
@@ -162,6 +164,7 @@ button.btn-send{
     }
 }
 div.boton{
+    display: none;
     button.boton-deportes{
         background-color: $color-botones;
         border-radius: 10px;

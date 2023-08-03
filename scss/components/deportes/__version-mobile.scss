@@ -1,16 +1,5 @@
 //================= HEADER =================//
-body{
 
-.contenedor-doc{
-    position: absolute;
-    min-height: 620vh;
-    display: flex;
-    flex-direction: column;
-    background-color: aquamarine;
-
-    
-}
-}
 header{
     background-color:$color-tarjetas;
     display: flex;
@@ -43,5 +32,8 @@ header{
                 width: 25em;
             }
     }
+}
+.box{
+    margin-bottom: 6em;
 }
 }
