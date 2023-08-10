@@ -1,11 +1,10 @@
 // //================= VARIABLES =================//
-$color-body:rgb(248, 90, 27);
-$color-botones: rgb(255, 98, 0);
-$color-botones-hover:rgb(224, 81, 81);
-$color-botones-servicios:#FFC300;
-$color-letras:black;
-$color-letras-hover:rgb(252, 244, 244);
-$color-tarjetas:rgb(185, 181, 181);
+$color-body: #e2dbca;
+$color-letras: black;
+$color-letras-hover:rgb(153, 150, 71);
+$color-botones:#e4d6b4;
+$color-letras-botones:rgb(122, 114, 114);
+
 
 
 
@@ -13,71 +12,12 @@ $color-tarjetas:rgb(185, 181, 181);
 
 // cambios generales de SCSS//
 *{
+    padding: 0;
     margin: 0;
-    padding:0 ;
     box-sizing: border-box;
-    
 }
 
-.container{
-    max-width: 1400px;
-    margin: auto;
-}
-
-h1{
-    color:#00000047;
-    text-decoration: underline;
+body{
+    margin: 2em 2em;
     font-family: fantasy;
-    text-align: center;
-    font-size: 2em;
-    margin: .5em
 }
-h2{
-    color:#00000084;
-    text-decoration: underline;
-    font-family: fantasy;
-    text-align: center;
-    font-size: 1.7em;
-}
-h3{
-    color:#635c5c84;
-    text-decoration: underline;
-    font-family: fantasy;
-    text-align: center;
-    font-size: 1.4em;
-    @media (min-width:768px){
-        font-size: 1.6em;
-    }
-}
-h4{
-color:#00000084;
-text-decoration: underline;
-font-family: fantasy;
-text-align: center;
-font-size: 1.2em;
-}
-p{
-    color:#000000;
-    font-family: 'Times New Roman', Times, serif;
-    text-align: justify;
-    font-size: 1.1em;
-    @media (min-width:768px){
-        font-size: 1.3em;
-    }
-}
-a{
-    color:#000000;
-    font-family: 'Times New Roman', Times, serif;
-    text-align: justify;
-    font-size: 1.1em;
-    text-decoration: none;
-
-}
-ul,li{
-    color: #635c5c84;
-    list-style: none;
-}
-
-
-
-

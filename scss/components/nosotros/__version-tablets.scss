@@ -1,69 +1,19 @@
-@media (min-width:768px){
-    #header-container{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        background-color: $color-tarjetas;
-        & h3{
-            font-size: 1.5em;
-            padding: 0;
-            border: 0;
-            margin: 0;
-            position: relative;
-            // top: .4em;
-            // grid-area: titulo;
-        }
-        & .nav-bar ul{
-            display: flex;
-            justify-content: space-around;
-                & li{
-                    display: flex;
-                    & a{
-                        text-decoration: solid;
-                        &:hover{
-                            color: $color-letras-hover;
-                        }
-                    }
-                } 
-            }
-    }    
-main{
-    
-    
+@media(min-width:768px){
+.idea_principal{
     h1{
-        font-size: 2em;
+        font-size: 1.8em;
     }
     .cont-img{
-        display: flex;
-        justify-content: center;
-        img{
-            border-radius: 0 20px;
-            width: 30em;
-        }
+        margin-bottom: 1em;
     }
     p{
-        font-size: 1.5em;
-        
+        font-size: 1.2em;
+        text-align: justify;
     }
     h3{
         font-size: 1.8em;
     }
 }
-.formulario{
-    height: 50vh;
-    h2{
-        margin-top: 1em;
-    }
-    form{
-        width: 60em;
-        height: 10em;
-        fieldset{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        
-    }
-}
 
 
 
@@ -79,7 +29,4 @@ main{
 
 
 
-
-
-
-}//mq
+}//MQ

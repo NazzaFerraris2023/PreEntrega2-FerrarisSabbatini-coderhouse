@@ -1,112 +1,77 @@
-//================= HEADER =================//
-header{
-    background-color:$color-tarjetas;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 70%;
-    width: 90vw;
-    margin: 0 1em;
-    border-bottom: yellow solid;
-    nav.nav-bar ul li{
-        margin-bottom: .6em;
-    }
-}
 body{
-.contenedor-doc{
-
-    display: flex;
-    flex-direction: column;
-    min-height: 325vh;
-
-}
-}
-div.hero{
-    display: none;
-}
-div.foto-karate{
+    background-color: $color-body;
+    .titulo-principal{
+        text-decoration: underline;
+    }
+    #container{
+        .hero{
+            display: none;
+        }
+        .titulo-karate{
+            font-size: 1.4em;
+        }
+        .foto-karate{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 1em;
+            img{
+                width: 80%;
+                border-radius: 10px;
+            }
+        }
+        .contenedor-columnas{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: 1fr;
+                grid-column-gap: 15px;
+                grid-row-gap: 0px;
+                p{
+                    text-align: justify;
+                }
+            }
+            .container{
+                .contenedor-articulo-judo{
+                    border: 2px solid black;
+                    margin-bottom:1em ;
+                    h3{
+                        font-size: 1.2em;
+                    }
+                    .cont-articulo{
+                        display: flex;
+                        justify-content: center;
+                        .articulo{
+                            width: 80%;
+                            margin-bottom: .5em;
+                        }
+                    }
+                    .texto-articulo{
+                        text-align: justify;
+                        font-size: .9em;
+                    }
+                }
+            }
+            .contenedor-articulo-boxeo{
+                border: 2px solid black;
+                margin-bottom:1em ;
+                h3{
+                    font-size: 1.2em;
+                    text-align: center;
+                }
+                .cont-articulo{
+                    display: flex;
+                    justify-content: center;
+                    .articulo{
+                        width: 80%;
+                        margin-bottom: .5em;
+                    }
+                }
+                .texto-articulo{
+                    text-align: justify;
+                    font-size: .9em;
+                }
+            }
+        }
     img{
-        width: 80vw;
-        margin:0 2em;
-    }
-
-}
-div.contenedor-columnas{
-    display: flex;
-    margin: 1 .0em;
-    background-color: $color-tarjetas;
-    width: 90vw;
-    p.texto-columna1-karate{
-        text-align: justify;
-        margin-right: 1em;
-        margin-bottom: 1em;
-    }
-    p.texto-columna2-karate{
-        margin-left: 1em;
-        margin-bottom: 1em;
-    }
-
-}
-
-div.contenedor-articulo-judo{
-    width: 90vw;
-    background-color: $color-tarjetas;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    ;
-    img{
-        width: 80vw;
-        margin:1em;
-    }
-    p.texto-articulo{
-        text-align: justify;
-        margin-right: 1em;
-    }
-}
-div.contenedor-articulo-boxeo{
-    width: 90vw;
-    height: 100vh;
-    background-color: $color-tarjetas;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: .5em;
-    
-    
-    img{
-        width: 80vw;
-        margin:1em;
-    }
-    p.texto-articulo{
-        text-align: justify;
-        margin-right: 1em;
-        margin-bottom: 6em;
-    }
-}
-
-div.container{
-    width: 90vw;
-    background-color: $color-tarjetas;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-
-    p{
-        border:1px solid black;
-        margin-bottom: 1em;
-        padding: .5em;
-        -webkit-box-shadow: 14px 13px 16px 2px #000000; 
-        box-shadow: 14px 13px 16px 2px #000000;
-        border-radius: 10px;
-    }
-    img{
-        display: none;
-    }
-    
-    margin: 1em 1em;
-    p.texto-articulo{
-        text-align: justify;
-        margin-right: 1em;
+        width: 2em;
     }
 }

@@ -1,45 +1,9 @@
-//================= HEADER =================//
 @media (min-width:768px){
-    #header{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        background-color: $color-tarjetas;
-        & div h3{
-            font-size: 1.5em;
-            padding: 0;
-            border: 0;
-            margin: 0;
-            position: relative;
-        }
-        & .nav-bar ul{
-            display: flex;
-            justify-content: space-around;
-                & li{
-                    display: flex;
-                    & a{
-                        text-decoration: solid;
-                        &:hover{
-                            color: $color-letras-hover;
-                        }
-                    }
-                } 
-            }
-    }
-    
-main{
-    background-color: transparent;
-    
-    .articulo-deportes{
-        .cont-img{
-            img{
-                width: 75vw;
-            }
-        }
+.articulo-deportes{
+    h3{
+        font-size: 1.7em;
     }
 }
-.contenedor-formulario{
-    height: 70vh;
-}
 
 
 
@@ -49,4 +13,20 @@ main{
 
 
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}//MQ

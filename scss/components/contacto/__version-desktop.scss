@@ -1,54 +1,30 @@
-@media(min-width: 1200px){
-    #header-container{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        background-color: $color-tarjetas;
-        & h3{
-            font-size: 1.5em;
-            padding: 0;
-            border: 0;
-            margin: 0;
-            position: relative;
-            // top: .4em;
-            // grid-area: titulo;
-        }
-        & .nav-bar ul{
-            display: flex;
-            justify-content: space-around;
-                & li{
-                    display: flex;
-                    & a{
-                        text-decoration: solid;
-                        &:hover{
-                            color: $color-letras-hover;
-                        }
-                    }
-                } 
-            }
-    }
+@media(min-width:1200px){
 #main{
     h1{
-        font-size: 2.5em;
-    }
-    section{
-        .contenedor-img{
-            img{
-                width: 25em;
-            }
-        }
-    p.section-informacion{
         font-size: 2em;
     }
-    }
-    p{
-        font-size: 1.5em;
+    .contenedor-img{
+        img{
+            width: 40%;
+            -webkit-box-shadow: -24px 26px 14px -15px #000000; 
+            box-shadow: -24px 26px 14px -15px #000000;
+            margin-bottom: 1em;
         }
-.contenedor-formulario{
-    height: 55vh;
-    margin-bottom: 100em;
+        .section-informacion{
+            text-align: center;
+        }
+        
+    }
+}
 
-}
-}
+
+
+
+
+
+
+
+
 
 
 
@@ -58,21 +34,3 @@
 
 
 }//MQ
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

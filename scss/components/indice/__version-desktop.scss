@@ -1,125 +1,51 @@
+
 @media (min-width:1200px){
-*{
-    margin: 0;
+#container{
+h3{
+    text-decoration: underline;
 }
-    body{
-        position: relative;
-
-        #header-container{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            background-color: $color-tarjetas;
-            & h3{
-                font-size: 1.5em;
-                padding: 0;
-                border: 0;
-                margin: 0;
-                position: relative;
-                // top: .4em;
-                // grid-area: titulo;
-            }
-            & .nav-bar ul{
-                display: flex;
-                justify-content: space-around;
-                    & li{
-                        display: flex;
-                        & a{
-                            text-decoration: solid;
-                            &:hover{
-                                color: $color-letras-hover;
-                            }
-                        }
-                    } 
-                }
-        }    
-        
-    .foto-karate{
-        margin-bottom: 2.5em;
-        background-color: transparent;
-        img{
-            width: 40em;
-            height: 20em;
-            margin-bottom: 2em;
-        }
-    }
-    main{
-        background-color: transparent;
-    .contenedor-columnas{
-        background-color: transparent;
-        
-    }
-
+.foto-karate:hover{
+    transition: 0.6s;
+    transform: scale(1.1);
+    opacity: 90%;
 }
-    section.container{
-        .contenedor-articulo-judo{
-            height: 90vh;
-
-            h3{
-                font-size: 2em;
-            }
-            .articulo{
-                display: block;
-                width:30em;
-                transform: translateY(-50px);
-            }
-            .texto-articulo{
-                transform: translateY(-70px);
-                font-size: 1.4em;
-            }
-            .cont-btn-judo{
-                transform: translateY(-70px);
-            }
-        }
+.contenedor-articulo-judo{
+    h3{
+        font-size: 15em;
     }
-    section.container{
-        .contenedor-articulo-boxeo{
-            height: 90vh;
-            h3{
-                font-size: 2em;
-            }
-            .articulo{
-                display: block;
-                width:30em;
-                transform: translateY(-50px);
-            }
-            .texto-articulo{
-                transform: translateY(-70px);
-                font-size: 1.3em;
-            }
-            
+    .cont-articulo{
+        .articulo{
+            -webkit-box-shadow: -24px 26px 14px -15px #000000; 
+            box-shadow: -24px 26px 14px -15px #000000;
+        }
+    
+    }
+    .texto-articulo{
+        font-size: 15em;
+        margin-top: 1em;
+    }
+    
+}
+
+.contenedor-articulo-boxeo{
+    .cont-articulo{
+        .articulo{
+            -webkit-box-shadow: -24px 26px 14px -15px #000000; 
+            box-shadow: -24px 26px 14px -15px #000000;
         }
     }
 }
-
-.formulario{
-    margin-bottom: 1em;
-    form{
-        fieldset{
-            ul.lista-formulario{
-                width: 10em;
-                display: flex;
-                text-align: center;
-                transform: translateX(550px);
-                li label{
-                    font-size: 1.5em;
-                }
-            }
-        }
+.texto-articulo{
+    font-size: 1.5em;
+    margin-top: 1em;
+}
     }
 
 
 
-}
 
 
-
-
-
-
-
-
-}//MQ
-
+}// MQ
 
 
 

@@ -1,1175 +1,486 @@
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
-.container {
-  max-width: 1400px;
-  margin: auto;
-}
-
-h1 {
-  color: rgba(0, 0, 0, 0.2784313725);
-  text-decoration: underline;
+body {
+  margin: 2em 2em;
   font-family: fantasy;
-  text-align: center;
-  font-size: 2em;
-  margin: 0.5em;
 }
 
-h2 {
-  color: rgba(0, 0, 0, 0.5176470588);
-  text-decoration: underline;
-  font-family: fantasy;
-  text-align: center;
-  font-size: 1.7em;
-}
-
-h3 {
-  color: rgba(99, 92, 92, 0.5176470588);
-  text-decoration: underline;
-  font-family: fantasy;
-  text-align: center;
-  font-size: 1.4em;
-}
-@media (min-width: 768px) {
-  h3 {
-    font-size: 1.6em;
-  }
-}
-
-h4 {
-  color: rgba(0, 0, 0, 0.5176470588);
-  text-decoration: underline;
-  font-family: fantasy;
-  text-align: center;
-  font-size: 1.2em;
-}
-
-p {
-  color: #000000;
-  font-family: "Times New Roman", Times, serif;
-  text-align: justify;
-  font-size: 1.1em;
-}
-@media (min-width: 768px) {
-  p {
-    font-size: 1.3em;
-  }
-}
-
-a {
-  color: #000000;
-  font-family: "Times New Roman", Times, serif;
-  text-align: justify;
-  font-size: 1.1em;
-  text-decoration: none;
-}
-
-ul, li {
-  color: rgba(99, 92, 92, 0.5176470588);
-  list-style: none;
-}
-
-div.cont-btn {
-  margin-bottom: 1em;
-}
-div.cont-btn a.btn {
-  padding: 0.2em;
-  background-color: rgb(255, 98, 0);
-  color: black;
-  border-radius: 10px;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-weight: 700;
-  margin-left: 2em;
-}
-div.cont-btn a.btn:hover {
-  background-color: rgb(224, 81, 81);
-}
-
-div.cont-btn-judo .btn-judo {
-  display: none;
-  padding: 0.3em;
-  background-color: rgb(255, 98, 0);
-  color: black;
-  border-radius: 10px;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 0.8em;
-}
-div.cont-btn-judo .btn-judo:hover {
-  background-color: rgb(224, 81, 81);
-}
-
-div.cont-btn-box a.btn-box {
-  display: none;
-  padding: 0.3em;
-  background-color: rgb(255, 98, 0);
-  color: black;
-  border-radius: 10px;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-weight: 700;
-  margin-left: 1em;
-  font-size: 0.8em;
-}
-div.cont-btn-box a.btn-box:hover {
-  background-color: rgb(224, 81, 81);
-}
-@media (min-width: 768px) {
-  div.cont-btn-box {
-    transform: translateY(-50px);
-  }
-}
-@media (min-width: 1200px) {
-  div.cont-btn-box {
-    transform: translateY(-60px);
-  }
-}
-
-div.cont-btn-info {
-  margin-top: 1em;
-}
-@media (min-width: 768px) {
-  div.cont-btn-info {
-    transform: translateY(-50px);
-  }
-}
-@media (min-width: 1200px) {
-  div.cont-btn-info {
-    transform: translateY(-65px);
-  }
-}
-div.cont-btn-info a.btn-info {
-  padding: 0.3em;
-  background-color: rgb(255, 98, 0);
-  color: black;
-  border-radius: 10px;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-weight: 700;
-  margin-left: 1em;
-  font-size: 0.8em;
-}
-div.cont-btn-info a.btn-info:hover {
-  background-color: rgb(224, 81, 81);
-}
-
-div.cont-btn-info1 {
-  margin-bottom: 1em;
-}
-div.cont-btn-info1 a.btn-info1 {
-  padding: 0.3em;
-  background-color: rgb(255, 98, 0);
-  color: black;
-  border-radius: 10px;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-weight: 700;
-  margin-left: 1em;
-  font-size: 0.8em;
-}
-div.cont-btn-info1 a.btn-info1:hover {
-  background-color: rgb(224, 81, 81);
-}
-
-div.cont-btn-send a.btn-send {
-  padding: 0.3em;
-  background-color: rgb(255, 98, 0);
-  color: black;
-  border-radius: 10px;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-weight: 700;
-  margin-bottom: 1em;
-  font-size: 0.6em;
-  position: relative;
-  left: 150px;
-  bottom: 2px;
-}
-div.cont-btn-send a.btn-send:hover {
-  background-color: rgb(224, 81, 81);
-}
-@media (min-width: 1200px) {
-  div.cont-btn-send a.btn-send {
-    padding: 0.5em;
-    font-size: 1em;
-  }
-}
-
-button.boton-servicio {
-  background-color: transparent;
-  text-decoration: solid;
-  padding: 0;
-  width: 10em;
-  height: 3em;
-  margin-right: 1em;
-  margin-bottom: 1em;
-  border-radius: 20px;
-  -webkit-box-shadow: 14px 13px 16px 2px #000000;
-  box-shadow: 14px 13px 16px 2px #000000;
-}
-button.boton-servicio a {
-  color: black;
-  text-decoration: solid;
-}
-
-button.boton {
-  background-color: rgb(255, 98, 0);
-  border-radius: 10px;
-  padding: 0.4em;
-}
-button.boton:hover {
-  background-color: rgb(224, 81, 81);
-}
-
-button.btn-send {
-  background-color: rgb(255, 98, 0);
-  border-radius: 10px;
-  padding: 0.4em;
-  margin-left: 2em;
-}
-button.btn-send:hover {
-  background-color: rgb(224, 81, 81);
-}
-
-div.boton {
-  display: none;
-}
-div.boton button.boton-deportes {
-  background-color: rgb(255, 98, 0);
-  border-radius: 10px;
-  padding: 0.4em;
-  margin-left: 2em;
-}
-div.boton button.boton-deportes a {
-  color: black;
-  text-decoration: solid;
-  background-color: transparent;
-}
-div.boton button.boton-deportes:hover {
-  background-color: rgb(224, 81, 81);
-}
-@media (min-width: 1200px) {
-  div.boton {
-    padding: 0;
-    margin: 0;
-  }
-  div.boton a {
-    font-size: 1.5em;
-  }
-}
-
-legend button {
-  background-color: rgb(255, 98, 0);
-  border-radius: 10px;
-  padding: 0.4em;
-  margin-left: 2em;
-}
-legend button:hover {
-  background-color: rgb(224, 81, 81);
-}
-
-footer {
-  width: 90%;
-  background-color: rgb(185, 181, 181);
-  padding: 1em 0;
-  margin-top: auto;
-  border-top: 5px solid black;
-  position: fixed;
-  bottom: 0;
-  margin-top: 3em;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-}
-
-header {
-  background-color: rgb(185, 181, 181);
+body header {
+  background-color: #fbd67e;
+  border: 2px solid black;
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 70%;
-  width: 90vw;
-  margin: 0 1em;
-  border-bottom: yellow solid;
+  width: 100%;
 }
-header nav.nav-bar ul li {
-  margin-bottom: 0.6em;
+body header h3 a {
+  color: black;
+  text-decoration: underline;
+  font-size: 1.3em;
+  text-transform: uppercase;
 }
-
-body .contenedor-doc {
-  display: flex;
-  flex-direction: column;
-  min-height: 325vh;
+body header .nav-bar ul {
+  list-style: none;
 }
-
-div.hero {
-  display: none;
+body header .nav-bar ul li a {
+  color: black;
+  text-decoration: none;
 }
-
-div.foto-karate img {
-  width: 80vw;
-  margin: 0 2em;
-}
-
-div.contenedor-columnas {
-  display: flex;
-  margin: 1 0em;
-  background-color: rgb(185, 181, 181);
-  width: 90vw;
-}
-div.contenedor-columnas p.texto-columna1-karate {
-  text-align: justify;
-  margin-right: 1em;
-  margin-bottom: 1em;
-}
-div.contenedor-columnas p.texto-columna2-karate {
-  margin-left: 1em;
-  margin-bottom: 1em;
-}
-
-div.contenedor-articulo-judo {
-  width: 90vw;
-  background-color: rgb(185, 181, 181);
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-div.contenedor-articulo-judo img {
-  width: 80vw;
-  margin: 1em;
-}
-div.contenedor-articulo-judo p.texto-articulo {
-  text-align: justify;
-  margin-right: 1em;
-}
-
-div.contenedor-articulo-boxeo {
-  width: 90vw;
-  height: 100vh;
-  background-color: rgb(185, 181, 181);
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 0.5em;
-}
-div.contenedor-articulo-boxeo img {
-  width: 80vw;
-  margin: 1em;
-}
-div.contenedor-articulo-boxeo p.texto-articulo {
-  text-align: justify;
-  margin-right: 1em;
-  margin-bottom: 6em;
-}
-
-div.container {
-  width: 90vw;
-  background-color: rgb(185, 181, 181);
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 1em 1em;
-}
-div.container p {
-  border: 1px solid black;
-  margin-bottom: 1em;
-  padding: 0.5em;
-  -webkit-box-shadow: 14px 13px 16px 2px #000000;
-  box-shadow: 14px 13px 16px 2px #000000;
-  border-radius: 10px;
-}
-div.container img {
-  display: none;
-}
-div.container p.texto-articulo {
-  text-align: justify;
-  margin-right: 1em;
+body header .nav-bar ul li a:hover {
+  color: rgb(153, 150, 71);
 }
 
 @media (min-width: 768px) {
-  body {
-    position: relative;
-  }
-  body .contenedor-doc {
-    min-height: 250vh;
-    display: flex;
-    flex-direction: column;
-  }
   #header-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: rgb(185, 181, 181);
-  }
-  #header-container h3 {
-    font-size: 1.5em;
-    padding: 0;
-    border: 0;
-    margin: 0;
-    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
   }
   #header-container .nav-bar ul {
     display: flex;
-    justify-content: space-around;
-  }
-  #header-container .nav-bar ul li {
-    display: flex;
-  }
-  #header-container .nav-bar ul li a {
-    text-decoration: solid;
-  }
-  #header-container .nav-bar ul li a:hover {
-    color: rgb(252, 244, 244);
-  }
-  main .hero {
-    display: flex;
-  }
-  main .hero img {
-    height: 50vh;
-    width: 90vw;
-    margin: 0 2em;
-    border-radius: 20px 0;
-    opacity: 90%;
-  }
-  main .hero img:hover {
-    transition: 0.6s;
-    transform: scale(0.9);
-    opacity: 90%;
-  }
-  main .foto-karate {
-    display: flex;
-    justify-content: center;
-    height: 16em;
-  }
-  main .foto-karate img {
-    border-radius: 20px;
-    height: 40vh;
-    width: 60vw;
-  }
-  main .foto-karate img:hover {
-    transition: 0.6s;
-    transform: scale(1.1);
-    opacity: 90%;
-  }
-  main .contenedor-columnas p.texto-columna1-karate {
-    margin-top: 1em;
-  }
-  main .contenedor-columnas p.texto-columna2-karate {
-    margin-top: 1em;
-  }
-  main section.container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  main section.container .contenedor-articulo-judo {
-    background-color: rgb(185, 181, 181);
-    border: none;
-    width: 43vw;
-    height: 68vh;
-  }
-  main section.container .contenedor-articulo-judo h3 {
-    font-size: 1.1em;
-    color: black;
-    margin-bottom: 1.1em;
-  }
-  main section.container .contenedor-articulo-judo .texto-articulo {
-    font-size: 0.9em;
-    margin-top: 1em;
-    transform: translateY(-60px);
-  }
-  main section.container .contenedor-articulo-judo .articulo {
-    display: relative;
-    width: 15em;
-    border-radius: 20px;
-    transform: translateY(-45px);
-  }
-  main section.container .contenedor-articulo-judo .articulo:hover {
-    transition: 0.6s;
-    transform: scale(1.1);
-    opacity: 90%;
-  }
-  main section.container .contenedor-articulo-boxeo {
-    background-color: rgb(185, 181, 181);
-    border: none;
-    width: 45vw;
-    height: 67vh;
-  }
-  main section.container .contenedor-articulo-boxeo h3 {
-    font-size: 1.1em;
-    color: black;
-    margin-bottom: 1.1em;
-  }
-  main section.container .contenedor-articulo-boxeo .texto-articulo {
-    font-size: 0.9em;
-    margin-top: 1em;
-    transform: translateY(-60px);
-  }
-  main section.container .contenedor-articulo-boxeo .articulo {
-    display: relative;
-    width: 15em;
-    border-radius: 20px;
-    transform: translateY(-35px);
-  }
-  main section.container .contenedor-articulo-boxeo .articulo:hover {
-    transition: 0.6s;
-    transform: scale(1.1);
-    opacity: 90%;
+    flex-direction: row;
+    gap: 1em;
   }
 }
 @media (min-width: 1200px) {
-  * {
-    margin: 0;
-  }
-  body {
-    position: relative;
-  }
-  body #header-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: rgb(185, 181, 181);
-  }
-  body #header-container h3 {
-    font-size: 1.5em;
-    padding: 0;
-    border: 0;
-    margin: 0;
-    position: relative;
-  }
-  body #header-container .nav-bar ul {
-    display: flex;
-    justify-content: space-around;
-  }
-  body #header-container .nav-bar ul li {
-    display: flex;
-  }
-  body #header-container .nav-bar ul li a {
-    text-decoration: solid;
-  }
-  body #header-container .nav-bar ul li a:hover {
-    color: rgb(252, 244, 244);
-  }
-  body .foto-karate {
-    margin-bottom: 2.5em;
-    background-color: transparent;
-  }
-  body .foto-karate img {
-    width: 40em;
-    height: 20em;
-    margin-bottom: 2em;
-  }
-  body main {
-    background-color: transparent;
-  }
-  body main .contenedor-columnas {
-    background-color: transparent;
-  }
-  body section.container .contenedor-articulo-judo {
-    height: 90vh;
-  }
-  body section.container .contenedor-articulo-judo h3 {
-    font-size: 2em;
-  }
-  body section.container .contenedor-articulo-judo .articulo {
-    display: block;
-    width: 30em;
-    transform: translateY(-50px);
-  }
-  body section.container .contenedor-articulo-judo .texto-articulo {
-    transform: translateY(-70px);
-    font-size: 1.4em;
-  }
-  body section.container .contenedor-articulo-judo .cont-btn-judo {
-    transform: translateY(-70px);
-  }
-  body section.container .contenedor-articulo-boxeo {
-    height: 90vh;
-  }
-  body section.container .contenedor-articulo-boxeo h3 {
-    font-size: 2em;
-  }
-  body section.container .contenedor-articulo-boxeo .articulo {
-    display: block;
-    width: 30em;
-    transform: translateY(-50px);
-  }
-  body section.container .contenedor-articulo-boxeo .texto-articulo {
-    transform: translateY(-70px);
-    font-size: 1.3em;
-  }
-  .formulario {
-    margin-bottom: 1em;
-  }
-  .formulario form fieldset ul.lista-formulario {
-    width: 10em;
-    display: flex;
-    text-align: center;
-    transform: translateX(550px);
-  }
-  .formulario form fieldset ul.lista-formulario li label {
+  #header-container {
     font-size: 1.5em;
   }
 }
-header {
-  background-color: rgb(185, 181, 181);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 70%;
-  width: 90vw;
-  margin: 0 1em;
-  border-bottom: yellow solid;
+.cont-btn {
+  background-color: #e4d6b4;
+  padding: 0.5em;
+  width: 9em;
+  margin: 1em 0;
+  border-radius: 10px;
+  -webkit-box-shadow: 16px 14px 33px 6px rgba(0, 0, 0, 0.81);
+  box-shadow: 16px 14px 33px 6px rgba(0, 0, 0, 0.81);
+  text-align: center;
 }
-header nav.nav-bar ul li {
-  margin-bottom: 0.6em;
+.cont-btn:hover {
+  background-color: rgba(174, 154, 107, 0.5843137255);
+}
+.cont-btn a {
+  color: rgb(122, 114, 114);
+  text-decoration: none;
+  cursor: pointer;
 }
 
-.idea-principal {
-  height: 60em;
-  margin: 0 1em;
+.pie-pagina {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 0;
+  grid-column-gap: 20px;
+  grid-row-gap: 0px;
+  width: 100%;
+  height: 5em;
+  padding: 1em 0.1em;
+  background-color: #fbd67e;
+  border: 2px solid black;
+}
+.pie-pagina .contenedor-titulo-footer h4 {
+  font-size: 0.7em;
+}
+.pie-pagina .contenedor-texto-footer {
+  font-size: 0.8em;
+}
+.pie-pagina .contenedor-texto-footer ul {
+  width: 60%;
+}
+
+@media (min-width: 768px) {
+  .pie-pagina {
+    font-size: 1.5em;
+  }
+}
+@media (min-width: 1200px) {
+  .pie-pagina {
+    font-size: 1.8em;
+  }
+}
+body {
+  background-color: #e2dbca;
+}
+body .titulo-principal {
+  text-decoration: underline;
+}
+body #container .hero {
+  display: none;
+}
+body #container .titulo-karate {
+  font-size: 1.4em;
+}
+body #container .foto-karate {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+body #container .foto-karate img {
+  width: 80%;
+  border-radius: 10px;
+}
+body #container .contenedor-columnas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 15px;
+  grid-row-gap: 0px;
+}
+body #container .contenedor-columnas p {
+  text-align: justify;
+}
+body #container .container .contenedor-articulo-judo {
+  border: 2px solid black;
+  margin-bottom: 1em;
+}
+body #container .container .contenedor-articulo-judo h3 {
+  font-size: 1.2em;
+}
+body #container .container .contenedor-articulo-judo .cont-articulo {
+  display: flex;
+  justify-content: center;
+}
+body #container .container .contenedor-articulo-judo .cont-articulo .articulo {
+  width: 80%;
+  margin-bottom: 0.5em;
+}
+body #container .container .contenedor-articulo-judo .texto-articulo {
+  text-align: justify;
+  font-size: 0.9em;
+}
+body #container .contenedor-articulo-boxeo {
+  border: 2px solid black;
+  margin-bottom: 1em;
+}
+body #container .contenedor-articulo-boxeo h3 {
+  font-size: 1.2em;
+  text-align: center;
+}
+body #container .contenedor-articulo-boxeo .cont-articulo {
+  display: flex;
+  justify-content: center;
+}
+body #container .contenedor-articulo-boxeo .cont-articulo .articulo {
+  width: 80%;
+  margin-bottom: 0.5em;
+}
+body #container .contenedor-articulo-boxeo .texto-articulo {
+  text-align: justify;
+  font-size: 0.9em;
+}
+body img {
+  width: 2em;
+}
+
+@media (min-width: 768px) {
+  body .titulo-principal {
+    text-align: center;
+  }
+  body .contenedor-columnas p {
+    font-size: 1.4em;
+  }
+  body .contenedor-articulo-judo h3 {
+    text-align: center;
+    text-decoration: underline;
+    font-weight: 200;
+  }
+  body .contenedor-articulo-boxeo h3 {
+    text-decoration: underline;
+  }
+}
+@media (min-width: 1200px) {
+  #container h3 {
+    text-decoration: underline;
+  }
+  #container .foto-karate:hover {
+    transition: 0.6s;
+    transform: scale(1.1);
+    opacity: 90%;
+  }
+  #container .contenedor-articulo-judo h3 {
+    font-size: 15em;
+  }
+  #container .contenedor-articulo-judo .cont-articulo .articulo {
+    -webkit-box-shadow: -24px 26px 14px -15px #000000;
+    box-shadow: -24px 26px 14px -15px #000000;
+  }
+  #container .contenedor-articulo-judo .texto-articulo {
+    font-size: 15em;
+    margin-top: 1em;
+  }
+  #container .contenedor-articulo-boxeo .cont-articulo .articulo {
+    -webkit-box-shadow: -24px 26px 14px -15px #000000;
+    box-shadow: -24px 26px 14px -15px #000000;
+  }
+  #container .texto-articulo {
+    font-size: 1.5em;
+    margin-top: 1em;
+  }
+}
+.idea-principal-deportes h1 {
+  text-decoration: underline;
+}
+.idea-principal-deportes .texto-introductorio {
+  font-size: 1.3em;
+  text-align: justify;
+}
+
+.articulo-deportes h3 {
+  text-decoration: underline;
+  text-align: center;
+  font-size: 1.5em;
+}
+.articulo-deportes p {
+  font-size: 1.3em;
+  text-align: justify;
+}
+.articulo-deportes .cont-img {
+  display: flex;
+  justify-content: center;
+}
+.articulo-deportes .cont-img img {
+  width: 80%;
+  border-radius: 10px;
+  margin-bottom: 1em;
+  margin-top: 0.5em;
+}
+
+@media (min-width: 768px) {
+  .articulo-deportes h3 {
+    font-size: 1.7em;
+  }
+}
+@media (min-width: 1200px) {
+  .idea-principal-deportes .texto-introductorio {
+    font-size: 1.5em;
+  }
+  .idea-principal-deportes .articulo-deportes p {
+    font-size: 1.5em;
+  }
+  .idea-principal-deportes .articulo-deportes .cont-img img:hover {
+    transition: 0.6s;
+    transform: scale(1.1);
+    opacity: 90%;
+  }
+}
+.idea-principal h1 {
+  text-decoration: underline;
+  margin-top: 0.3em;
 }
 .idea-principal .cont-img-servicio {
   display: flex;
   justify-content: center;
 }
 .idea-principal .cont-img-servicio img {
-  width: 15em;
-}
-.idea-principal p {
+  width: 80%;
+  border-radius: 20px;
   margin-bottom: 1em;
 }
-
-.recomendaciones {
-  height: 150vh;
-  margin-top: 6em;
+.idea-principal .obj-pagina {
+  text-decoration: underline;
+  font-size: 1.4em;
+  text-align: center;
 }
-.recomendaciones .deportes {
-  font-size: 1.5em;
-  font-weight: 700;
+.idea-principal p {
+  text-align: justify;
+  font-size: 1.2em;
+}
+
+.recomendaciones h3 {
+  font-size: 1.4em;
   text-decoration: underline;
 }
-.recomendaciones .cont-img-articulos {
+.recomendaciones .articulos {
+  border: 2px solid black;
+  margin-bottom: 1em;
+}
+.recomendaciones .articulos .deportes {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 1.5em;
+}
+.recomendaciones .articulos .cont-img-articulos {
   display: flex;
   justify-content: center;
 }
-.recomendaciones .cont-img-articulos img {
-  width: 20em;
-  border-radius: 20px;
+.recomendaciones .articulos .cont-img-articulos img {
+  width: 60%;
+  margin-bottom: 0.5em;
+  -webkit-box-shadow: -24px 26px 14px -15px #000000;
+  box-shadow: -24px 26px 14px -15px #000000;
 }
 
 @media (min-width: 768px) {
-  #header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: rgb(185, 181, 181);
+  .idea-principal .obj-pagina {
+    font-size: 1.7em;
   }
-  #header div h3 {
-    font-size: 1.5em;
-    padding: 0;
-    border: 0;
-    margin: 0;
-    position: relative;
-  }
-  #header .nav-bar ul {
-    display: flex;
-    justify-content: space-around;
-  }
-  #header .nav-bar ul li {
-    display: flex;
-  }
-  #header .nav-bar ul li a {
-    text-decoration: solid;
-  }
-  #header .nav-bar ul li a:hover {
-    color: rgb(252, 244, 244);
-  }
-  main .cont-img img {
-    width: 40em;
-  }
-  main h4 {
-    font-size: 1.5em;
-  }
-  main p {
-    margin: 0 1em;
+  .idea-principal p {
+    font-size: 1.3em;
+    text-align: justify;
   }
   .recomendaciones h3 {
     font-size: 1.7em;
   }
-  .recomendaciones .deportes {
-    display: flex;
-    justify-content: center;
-    font-size: 1.5em;
-  }
-  .recomendaciones .cont-img-articulos img {
-    width: 39em;
-    margin-bottom: 8em;
-  }
-  .recomendaciones .cont-img-capoeira img {
-    width: 39em;
-  }
 }
 @media (min-width: 1200px) {
-  main h4 {
-    font-size: 2em;
-  }
-  main p {
-    font-size: 1.5em;
-  }
-  .recomendaciones h3 {
-    font-size: 2.3em;
-  }
-  .recomendaciones .deportes {
-    display: flex;
-    justify-content: flex-start;
-    font-size: 2em;
-  }
-  .recomendaciones .cont-img-articulos {
-    display: flex;
-    justify-content: start;
-  }
-  .recomendaciones .cont-img-articulos img {
-    width: 30em;
-  }
-  .recomendaciones .cont-img-articulos img:hover {
+  .idea-principal .cont-img-servicio img:hover {
     transition: 0.6s;
-    transform: scale(0.9);
+    transform: scale(1.1);
     opacity: 90%;
   }
+  .idea-principal .obj-pagina {
+    font-size: 1.9em;
+  }
+  .idea-principal p {
+    font-size: 1.5em;
+  }
+  .recomendaciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .recomendaciones .articulos {
+    width: 30em;
+  }
 }
-/* ================================CONTACTO================================ */
-header {
-  background-color: rgb(185, 181, 181);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 70%;
-  width: 90vw;
-  margin: 0 1em;
-  border-bottom: yellow solid;
-}
-header nav.nav-bar ul li {
-  margin-bottom: 0.6em;
-}
-
-#main {
-  background-color: transparent;
-}
-#main section .contenedor-img {
-  display: flex;
-  justify-content: center;
-}
-#main section .contenedor-img img {
-  width: 60vw;
-  border-radius: 10px;
-}
-#main section .section-informacion {
-  text-align: center;
+#main h1 {
+  font-size: 1.4em;
+  font-weight: 900;
   text-decoration: underline;
-  margin: 0.5em 0;
-  font-size: 1.2em;
-}
-#main section ul li {
-  color: black;
-  font-weight: 700;
-}
-#main section ul .github {
-  width: 1em;
-  font-size: 1em;
 }
 #main .contenedor-img {
   display: flex;
   justify-content: center;
 }
 #main .contenedor-img img {
-  width: 50vw;
-  border-radius: 10px;
+  width: 80%;
+  border-radius: 20px;
 }
-#main .contenedor-img img:hover {
-  transition: 0.6s;
-  transform: scale(1.1);
-  opacity: 90%;
+#main .section-informacion {
+  font-size: 1.2em;
+  font-weight: 900;
+  text-decoration: underline;
+  text-align: center;
 }
-#main .contenedor-formulario {
-  height: 30vh;
+#main p {
+  font-size: 1em;
 }
-#main form fieldset {
-  width: 20vw;
+#main ul {
+  list-style: none;
+}
+#main ul li {
+  font-weight: bolder;
+}
+#main .contenedor-formulario h4 {
+  text-decoration: underline;
+  text-align: center;
+}
+#main .contenedor-formulario form fieldset {
+  text-align: center;
+  background-color: #fbd67e;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+#main .contenedor-formulario form fieldset ul {
+  width: 12em;
+}
+#main .contenedor-formulario form fieldset ul .mails {
+  margin-right: 0.5em;
 }
 
 @media (min-width: 768px) {
-  #header-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: rgb(185, 181, 181);
-  }
-  #header-container h3 {
-    font-size: 1.5em;
-    padding: 0;
-    border: 0;
-    margin: 0;
-    position: relative;
-  }
-  #header-container .nav-bar ul {
-    display: flex;
-    justify-content: space-around;
-  }
-  #header-container .nav-bar ul li {
-    display: flex;
-  }
-  #header-container .nav-bar ul li a {
-    text-decoration: solid;
-  }
-  #header-container .nav-bar ul li a:hover {
-    color: rgb(252, 244, 244);
-  }
-  main .contenedor-img img:hover {
-    transition: 0.6s;
-    transform: scale(0.9);
-    opacity: 90%;
-  }
-  main section p {
-    font-size: 1.5em;
-    margin-bottom: 0.5em;
-  }
-  main section ul li {
-    font-size: 1.5em;
-    margin: 0 1em;
-  }
-  main p {
-    font-size: 1.5em;
-    margin-bottom: 0.5em;
-    margin-top: 0.5em;
-  }
-  form {
-    display: flex;
-    justify-content: center;
-  }
-}
-@media (min-width: 1200px) {
-  #header-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: rgb(185, 181, 181);
-  }
-  #header-container h3 {
-    font-size: 1.5em;
-    padding: 0;
-    border: 0;
-    margin: 0;
-    position: relative;
-  }
-  #header-container .nav-bar ul {
-    display: flex;
-    justify-content: space-around;
-  }
-  #header-container .nav-bar ul li {
-    display: flex;
-  }
-  #header-container .nav-bar ul li a {
-    text-decoration: solid;
-  }
-  #header-container .nav-bar ul li a:hover {
-    color: rgb(252, 244, 244);
-  }
   #main h1 {
-    font-size: 2.5em;
+    font-size: 1.7em;
   }
-  #main section .contenedor-img img {
-    width: 25em;
-  }
-  #main section p.section-informacion {
-    font-size: 2em;
+  #main .section-informacion {
+    font-size: 1.5em;
   }
   #main p {
+    font-size: 1.3em;
+  }
+  #main ul {
+    font-size: 1.3em;
+  }
+  #main .contenedor-formulario h4 {
     font-size: 1.5em;
   }
-  #main .contenedor-formulario {
-    height: 55vh;
-    margin-bottom: 100em;
+  #main .contenedor-formulario form fieldset ul .mails {
+    margin-right: 3em;
   }
-}
-header {
-  background-color: rgb(185, 181, 181);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 70%;
-  width: 90vw;
-  margin: 0 1em;
-  border-bottom: yellow solid;
-}
-header nav.nav-bar ul li {
-  margin-bottom: 0.6em;
-}
-
-.idea-principal-deportes {
-  background-color: rgb(185, 181, 181);
-  width: 90vw;
-  padding: 0.5em;
-  margin: 1em 1em;
-}
-.idea-principal-deportes .cont-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 0.5em;
-}
-.idea-principal-deportes .cont-img img {
-  width: 15em;
-  border-radius: 10px;
-}
-@media (min-width: 660px) and (max-width: 767px) {
-  .idea-principal-deportes .cont-img img {
-    width: 25em;
-  }
-}
-.idea-principal-deportes .box {
-  margin-bottom: 6em;
-}
-
-@media (min-width: 768px) {
-  #header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: rgb(185, 181, 181);
-  }
-  #header div h3 {
-    font-size: 1.5em;
-    padding: 0;
-    border: 0;
-    margin: 0;
-    position: relative;
-  }
-  #header .nav-bar ul {
-    display: flex;
-    justify-content: space-around;
-  }
-  #header .nav-bar ul li {
-    display: flex;
-  }
-  #header .nav-bar ul li a {
-    text-decoration: solid;
-  }
-  #header .nav-bar ul li a:hover {
-    color: rgb(252, 244, 244);
-  }
-  main {
-    background-color: transparent;
-  }
-  main .articulo-deportes .cont-img img {
-    width: 75vw;
-  }
-  .contenedor-formulario {
-    height: 70vh;
+  #main .contenedor-formulario form fieldset ul .nombre {
+    margin-right: 1.7em;
   }
 }
 @media (min-width: 1200px) {
-  * {
-    margin-left: 1.5em;
+  #main h1 {
+    font-size: 2em;
   }
-  #header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: rgb(185, 181, 181);
+  #main .contenedor-img img {
+    width: 40%;
+    -webkit-box-shadow: -24px 26px 14px -15px #000000;
+    box-shadow: -24px 26px 14px -15px #000000;
+    margin-bottom: 1em;
   }
-  #header div h3 {
-    font-size: 1.5em;
-    padding: 0;
-    border: 0;
-    margin: 0;
-    position: relative;
+  #main .contenedor-img .section-informacion {
+    text-align: center;
   }
-  #header .nav-bar ul {
-    display: flex;
-    justify-content: space-around;
+}
+.idea_principal h1 {
+  font-size: 1.5em;
+  text-decoration: underline;
+}
+.idea_principal .cont-img {
+  display: flex;
+  justify-content: center;
+}
+.idea_principal .cont-img img {
+  width: 70%;
+  border-radius: 15px;
+}
+.idea_principal h3 {
+  font-size: 1.5em;
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .idea_principal h1 {
+    font-size: 1.8em;
   }
-  #header .nav-bar ul li {
-    display: flex;
+  .idea_principal .cont-img {
+    margin-bottom: 1em;
   }
-  #header .nav-bar ul li a {
-    text-decoration: solid;
+  .idea_principal p {
+    font-size: 1.2em;
+    text-align: justify;
   }
-  #header .nav-bar ul li a:hover {
-    color: rgb(252, 244, 244);
+  .idea_principal h3 {
+    font-size: 1.8em;
   }
-  .idea-principal-deportes {
-    width: 90vw;
-    background-color: transparent;
+}
+@media (min-width: 1200px) {
+  .idea_principal h1 {
+    font-size: 2em;
+    text-transform: capitalize;
   }
-  .idea-principal-deportes .texto-introductorio {
-    font-size: 1.6em;
+  .idea_principal .cont-img img {
+    width: 50em;
   }
-  .idea-principal-deportes .articulo-deportes {
-    height: 525vh;
-  }
-  .idea-principal-deportes .articulo-deportes p {
-    font-size: 1.6em;
-  }
-  .idea-principal-deportes .articulo-deportes .cont-img:hover {
+  .idea_principal .cont-img img:hover {
     transition: 0.6s;
     transform: scale(1.1);
     opacity: 90%;
   }
-}
-header {
-  background-color: rgb(185, 181, 181);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 70%;
-  width: 90vw;
-  margin: 0 1em;
-  border-bottom: yellow solid;
-}
-header nav.nav-bar ul li {
-  margin-bottom: 0.6em;
-}
-
-main {
-  margin-left: 1em;
-  margin-bottom: 12em;
-}
-main .cont-img {
-  display: flex;
-  justify-content: center;
-}
-main .cont-img img {
-  width: 17em;
-}
-main h1 {
-  font-size: 1.5em;
-}
-main p {
-  font-size: 1.2em;
-}
-main h3 {
-  font-size: 1.5em;
-}
-
-.formulario {
-  background-color: rgb(185, 181, 181);
-  width: 90vw;
-  margin: 0 1em;
-  height: 10em;
-}
-.formulario form fieldset {
-  width: 15em;
-}
-
-@media (min-width: 530px) and (max-width: 767px) {
-  .formulario {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .formulario form fieldset {
-    width: 20em;
-  }
-}
-@media (min-width: 768px) {
-  #header-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: rgb(185, 181, 181);
-  }
-  #header-container h3 {
-    font-size: 1.5em;
-    padding: 0;
-    border: 0;
-    margin: 0;
-    position: relative;
-  }
-  #header-container .nav-bar ul {
-    display: flex;
-    justify-content: space-around;
-  }
-  #header-container .nav-bar ul li {
-    display: flex;
-  }
-  #header-container .nav-bar ul li a {
-    text-decoration: solid;
-  }
-  #header-container .nav-bar ul li a:hover {
-    color: rgb(252, 244, 244);
-  }
-  main h1 {
+  .idea_principal h3 {
     font-size: 2em;
   }
-  main .cont-img {
-    display: flex;
-    justify-content: center;
-  }
-  main .cont-img img {
-    border-radius: 0 20px;
-    width: 30em;
-  }
-  main p {
+  .idea_principal p {
     font-size: 1.5em;
-  }
-  main h3 {
-    font-size: 1.8em;
-  }
-  .formulario {
-    height: 50vh;
-  }
-  .formulario h2 {
-    margin-top: 1em;
-  }
-  .formulario form {
-    width: 60em;
-    height: 10em;
-  }
-  .formulario form fieldset {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
-@media (min-width: 1200px) {
-  #header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: rgb(185, 181, 181);
-  }
-  #header div h3 {
-    font-size: 1.5em;
-    padding: 0;
-    border: 0;
-    margin: 0;
-    position: relative;
-  }
-  #header .nav-bar ul {
-    display: flex;
-    justify-content: space-around;
-  }
-  #header .nav-bar ul li {
-    display: flex;
-  }
-  #header .nav-bar ul li a {
-    text-decoration: solid;
-  }
-  #header .nav-bar ul li a:hover {
-    color: rgb(252, 244, 244);
-  }
-  main {
-    height: 40em;
-  }
-  main h1 {
-    font-size: 2.5em;
-  }
-  main .cont-img img {
-    width: 40em;
-  }
-  .formulario form {
-    width: 60em;
   }
 }
 

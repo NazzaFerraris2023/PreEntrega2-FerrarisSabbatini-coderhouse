@@ -1,58 +1,19 @@
-header{
-    background-color:$color-tarjetas;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 70%;
-    width: 90vw;
-    margin: 0 1em;
-    border-bottom: yellow solid;
-    nav.nav-bar ul li{
-        margin-bottom: .6em;
+.idea_principal{
+    h1{
+        font-size: 1.5em;
+        text-decoration: underline;
+
     }
-}
-main{
-    
-    margin-left: 1em;
-    margin-bottom: 12em;
-    
     .cont-img{
         display: flex;
         justify-content: center;
         img{
-        width:17em;
+            width:70%;
+            border-radius: 15px;
         }
-    }
-    h1{
-        font-size: 1.5em;
-    }
-    p{
-        font-size:1.2em ;
     }
     h3{
         font-size: 1.5em;
+        text-decoration: underline;
     }
-    
-}
-.formulario{
-    background-color: $color-tarjetas;
-    width: 90vw;
-    margin: 0 1em;
-    height: 10em;
-    form fieldset{
-        width: 15em;
-    }
-
-}
-
-@media(min-width:530px) and (max-width:767px){
-    
-.formulario{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    form fieldset{
-        width: 20em;
-    }   }
 }

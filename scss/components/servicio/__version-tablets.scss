@@ -1,72 +1,18 @@
 @media(min-width:768px){
-
-    #header{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        background-color: $color-tarjetas;
-        & div h3{
-            font-size: 1.5em;
-            padding: 0;
-            border: 0;
-            margin: 0;
-            position: relative;
-            // top: .4em;
-            // grid-area: titulo;
-        }
-        & .nav-bar ul{
-            display: flex;
-            justify-content: space-around;
-                & li{
-                    display: flex;
-                    & a{
-                        text-decoration: solid;
-                        &:hover{
-                            color: $color-letras-hover;
-                        }
-                    }
-                } 
-            }
+.idea-principal{
+    .obj-pagina{
+        font-size: 1.7em;
     }
-
-    main{
-        .cont-img{
-            img{
-                width: 40em;
-            }
-        }
-        h4{
-            font-size: 1.5em;
-        }
-        p{
-            margin: 0 1em;
-        }
+    p{
+        font-size: 1.3em;
+        text-align: justify;
     }
-
-    .recomendaciones{
-        h3{
-            font-size: 1.7em;
-        }
-        .deportes{
-            display: flex;
-            justify-content: center;
-            font-size: 1.5em
-        }
-        .cont-img-articulos{
-            img{
-                width: 39em;
-                margin-bottom: 8em;
-            }
-        }
-        .cont-img-capoeira{
-            img{
-                width: 39em;
-                
-            }
-        }
+}
+.recomendaciones{
+    h3{
+        font-size: 1.7em;
     }
-
-
-
+}
 
 
 
@@ -87,3 +33,13 @@
 
 
 }//MQ
+
+
+
+
+
+
+
+
+
+

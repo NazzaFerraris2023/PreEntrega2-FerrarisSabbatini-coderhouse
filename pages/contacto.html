@@ -14,7 +14,7 @@
 
 <body>
     <!--Barra de navegacion-->
-    <header id="header">
+    <header id="header-container">
         <div class="contenedor-nav">
             <h3>
                 <a href="../index.html">InformateYaa!</a>
@@ -60,7 +60,7 @@
             <ul>
                 <li>Gmail:nazzaferrariss@gmail.com</li>
             </ul>
-            <button class="boton" href="#">Preguntame!</button>
+            <button class="cont-btn" href="#">Preguntame!</button>
         </section>
 
         <h2 class="section-informacion">Informacion</h2>
@@ -69,15 +69,16 @@
                 alt="dibujo de un conjunto de datos">
         </div>
         <p>Todo lo visto en esta pagina es con fines de entretenimiento!</p>
-        <button class="boton" href="#">Contactame!</button>
+        <button class="cont-btn" href="#">Contactame!</button>
         <section>
 
             <h2 class="section-informacion"> Se parte del proyecto</h2>
-            <div class="contenedor-img"><img class="img-nosotros"
+            <div class="contenedor-img">
+                    <img class="img-nosotros"
                     src="../fotos_proyecto/fotos contacto/foto-contacto-forma_parte.png"
                     alt="dibujo de una seleccion de personal"></div>
             <p>Te interesa trabajar conmigo para algun futuro proyecto?</p>
-            <button class="boton" href="#">Contactame!</button>
+            <button class="cont-btn" href="#">Contactame!</button>
         </section>
         <section class="contenedor-formulario">
             <h4>Dejame tu mensaje</h4>
@@ -86,13 +87,13 @@
 
                     <ul>
                         <li>
-                            <label for="name">Nombre</label>
+                            <label class="nombre" for="name">Nombre</label>
                             <input type="text" id="name" name=user_name>
                         </li>
                     </ul>
                     <ul>
                         <li>
-                            <label for="mail">Email</label>
+                            <label class="mails" for="mail">Email</label>
                             <input type="email" id="mail" name=user_mail>
                         </li>
                     </ul>
@@ -111,7 +112,7 @@
                 </fieldset>
             </form>
             <legend class="block-btn-send">
-                <button class="btn-send" href="#">Envia los datos</button>
+                <button class="cont-btn" href="#">Envia los datos</button>
             </legend>
         </section>
     </main>

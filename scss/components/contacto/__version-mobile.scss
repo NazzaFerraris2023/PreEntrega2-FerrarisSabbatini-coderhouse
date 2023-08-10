@@ -1,68 +1,55 @@
-/* ================================CONTACTO================================ */
-//================= VERSION-MOBILE ===============//
-header{
-    background-color:$color-tarjetas;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 70%;
-    width: 90vw;
-    margin: 0 1em;
-    border-bottom: yellow solid;
-    nav.nav-bar ul li{
-        margin-bottom: .6em;
-    }
-}
 #main{
-    background-color: transparent;
-    section{
-        .contenedor-img{
-            display: flex;
-            justify-content: center;
-            img{
-                width: 60vw;
-                border-radius: 10px;
-            }
+    h1{
+        font-size: 1.4em;
+        font-weight: 900;
+        text-decoration: underline;
+    }
+    .contenedor-img{
+        display: flex;
+        justify-content: center;
+        img{
+            width: 80%;
+            border-radius: 20px;
         }
-        .section-informacion{
-            text-align: center;
+    }
+    .section-informacion{
+        font-size: 1.2em;
+        font-weight: 900;
+        text-decoration: underline;
+        text-align: center;
+    }
+    p{
+        font-size: 1em;
+    }
+    ul {
+        list-style: none;
+        li{
+            font-weight: bolder;
+        }
+    }
+    .contenedor-formulario{
+        h4{
             text-decoration: underline;
-            margin: .5em 0;
-            font-size: 1.2em;
+            text-align: center;
         }
-        ul{
-            li{
-                color: black;
-                font-weight: 700;
+        form fieldset{
+            text-align: center;
+            background-color: #fbd67e;
+            display: flex;
+            flex-direction: column;
+            justify-content:center ;
+            align-items: center;
+        
+            ul{
+                width: 12em;
+                .mails{
+                    margin-right:.5em;
+                }
+            
+                
             }
-            .github{
-                width:1em;
-                font-size: 1em;
-            }
+
+
         }
     }
-.contenedor-img{
-    display: flex;
-    justify-content: center;
-    img{
-        width: 50vw;
-        border-radius: 10px;
-        &:hover{
-            transition: 0.6s;
-            transform: scale(1.1);
-            opacity: 90%;
-        }
-    }
- }
- .contenedor-formulario{
-     height: 30vh;
- }
-form fieldset{
-    width: 20vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
-
-}
-

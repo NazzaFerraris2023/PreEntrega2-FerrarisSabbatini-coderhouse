@@ -1,206 +1,24 @@
-//=========================BOTONES=================================
-div.cont-btn{
-    margin-bottom: 1em;
-    a.btn{
-        padding: .2em;
-        background-color: $color-botones;
-        color: $color-letras;
-        border-radius: 10px;
-        text-transform: uppercase;
-        text-decoration: none;
-        font-weight: 700;
-        margin-left: 2em;
-        
-        
-        &:hover{
-            background-color:$color-botones-hover;
-        }
+//------------------------BOTONES----------------------
+.cont-btn{
+    background-color: $color-botones;
+    padding: .5em;
+    width: 9em;
+    margin: 1em 0;
+    border-radius: 10px;
+    -webkit-box-shadow: 16px 14px 33px 6px rgba(0,0,0,0.81); 
+    box-shadow: 16px 14px 33px 6px rgba(0,0,0,0.81);
+    text-align: center;
+    // transform: translateX(70px);
+    &:hover{
+        background-color: #ae9a6b95;
     }
-}
-
-div.cont-btn-judo{        
-    .btn-judo {
-        display: none;
-        padding: .3em;
-        background-color: $color-botones;
-        color: $color-letras;
-        border-radius: 10px;
-        text-transform: uppercase;
-        text-decoration: none;
-        font-weight: 700;
-        font-size: .8em;
-        &:hover{
-            background-color:$color-botones-hover;
-        }
-    }
-}
     
-div.cont-btn-box{
-    a.btn-box{
-        display: none;
-        padding: .3em;
-        background-color: $color-botones;
-        color: $color-letras;
-        border-radius: 10px;
-        text-transform: uppercase;
+    a{
+        color: $color-letras-botones;
         text-decoration: none;
-        font-weight: 700;
-        margin-left: 1em;
-        font-size: .8em;
-        &:hover{
-            background-color:$color-botones-hover;
-        }
-        }
-        @media (min-width:768px){
-            transform: translateY(-50px);
-
-
-        }
-        @media (min-width:1200px){
-            transform: translateY(-60px);
-        }
-    }
-div.cont-btn-info{
-    margin-top: 1em;
-    @media (min-width:768px){
-        transform: translateY(-50px);
-        
-
-    }
-    @media (min-width:1200px){
-        transform: translateY(-65px);
-    }
-    a.btn-info{
-        padding: .3em;
-        background-color: $color-botones;
-        color: $color-letras;
-        border-radius: 10px;
-        text-transform: uppercase;
-        text-decoration: none;
-        font-weight: 700;
-        margin-left: 1em;
-        font-size: .8em;
-        &:hover{
-            background-color:$color-botones-hover;
-        }
-        }
-    }
-div.cont-btn-info1{
-    margin-bottom: 1em;
-    a.btn-info1{
-        padding: .3em;
-        background-color: $color-botones;
-        color: $color-letras;
-        border-radius: 10px;
-        text-transform: uppercase;
-        text-decoration: none;
-        font-weight: 700;
-        margin-left: 1em;
-        font-size: .8em;
-        &:hover{
-            background-color:$color-botones-hover;
-        }            
-        }
-    }
-div.cont-btn-send{
-    a.btn-send{
-        padding: .3em;
-        background-color: $color-botones;
-        color: $color-letras;
-        border-radius: 10px;
-        text-transform: uppercase;
-        text-decoration: none;
-        font-weight: 700;
-        margin-bottom: 1em;
-        // margin-left: 1em;
-        font-size: .6em;
-        position: relative;
-        left: 150px;
-        bottom: 2px;
-        &:hover{
-            background-color:$color-botones-hover;
-        }
-        @media (min-width:1200px){
-            padding: .5em;
-            font-size: 1em;
-            // transform: translateX(1550px);
-            
-        }    }
-        
-    }
-    button.boton-servicio{
-            background-color: transparent;
-            text-decoration: solid;
-            padding: 0;
-            width: 10em;
-            height: 3em;
-            margin-right: 1em;
-            margin-bottom: 1em;
-            border-radius: 20px;
-            -webkit-box-shadow: 14px 13px 16px 2px #000000; 
-            box-shadow: 14px 13px 16px 2px #000000;
-            & a{
-            color: $color-letras;
-            text-decoration: solid;
-        }
-        }
-button.boton{
-    background-color: $color-botones;
-    border-radius: 10px;
-    padding: .4em;
-    &:hover{
-        background-color: $color-botones-hover;
+        cursor: pointer;
     }
 }
-    
-
-button.btn-send{
-    background-color: $color-botones;
-    border-radius: 10px;
-    padding: .4em;
-    margin-left: 2em;
-    &:hover{
-        background-color: $color-botones-hover;
-    }
-}
-div.boton{
-    display: none;
-    button.boton-deportes{
-        background-color: $color-botones;
-        border-radius: 10px;
-        padding: .4em;
-        margin-left: 2em;
-        & a{
-            color: $color-letras;
-            text-decoration: solid;
-            background-color: transparent;}
-        &:hover{
-            background-color: $color-botones-hover;
-        }
-    }
-    @media (min-width:1200px){
-        padding: 0;
-        margin: 0;
-        & a{
-            font-size: 1.5em;
-
-        }
-    }
-}
-// }
-legend button{
-    background-color: $color-botones;
-    border-radius: 10px;
-    padding: .4em;
-    margin-left: 2em;
-    &:hover{
-        background-color: $color-botones-hover;
-    }
-}
-
-
-
-
 
 
 

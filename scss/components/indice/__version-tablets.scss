@@ -1,148 +1,25 @@
 @media (min-width:768px){
     body{
-        position: relative;
-        .contenedor-doc{
-            min-height: 250vh;
-            display: flex;
-            flex-direction: column;
-            
+        .titulo-principal{
+            text-align: center;
         }
-    }
-    #header-container{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        background-color: $color-tarjetas;
-        & h3{
-            font-size: 1.5em;
-            padding: 0;
-            border: 0;
-            margin: 0;
-            position: relative;
-            // top: .4em;
-            // grid-area: titulo;
+        .contenedor-columnas p{
+            font-size: 1.4em;
         }
-        & .nav-bar ul{
-            display: flex;
-            justify-content: space-around;
-                & li{
-                    display: flex;
-                    & a{
-                        text-decoration: solid;
-                        &:hover{
-                            color: $color-letras-hover;
-                        }
-                    }
-                } 
-            }
-    }    
-    
-
-main{
-    
-    .hero{
-        display: flex;
-        img{
-            height: 50vh;
-            width: 90vw;
-            margin: 0 2em;
-            border-radius: 20px 0;
-            opacity: 90%;
-            &:hover{
-                transition: 0.6s;
-                transform: scale(0.9);
-                opacity: 90%;
-            }
-        }
-    }
-
-    .foto-karate{
-        display: flex;
-        justify-content: center;
-        height: 16em;
-        img{
-            border-radius: 20px;
-            height: 40vh;
-            width: 60vw;
-            &:hover{
-                transition: 0.6s;
-                transform: scale(1.1);
-                opacity: 90%;
-            }
-        }
-    }
-    .contenedor-columnas{
-        p.texto-columna1-karate{
-            margin-top: 1em;
-
-        }
-        p.texto-columna2-karate{
-            margin-top: 1em;
-
-        }
-    }
-
-section.container{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    .contenedor-articulo-judo{
-        background-color: $color-tarjetas;
-        border: none;
-        width: 43vw;
-        height: 68vh;
+        .contenedor-articulo-judo{
             h3{
-                font-size: 1.1em;
-                color: black;
-                margin-bottom: 1.1em;
-            }
-            .texto-articulo{
-                font-size: .9em;
-                margin-top: 1em;
-                transform: translateY(-60px);
-            }
-            .articulo{
-                display: relative;
-                width:15em;
-                border-radius: 20px;
-                transform: translateY(-45px);
-                &:hover{
-                    transition: 0.6s;
-                    transform: scale(1.1);
-                    opacity: 90%;
-                }
-                
+                text-align: center;
+                text-decoration: underline;
+                font-weight: 200;
             }
         }
         .contenedor-articulo-boxeo{
-            background-color: $color-tarjetas;
-            border: none;
-            width: 45vw;
-            height: 67vh;
-                h3{
-                    font-size: 1.1em;
-                    color: black;
-                    margin-bottom: 1.1em;
-                }
-                .texto-articulo{
-                    font-size: .9em;
-                    margin-top: 1em;
-                    transform: translateY(-60px);
-                }
+            h3{
+                text-decoration: underline;
                 
-                .articulo{
-                    display: relative;
-                    width:15em;
-                    border-radius: 20px;
-                    transform: translateY(-35px);
-                    &:hover{
-                        transition: 0.6s;
-                        transform: scale(1.1);
-                        opacity: 90%;
-                    }
-                    
-                }
             }
+        }
     }
-}
 
 
 
